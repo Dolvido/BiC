@@ -1,0 +1,5 @@
+# Versions used by public source validation (Python 3.12).
+# Install torch from https://download.pytorch.org/whl/cpu for the CPU build.
+torch==2.11.0
+numpy==2.5.3
+Pillow==12.3.0

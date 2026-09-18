@@ -1,0 +1,78 @@
+{
+  "schema": "bic-v05-legacy-compatibility-v1",
+  "result": "exact_tensor_equality",
+  "record_type": "Recorded after the successful observed probe; the probe was not rerun for this record.",
+  "method": "Run archived v0.4 package code and current package code in separate Python subprocesses, loading the same delivered v0.4 checkpoint. Compare every tensor in the returned output recursively using torch.equal. memory_context is omitted.",
+  "archive": "brain-in-computer-v0.4.zip",
+  "archive_sha256": "da0cc1322eaa00b364807103ccb63b6a18758506361b8154996d7817762d1274",
+  "checkpoint": "runs/grounding-v04/checkpoint.pt",
+  "checkpoint_sha256": "5081e6c4767bfa27ca14ca398c6b8193a0ba56b5ec97e18e6160963cd57fd680",
+  "source_hashes_recorded_after_probe": {
+    "brain_in_computer/model.py": {
+      "archived_v04_sha256": "26fa13df82919179ddb54615c1a7170e78c8a4b2efc31bec5a15537d59da5a54",
+      "current_sha256": "a00ec22982cbda4b39450ba78721b038e71f47a0108dde55716956c4021d24a0"
+    },
+    "brain_in_computer/regions.py": {
+      "archived_v04_sha256": "0e8186ef71008d5c02b4656d0b77e06aae9aac524e9cc499c57737f53b98eb35",
+      "current_sha256": "ab478d5a65c9ff51aa0204c9335ca2a6390b09d61aa4de9712c68cd5d20a800f"
+    },
+    "brain_in_computer/language.py": {
+      "archived_v04_sha256": "a103ae1889f1d7e12a321eb67a85b647f2630e74d1b48baa899072ce2147181a",
+      "current_sha256": "677475e8a481b61fb8b5b5db033d5083592373ebd7e69e77414886b9601a8d31"
+    },
+    "brain_in_computer/computer_use/model.py": {
+      "archived_v04_sha256": "b697398e16e110ade1822a2dd648e0577a17ded74693d30ecb941e9591b7914e",
+      "current_sha256": "b697398e16e110ade1822a2dd648e0577a17ded74693d30ecb941e9591b7914e"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "threads": 1,
+    "dtype": "float32"
+  },
+  "inputs": {
+    "seed_before_inputs": 98503,
+    "pixels": "torch.rand(2,3,3,32,32)",
+    "body": "torch.rand(2,3,4)",
+    "prompts": [
+      "click red",
+      "type hi"
+    ],
+    "decoder": "torch.ones(2,1,dtype=torch.long), BOS only"
+  },
+  "tensors_compared": 23,
+  "tensor_names": [
+    "logits",
+    "visual_logits",
+    "auditory_logits",
+    "prediction",
+    "value",
+    "region_activity.visual_cortex",
+    "region_activity.auditory_cortex",
+    "region_activity.somatosensory_cortex",
+    "region_activity.temporal_language",
+    "region_activity.parietal_association",
+    "region_activity.thalamus",
+    "region_activity.prefrontal_cortex",
+    "region_activity.hippocampus",
+    "region_activity.basal_ganglia",
+    "region_activity.motor_cortex",
+    "region_activity.cerebellum",
+    "region_activity.amygdala",
+    "region_activity.hypothalamus",
+    "language_logits",
+    "concept_context",
+    "production_context",
+    "comprehension_states",
+    "scene_logits"
+  ],
+  "all_equal": true,
+  "output_tensor_hashes": null,
+  "output_tensor_hashes_note": "The original probe retained the equality result, not per-tensor digests or temporary tensor files.",
+  "limitations": [
+    "This is one fixed CPU input batch and one checkpoint, not a universal bitwise equivalence proof.",
+    "The separate unit tests also check memory_context=None versus zero and hippocampal lesion behavior."
+  ]
+}

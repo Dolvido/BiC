@@ -1,0 +1,5 @@
+HTTP integration: passed; saved experiments/computer_ui_verification.json
+{"prompt": "hello", "reply": "hello.", "actions": ["stop"], "visible_state": {"text": "", "last_clicked": null}}
+{"prompt": "click red", "reply": "clicked red.", "actions": ["click_bottom_left", "stop"], "visible_state": {"text": "", "last_clicked": "red"}}
+{"prompt": "what did you click", "reply": "last was red.", "actions": ["stop"], "visible_state": {"text": "", "last_clicked": "red"}}
+{"prompt": "type hi", "reply": "typed hi.", "actions": ["backspace", "click_field", "key_h", "key_i", "stop"], "visible_state": {"text": "hi", "last_clicked": "red"}}

@@ -1,0 +1,17 @@
+{
+  "checkpoint_sha256": "830e0ec6bd74b51b66acb7017c4c1bae2f95e3503335f84136e2597a636fa153",
+  "original_archive": "brain-in-computer-v0.1.zip",
+  "episodes": 32,
+  "delay": 6,
+  "bitwise_equal_to_original_v01": {
+    "logits": true,
+    "visual_logits": true,
+    "auditory_logits": true,
+    "prediction": true,
+    "value": true,
+    "all_region_activities": true
+  },
+  "checkpoint_unchanged": true,
+  "optimizer_steps": 0,
+  "english_training_performed": false
+}

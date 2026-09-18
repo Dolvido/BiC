@@ -1,0 +1,129 @@
+{
+  "language_training_performed": false,
+  "estimates": [
+    {
+      "parameter_count": 1000000,
+      "parameter_state_bytes": {
+        "inference_fp32": 4000000,
+        "inference_fp16_bf16": 2000000,
+        "inference_4bit_ideal": 500000,
+        "training_fp32_adam": 16000000
+      },
+      "training_workload": {
+        "corpus_tokens": null,
+        "epochs": 1,
+        "processed_tokens": null,
+        "measured_tokens_per_second": null
+      },
+      "estimated_training_seconds": null,
+      "assumptions": [
+        "Parameter-state storage only; these values are not total VRAM estimates or fit guarantees.",
+        "FP32 inference weights use 4 bytes per parameter; FP16/BF16 inference weights use 2.",
+        "Ideal packed 4-bit inference weights use half a byte per parameter, rounded up to whole bytes.",
+        "4-bit storage assumes a compatible quantized representation; no model is quantized here.",
+        "FP32 Adam training state uses 4-byte weights, 4-byte gradients, and two 4-byte moment tensors: 16 bytes per parameter.",
+        "Activations, caches, workspaces, runtime allocations, quantization metadata, and temporary buffers are excluded.",
+        "Mixed-precision training, optimizer variants, offloading, and distributed replicas are not estimated.",
+        "Duration is unavailable unless corpus size and externally measured training throughput are both supplied.",
+        "Supplied throughput is not independently verified; it must represent the intended model, hardware, precision, batch size, and sequence length.",
+        "Duration assumes constant measured throughput for every corpus token in every epoch; unmeasured preprocessing, evaluation, and checkpoint overhead are excluded.",
+        "Neither parameter count nor this budget establishes English competence or general intelligence."
+      ],
+      "language_training_performed": false,
+      "model_downloaded": false
+    },
+    {
+      "parameter_count": 10000000,
+      "parameter_state_bytes": {
+        "inference_fp32": 40000000,
+        "inference_fp16_bf16": 20000000,
+        "inference_4bit_ideal": 5000000,
+        "training_fp32_adam": 160000000
+      },
+      "training_workload": {
+        "corpus_tokens": null,
+        "epochs": 1,
+        "processed_tokens": null,
+        "measured_tokens_per_second": null
+      },
+      "estimated_training_seconds": null,
+      "assumptions": [
+        "Parameter-state storage only; these values are not total VRAM estimates or fit guarantees.",
+        "FP32 inference weights use 4 bytes per parameter; FP16/BF16 inference weights use 2.",
+        "Ideal packed 4-bit inference weights use half a byte per parameter, rounded up to whole bytes.",
+        "4-bit storage assumes a compatible quantized representation; no model is quantized here.",
+        "FP32 Adam training state uses 4-byte weights, 4-byte gradients, and two 4-byte moment tensors: 16 bytes per parameter.",
+        "Activations, caches, workspaces, runtime allocations, quantization metadata, and temporary buffers are excluded.",
+        "Mixed-precision training, optimizer variants, offloading, and distributed replicas are not estimated.",
+        "Duration is unavailable unless corpus size and externally measured training throughput are both supplied.",
+        "Supplied throughput is not independently verified; it must represent the intended model, hardware, precision, batch size, and sequence length.",
+        "Duration assumes constant measured throughput for every corpus token in every epoch; unmeasured preprocessing, evaluation, and checkpoint overhead are excluded.",
+        "Neither parameter count nor this budget establishes English competence or general intelligence."
+      ],
+      "language_training_performed": false,
+      "model_downloaded": false
+    },
+    {
+      "parameter_count": 100000000,
+      "parameter_state_bytes": {
+        "inference_fp32": 400000000,
+        "inference_fp16_bf16": 200000000,
+        "inference_4bit_ideal": 50000000,
+        "training_fp32_adam": 1600000000
+      },
+      "training_workload": {
+        "corpus_tokens": null,
+        "epochs": 1,
+        "processed_tokens": null,
+        "measured_tokens_per_second": null
+      },
+      "estimated_training_seconds": null,
+      "assumptions": [
+        "Parameter-state storage only; these values are not total VRAM estimates or fit guarantees.",
+        "FP32 inference weights use 4 bytes per parameter; FP16/BF16 inference weights use 2.",
+        "Ideal packed 4-bit inference weights use half a byte per parameter, rounded up to whole bytes.",
+        "4-bit storage assumes a compatible quantized representation; no model is quantized here.",
+        "FP32 Adam training state uses 4-byte weights, 4-byte gradients, and two 4-byte moment tensors: 16 bytes per parameter.",
+        "Activations, caches, workspaces, runtime allocations, quantization metadata, and temporary buffers are excluded.",
+        "Mixed-precision training, optimizer variants, offloading, and distributed replicas are not estimated.",
+        "Duration is unavailable unless corpus size and externally measured training throughput are both supplied.",
+        "Supplied throughput is not independently verified; it must represent the intended model, hardware, precision, batch size, and sequence length.",
+        "Duration assumes constant measured throughput for every corpus token in every epoch; unmeasured preprocessing, evaluation, and checkpoint overhead are excluded.",
+        "Neither parameter count nor this budget establishes English competence or general intelligence."
+      ],
+      "language_training_performed": false,
+      "model_downloaded": false
+    },
+    {
+      "parameter_count": 3000000000,
+      "parameter_state_bytes": {
+        "inference_fp32": 12000000000,
+        "inference_fp16_bf16": 6000000000,
+        "inference_4bit_ideal": 1500000000,
+        "training_fp32_adam": 48000000000
+      },
+      "training_workload": {
+        "corpus_tokens": null,
+        "epochs": 1,
+        "processed_tokens": null,
+        "measured_tokens_per_second": null
+      },
+      "estimated_training_seconds": null,
+      "assumptions": [
+        "Parameter-state storage only; these values are not total VRAM estimates or fit guarantees.",
+        "FP32 inference weights use 4 bytes per parameter; FP16/BF16 inference weights use 2.",
+        "Ideal packed 4-bit inference weights use half a byte per parameter, rounded up to whole bytes.",
+        "4-bit storage assumes a compatible quantized representation; no model is quantized here.",
+        "FP32 Adam training state uses 4-byte weights, 4-byte gradients, and two 4-byte moment tensors: 16 bytes per parameter.",
+        "Activations, caches, workspaces, runtime allocations, quantization metadata, and temporary buffers are excluded.",
+        "Mixed-precision training, optimizer variants, offloading, and distributed replicas are not estimated.",
+        "Duration is unavailable unless corpus size and externally measured training throughput are both supplied.",
+        "Supplied throughput is not independently verified; it must represent the intended model, hardware, precision, batch size, and sequence length.",
+        "Duration assumes constant measured throughput for every corpus token in every epoch; unmeasured preprocessing, evaluation, and checkpoint overhead are excluded.",
+        "Neither parameter count nor this budget establishes English competence or general intelligence."
+      ],
+      "language_training_performed": false,
+      "model_downloaded": false
+    }
+  ]
+}

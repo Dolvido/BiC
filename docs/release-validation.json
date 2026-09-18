@@ -1,0 +1,107 @@
+{
+  "schema": "bic-source-release-validation-v1",
+  "utc": "2026-09-18T15:03:36.150999+00:00",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "dependencies": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0"
+  },
+  "test_files": [
+    "test_launcher.py",
+    "test_offline_home.py",
+    "test_home_learning.py",
+    "test_definition_tutor_author.py",
+    "test_definition_curriculum.py",
+    "test_shared_rate_continuation.py",
+    "test_shared_rate_run.py",
+    "test_public_demo.py"
+  ],
+  "scope": "Selected source checks, aggregate evidence arithmetic, and bundled CPU inference; no training or live tutor calls.",
+  "syntax_files": 452,
+  "tests": {
+    "run": 70,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "checked_imports": [
+    "brain_in_computer",
+    "brain_in_computer.curriculum",
+    "brain_in_computer.curriculum_tutor",
+    "brain_in_computer.dialogue_student",
+    "brain_in_computer.language",
+    "brain_in_computer.launcher",
+    "brain_in_computer.learning_student",
+    "brain_in_computer.model",
+    "brain_in_computer.regions",
+    "examples",
+    "examples.english_demo",
+    "examples.export_demo_weights",
+    "experiments.cognitive_curriculum",
+    "experiments.complementary_composition_run",
+    "experiments.composition_data",
+    "experiments.definition_basis_curriculum",
+    "experiments.definition_basis_data",
+    "experiments.definition_curriculum",
+    "experiments.definition_tutor_author",
+    "experiments.definition_tutor_chapters",
+    "experiments.foundation_layout_study",
+    "experiments.foundation_plan",
+    "experiments.foundation_tutor_adviser",
+    "experiments.home_learning",
+    "experiments.offline_home",
+    "experiments.sequence_data",
+    "experiments.sequence_student",
+    "experiments.shared_objective_continuation",
+    "experiments.shared_rate_continuation",
+    "experiments.shared_rate_run",
+    "experiments.shared_state_student"
+  ],
+  "cli_help": [
+    {
+      "module": "brain_in_computer",
+      "arguments": [],
+      "returncode": 0
+    },
+    {
+      "module": "brain_in_computer",
+      "arguments": [
+        "doctor"
+      ],
+      "returncode": 0
+    },
+    {
+      "module": "experiments.offline_home",
+      "arguments": [],
+      "returncode": 0
+    },
+    {
+      "module": "experiments.home_learning",
+      "arguments": [],
+      "returncode": 0
+    },
+    {
+      "module": "experiments.shared_rate_run",
+      "arguments": [],
+      "returncode": 0
+    }
+  ],
+  "evidence": {
+    "status": "aggregate arithmetic verified",
+    "evidence_sha256": "be4cb587e298739cd745a6b3189bb92ed4ac3e71f1d8acba518f983128bcbb3f",
+    "original_report_authenticated": false,
+    "acquisition_mean_effect_pp": 24.375,
+    "eligible_arms": []
+  },
+  "demo": {
+    "device": "cpu",
+    "weights_sha256": "002a5cdd39c1ad1e4625f2a7e804eb1d1a13ba62598db90ff0bc3354467d758b",
+    "illustrations_not_benchmark": true,
+    "scenarios": 4,
+    "turns": 27
+  },
+  "passed": true,
+  "wall_seconds": 6.878
+}

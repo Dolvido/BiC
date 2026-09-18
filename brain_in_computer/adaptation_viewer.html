@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BiC · Learning Lab</title>
+<style>
+:root{color-scheme:light;--ink:#17332d;--muted:#657b72;--paper:#f4f6ef;--white:#fff;--line:#dce4d7;--green:#245b47;--lime:#ddf3a1;--red:#d05247;--blue:#578ccb;--yellow:#e5b948}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Segoe UI,Arial,sans-serif;line-height:1.5}button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #759df4;outline-offset:3px}button:disabled{cursor:not-allowed;opacity:.43}.shell{max-width:1170px;margin:auto;padding:36px 32px 28px}.brand{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:650;letter-spacing:.02em}.mark{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:var(--green);color:var(--lime);font-weight:750}.badge{margin-left:auto;border:1px solid #becdba;border-radius:99px;padding:5px 12px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+header{margin:42px 0 28px;display:flex;gap:36px;align-items:end;justify-content:space-between}h1{font-size:clamp(32px,4vw,47px);letter-spacing:-.045em;line-height:1.08;font-weight:600;margin:0 0 15px}header p{font-size:16px;max-width:580px;margin:0;color:var(--muted)}.model{font-size:12px;text-align:right;white-space:nowrap;color:var(--muted)}.model strong{display:block;font-weight:600;color:var(--ink);font-size:14px}
+.layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,1fr);gap:22px;align-items:start}.card{background:var(--white);border:1px solid var(--line);border-radius:21px;overflow:hidden}.stage{padding:25px}.kicker{text-transform:uppercase;font-size:10px;font-weight:750;letter-spacing:.15em;color:var(--muted)}.stage-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.stage-head h2{font-size:18px;font-weight:600;margin:4px 0 0}.counter{font-size:13px;font-variant-numeric:tabular-nums;color:var(--muted)}.objects{display:grid;grid-template-columns:1fr 1fr;gap:12px}.object{height:142px;border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;background:#f9faf6}.shape{height:47px;width:47px;border-radius:13px;box-shadow:inset 0 -3px 0 #00000012}.color-name{font-size:13px;font-weight:600;text-transform:capitalize}.red{background:var(--red)}.blue{background:var(--blue)}.green{background:#71a57e}.yellow{background:var(--yellow)}.progress{height:4px;background:#edf1e7;border-radius:99px;margin:23px 0;overflow:hidden}.progress span{display:block;height:100%;width:0;background:var(--green);transition:width .25s}
+.controls{display:flex;flex-wrap:wrap;gap:9px}button{border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink);padding:10px 17px;font-size:13px;font-weight:600;transition:background .15s}button:hover:not(:disabled){background:#eef3e5}.primary{background:var(--green);color:white;border-color:var(--green)}.primary:hover:not(:disabled){background:#194735}.play{background:var(--lime);border-color:var(--lime)}.controls #new{margin-left:auto}.subnote{font-size:12px;color:var(--muted);margin:15px 0 0}.aside{display:grid;gap:18px}.summary{padding:23px}.stats{display:flex;align-items:end;justify-content:space-between;margin:12px 0 20px}.stat strong{display:block;font-size:36px;font-weight:500;letter-spacing:-.05em;line-height:1.15}.stat span{font-size:12px;color:var(--muted)}.smallstat{text-align:right;font-size:13px;color:var(--muted)}.feedback{background:#f1f5e9;border-radius:12px;padding:15px;font-size:14px;min-height:81px}.feedback strong{display:block;font-weight:600;margin-bottom:4px}.feedback span{font-size:12px;color:var(--muted)}.feedback[data-success=false]{background:#fcf1e7}.history-card{padding:21px}.history-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}.history-head h2{font-size:15px;font-weight:600;margin:0}.history-head span{font-size:11px;color:var(--muted)}.history{max-height:294px;overflow:auto;margin:0;padding:0;list-style:none}.history li{display:flex;align-items:center;gap:9px;border-top:1px solid #eef1e8;padding:10px 0;font-size:12px}.history .trial{color:var(--muted);width:25px;font-variant-numeric:tabular-nums}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;flex-shrink:0}.outcome{margin-left:auto;font-size:11px;border-radius:99px;background:#edf5e6;padding:3px 8px;color:#325c37}.outcome.miss{background:#faf0e7;color:#90643d}.empty{font-size:13px;color:var(--muted);padding:21px 0}
+.persistence{display:flex;align-items:center;gap:14px;padding:19px 23px;margin-top:19px}.persistence .explain{flex:1}.persistence strong{font-size:13px;font-weight:600}.persistence p{font-size:12px;color:var(--muted);margin:3px 0 0}.persistence button{font-size:12px;padding:8px 12px}.notice{font-size:12px;min-height:21px;margin:15px 0 0;color:var(--muted)}.notice.error{color:#a1392e}footer{border-top:1px solid var(--line);margin-top:33px;padding-top:18px;font-size:11px;color:var(--muted);display:flex;gap:28px;justify-content:space-between}footer p{margin:0;max-width:670px}.hidden{display:none}
+@media(max-width:760px){.shell{padding:24px 18px}header{margin-top:29px;display:block}h1{font-size:36px}.model{display:none}.layout{grid-template-columns:1fr}.object{height:119px}.aside{grid-template-columns:1fr}.persistence{flex-wrap:wrap}.persistence .explain{flex-basis:100%}.controls #new{margin-left:0}.badge{font-size:10px;padding:5px 8px}footer{display:block}footer p+p{margin-top:9px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<div class="brand"><span class="mark">B</span>Brain in Computer<span class="badge">Experimental learning lab</span></div>
+<header><div><h1>Experience. Remember. Adapt.</h1><p>Watch BiC learn which choice earns a reward, using feedback from its own actions. The rule changes during each episode.</p></div><div class="model">Running locally<strong id="model">Loading model…</strong></div></header>
+<main>
+<div class="layout">
+<section class="card stage" aria-label="Learning world">
+<div class="stage-head"><div><div class="kicker">Four-object world</div><h2 id="world-title">Next choice</h2></div><div class="counter" id="trial">Ready</div></div>
+<div class="objects" id="objects" aria-label="Four available objects"></div>
+<div class="progress" role="progressbar" aria-label="Episode progress" aria-valuemin="0" aria-valuemax="40" aria-valuenow="0" id="progress"><span id="progress-fill"></span></div>
+<div class="controls"><button class="primary" id="step">Step once</button><button class="play" id="run">Run episode</button><button id="new">New episode</button></div>
+<p class="subnote">BiC makes each choice. Positions change; experience carries forward.</p>
+</section>
+<aside class="aside">
+<section class="card summary" aria-label="Episode results"><div class="kicker">This episode</div><div class="stats"><div class="stat"><strong id="successes">0</strong><span>successful choices</span></div><div class="smallstat" id="completed">No trials yet</div></div><div class="feedback" id="feedback" aria-live="polite"><strong id="feedback-title">Ready to explore</strong><span id="feedback-detail">Take the first step to see what BiC chooses.</span></div></section>
+<section class="card history-card"><div class="history-head"><h2>Recent experience</h2><span>Newest first</span></div><ol class="history" id="history"></ol><div class="empty" id="empty">The story starts with its first choice.</div></section>
+</aside>
+</div>
+<section class="card persistence" aria-label="Save and resume"><div class="explain"><strong>Pause now. Pick up where it left off.</strong><p>Save the world and BiC's memory together. Reload returns to your last saved trial.</p></div><button id="save">Save session</button><button id="reload">Reload saved</button></section>
+<p class="notice" id="notice" role="status" aria-live="polite">Connecting to the local lab…</p>
+</main>
+<footer><p>This lab receives identified object categories and success/failure feedback. It tests memory and adaptation in a small symbolic task, separate from the desktop and language model.</p><p>Model weights stay fixed during use.</p></footer>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let state=null, busy=false, running=false, runToken=0;
+function controls(){
+  $("step").disabled=busy||running||!state||state.done;
+  $("run").disabled=!state||state.done||(busy&&!running);
+  $("run").textContent=running?"Pause":"Run episode";
+  $("new").disabled=busy||running;
+  $("save").disabled=busy||running||!state||!state.can_save;
+  $("reload").disabled=busy||running||!state||!state.has_saved_session;
+}
+function showError(error){$("notice").textContent=error.message;$("notice").classList.add("error");}
+function render(s){
+  state=s;$("model").textContent=s.model;
+  $("trial").textContent=s.done?"Complete · "+s.horizon+" trials":"Trial "+(s.completed_trials+1)+" of "+s.horizon;
+  $("world-title").textContent=s.done?"Episode complete":"Next choice";
+  $("successes").textContent=s.successes;
+  $("completed").textContent=s.completed_trials?"out of "+s.completed_trials+" completed":"No trials yet";
+  $("progress-fill").style.width=(100*s.completed_trials/s.horizon)+"%";
+  $("progress").setAttribute("aria-valuenow",s.completed_trials);
+  $("progress").setAttribute("aria-valuemax",s.horizon);
+  $("objects").replaceChildren();
+  for(const object of s.objects){
+    const tile=document.createElement("div");tile.className="object";tile.setAttribute("role","img");
+    tile.setAttribute("aria-label",object.color+" object, "+object.position);
+    const shape=document.createElement("span");shape.className="shape "+object.color;shape.setAttribute("aria-hidden","true");
+    const label=document.createElement("span");label.className="color-name";label.textContent=object.color;
+    tile.append(shape,label);$("objects").append(tile);
+  }
+  const last=s.last_result;
+  if(last){$("feedback").dataset.success=String(last.success);$("feedback-title").textContent=last.success?"Success — a rewarding choice":"No reward — another experience";
+    $("feedback-detail").textContent="Trial "+last.trial+": chose "+last.color+" at "+last.cell_name+".";}
+  else{delete $("feedback").dataset.success;$("feedback-title").textContent="Ready to explore";$("feedback-detail").textContent="Take the first step to see what BiC chooses.";}
+  $("history").replaceChildren();$("empty").classList.toggle("hidden",s.history.length>0);
+  for(const row of [...s.history].reverse()){
+    const item=document.createElement("li"),trial=document.createElement("span"),dot=document.createElement("span"),choice=document.createElement("span"),outcome=document.createElement("span");
+    trial.className="trial";trial.textContent=String(row.trial).padStart(2,"0");
+    dot.className="dot "+row.color;choice.textContent="Chose "+row.color;
+    outcome.className="outcome"+(row.success?"":" miss");outcome.textContent=row.success?"Success":"No reward";
+    item.append(trial,dot,choice,outcome);$("history").append(item);
+  }
+  $("notice").textContent=s.notice;$("notice").classList.remove("error");controls();
+}
+async function request(path,body){
+  const response=await fetch(path,body===undefined?{cache:"no-store"}:{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+  const value=await response.json();if(!response.ok)throw new Error(value.error||"The local lab could not complete that action.");return value;
+}
+async function action(path){busy=true;controls();try{render(await request(path,{}));}catch(error){running=false;showError(error);}finally{busy=false;controls();}}
+$("step").onclick=()=>action("/step");
+$("new").onclick=()=>action("/new");
+$("save").onclick=()=>action("/save");
+$("reload").onclick=()=>action("/reload");
+$("run").onclick=async()=>{
+  if(running){running=false;runToken++;controls();return;}
+  const token=++runToken;running=true;controls();
+  while(running&&token===runToken&&state&&!state.done){await action("/step");if(running&&token===runToken&&!state.done)await new Promise(resolve=>setTimeout(resolve,420));}
+  if(token===runToken)running=false;controls();
+};
+request("/state").then(render).catch(showError);controls();
+</script>
+</body>
+</html>

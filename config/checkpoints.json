@@ -1,0 +1,9 @@
+{
+  "schema": "bic-release-v1",
+  "release": "0.6.0",
+  "checkpoints": {
+    "computer": "runs/retention-v06/checkpoint.pt",
+    "regional": "runs/retention-v06/checkpoint.pt",
+    "encoder": "runs/associative/encoder.pt"
+  }
+}

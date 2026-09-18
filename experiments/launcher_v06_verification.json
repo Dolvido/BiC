@@ -1,0 +1,1060 @@
+{
+  "schema": "bic-release-launcher-verification-v1",
+  "timestamp_utc": "2026-09-16T15:21:15.688472+00:00",
+  "release": "0.6.0",
+  "checkpoint_sha256": {
+    "computer": "7e0e1bbdc759abd3a975c4555cef4eaa268fb15387a909698159a3364fff29ff",
+    "regional": "7e0e1bbdc759abd3a975c4555cef4eaa268fb15387a909698159a3364fff29ff",
+    "encoder": "7206dbb6a6c0d90cdeffb7d78b29a7950ba6bb07d1a9997e565aeccd65b507d8"
+  },
+  "manifest_sha256": "878397c91dfe8abfe5f06ae4426aece8d34e201e454ea7749bcf1f77bbe6a15c",
+  "script_sha256": "ffe3e0e90897ba10b18f3ff4e0d1d3a457fd0b268208b471a7c672e93487b5a1",
+  "protocol": {
+    "scene": "Ordinary seed-7 teaching interface scene, first displayed object",
+    "label": "dax",
+    "relations_before_and_after_restart": [
+      "find",
+      "left",
+      "right",
+      "above",
+      "below"
+    ],
+    "desktop_prompts_each_phase": [
+      "hello",
+      "good morning",
+      "click the red button",
+      "what did you click",
+      "type hi"
+    ],
+    "selection": "Fixed before this run; no scene or seed search",
+    "generalization_claim": false,
+    "initial_patterns_scoring_only": [
+      11289,
+      28025,
+      23202,
+      45816
+    ],
+    "restarted_patterns_scoring_only": [
+      28025,
+      11289,
+      23202,
+      45816
+    ]
+  },
+  "scope": "Public dependency diagnostic plus paired local HTTP integration. Transport/persistence checks and observed model correctness are reported separately. Rendering identities are used only to score memory actions, never as policy inputs.",
+  "browser_visual_verification": false,
+  "training_performed": false,
+  "processes": [
+    {
+      "phase": "first_launch",
+      "pids": {
+        "computer": 14,
+        "memory": 16
+      }
+    },
+    {
+      "phase": "restart_without_teaching",
+      "pids": {
+        "computer": 94,
+        "memory": 96
+      }
+    }
+  ],
+  "checks": {
+    "public_doctor_handles_missing_dependencies": true,
+    "memory_html_served": true,
+    "memory_state_get_nonmutating": true,
+    "computer_html_served": true,
+    "computer_state_get_nonmutating": true,
+    "regional_mode_enabled": true,
+    "teaching_acknowledgment_is_interface_text": true,
+    "both_first_children_reaped_before_restart": true,
+    "label_loaded_without_reteaching": true,
+    "four_distinct_child_processes": true,
+    "taught_object_changed_pixels": true,
+    "scene_advanced_after_restart": true,
+    "memory_bytes_unchanged_by_queries_and_restart": true,
+    "all_started_children_reaped": true,
+    "release_checkpoint_bytes_unchanged": true,
+    "memory_actions_and_replies_use_neural_pathways": true
+  },
+  "transport": [
+    {
+      "phase": "first_launch",
+      "endpoint": "/",
+      "method": "GET",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/state",
+      "method": "GET",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/state",
+      "method": "GET",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/",
+      "method": "GET",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/state",
+      "method": "GET",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/state",
+      "method": "GET",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/state",
+      "method": "GET",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/teach",
+      "method": "POST",
+      "status": 403,
+      "expected_status": 403,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/select",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/teach",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "first_launch",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/state",
+      "method": "GET",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "unknown_name",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    },
+    {
+      "phase": "restart_without_teaching",
+      "endpoint": "/chat",
+      "method": "POST",
+      "status": 200,
+      "expected_status": 200,
+      "passed": true
+    }
+  ],
+  "desktop_cases": [
+    {
+      "phase": "first_launch",
+      "prompt": "hello",
+      "reply": "hello.",
+      "actions": [
+        "stop"
+      ],
+      "visible_state": {
+        "text": "",
+        "last_clicked": null
+      },
+      "terminated": true,
+      "expected_reply": "hello.",
+      "behavior_criterion": "no_action",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    },
+    {
+      "phase": "first_launch",
+      "prompt": "good morning",
+      "reply": "hello.",
+      "actions": [
+        "stop"
+      ],
+      "visible_state": {
+        "text": "",
+        "last_clicked": null
+      },
+      "terminated": true,
+      "expected_reply": "hello.",
+      "behavior_criterion": "no_action",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    },
+    {
+      "phase": "first_launch",
+      "prompt": "click the red button",
+      "reply": "clicked red.",
+      "actions": [
+        "click_bottom_left",
+        "stop"
+      ],
+      "visible_state": {
+        "text": "",
+        "last_clicked": "red"
+      },
+      "terminated": true,
+      "expected_reply": "clicked red.",
+      "behavior_criterion": "red_visible",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    },
+    {
+      "phase": "first_launch",
+      "prompt": "what did you click",
+      "reply": "last was red.",
+      "actions": [
+        "stop"
+      ],
+      "visible_state": {
+        "text": "",
+        "last_clicked": "red"
+      },
+      "terminated": true,
+      "expected_reply": "last was red.",
+      "behavior_criterion": "no_action",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    },
+    {
+      "phase": "first_launch",
+      "prompt": "type hi",
+      "reply": "typed hi.",
+      "actions": [
+        "click_field",
+        "key_h",
+        "key_i",
+        "stop"
+      ],
+      "visible_state": {
+        "text": "hi",
+        "last_clicked": "red"
+      },
+      "terminated": true,
+      "expected_reply": "typed hi.",
+      "behavior_criterion": "hi_visible",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "hello",
+      "reply": "hello.",
+      "actions": [
+        "stop"
+      ],
+      "visible_state": {
+        "text": "",
+        "last_clicked": null
+      },
+      "terminated": true,
+      "expected_reply": "hello.",
+      "behavior_criterion": "no_action",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "good morning",
+      "reply": "hello.",
+      "actions": [
+        "stop"
+      ],
+      "visible_state": {
+        "text": "",
+        "last_clicked": null
+      },
+      "terminated": true,
+      "expected_reply": "hello.",
+      "behavior_criterion": "no_action",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "click the red button",
+      "reply": "clicked red.",
+      "actions": [
+        "click_bottom_left",
+        "stop"
+      ],
+      "visible_state": {
+        "text": "",
+        "last_clicked": "red"
+      },
+      "terminated": true,
+      "expected_reply": "clicked red.",
+      "behavior_criterion": "red_visible",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "what did you click",
+      "reply": "last was red.",
+      "actions": [
+        "stop"
+      ],
+      "visible_state": {
+        "text": "",
+        "last_clicked": "red"
+      },
+      "terminated": true,
+      "expected_reply": "last was red.",
+      "behavior_criterion": "no_action",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "type hi",
+      "reply": "typed hi.",
+      "actions": [
+        "click_field",
+        "key_h",
+        "key_i",
+        "stop"
+      ],
+      "visible_state": {
+        "text": "hi",
+        "last_clicked": "red"
+      },
+      "terminated": true,
+      "expected_reply": "typed hi.",
+      "behavior_criterion": "hi_visible",
+      "behavior_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "correctness_scope": "Exact reply plus visible final outcome or STOP; private action targets are not inspected."
+    }
+  ],
+  "memory_cases": [
+    {
+      "phase": "first_launch",
+      "prompt": "find \"dax\"",
+      "action": 0,
+      "reply": "selected top left.",
+      "status": "selected",
+      "target_scoring_only": 0,
+      "expected_reply_scoring_only": "selected top left.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          1.0,
+          0.39114806056022644,
+          0.18109682202339172,
+          -0.08368392288684845
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "find <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 2.767296075820923,
+          "auditory_cortex": 1.289233684539795,
+          "somatosensory_cortex": 2.8771345615386963,
+          "temporal_language": 6.23764705657959,
+          "parietal_association": 5.608036994934082,
+          "thalamus": 6.693500995635986,
+          "prefrontal_cortex": 4.938048362731934,
+          "hippocampus": 4.041171550750732,
+          "basal_ganglia": 5.4538254737854,
+          "motor_cortex": 5.563553810119629,
+          "cerebellum": 3.826523542404175,
+          "amygdala": 5.291579246520996,
+          "hypothalamus": 3.8826069831848145
+        }
+      }
+    },
+    {
+      "phase": "first_launch",
+      "prompt": "click the object left of \"dax\"",
+      "action": 10,
+      "reply": "cannot select.",
+      "status": "stopped",
+      "target_scoring_only": 10,
+      "expected_reply_scoring_only": "cannot select.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          1.0,
+          0.39114806056022644,
+          0.18109682202339172,
+          -0.08368392288684845
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "click the object left of <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 2.8381431102752686,
+          "auditory_cortex": 1.256583333015442,
+          "somatosensory_cortex": 3.9333901405334473,
+          "temporal_language": 6.396403789520264,
+          "parietal_association": 5.6500630378723145,
+          "thalamus": 5.327823638916016,
+          "prefrontal_cortex": 4.760809421539307,
+          "hippocampus": 5.467597007751465,
+          "basal_ganglia": 5.578668594360352,
+          "motor_cortex": 5.882620811462402,
+          "cerebellum": 3.958441972732544,
+          "amygdala": 5.565488338470459,
+          "hypothalamus": 5.432309150695801
+        }
+      }
+    },
+    {
+      "phase": "first_launch",
+      "prompt": "click the object right of \"dax\"",
+      "action": 1,
+      "reply": "selected top right.",
+      "status": "selected",
+      "target_scoring_only": 1,
+      "expected_reply_scoring_only": "selected top right.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          1.0,
+          0.39114806056022644,
+          0.18109682202339172,
+          -0.08368392288684845
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "click the object right of <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 2.786184787750244,
+          "auditory_cortex": 1.408525824546814,
+          "somatosensory_cortex": 3.8642265796661377,
+          "temporal_language": 6.154441833496094,
+          "parietal_association": 5.7137041091918945,
+          "thalamus": 6.882462024688721,
+          "prefrontal_cortex": 5.12504243850708,
+          "hippocampus": 3.945981740951538,
+          "basal_ganglia": 5.366030216217041,
+          "motor_cortex": 5.652675628662109,
+          "cerebellum": 4.277479648590088,
+          "amygdala": 5.601370334625244,
+          "hypothalamus": 5.193774700164795
+        }
+      }
+    },
+    {
+      "phase": "first_launch",
+      "prompt": "click the object above \"dax\"",
+      "action": 10,
+      "reply": "cannot select.",
+      "status": "stopped",
+      "target_scoring_only": 10,
+      "expected_reply_scoring_only": "cannot select.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          1.0,
+          0.39114806056022644,
+          0.18109682202339172,
+          -0.08368392288684845
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "click the object above <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 2.73124623298645,
+          "auditory_cortex": 0.9936438798904419,
+          "somatosensory_cortex": 2.3528904914855957,
+          "temporal_language": 6.4366350173950195,
+          "parietal_association": 5.110905170440674,
+          "thalamus": 6.904097080230713,
+          "prefrontal_cortex": 4.920567989349365,
+          "hippocampus": 4.27224063873291,
+          "basal_ganglia": 5.540596961975098,
+          "motor_cortex": 6.073859691619873,
+          "cerebellum": 3.7766902446746826,
+          "amygdala": 5.389609336853027,
+          "hypothalamus": 3.7024428844451904
+        }
+      }
+    },
+    {
+      "phase": "first_launch",
+      "prompt": "click the object below \"dax\"",
+      "action": 2,
+      "reply": "selected bottom left.",
+      "status": "selected",
+      "target_scoring_only": 2,
+      "expected_reply_scoring_only": "selected bottom left.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          1.0,
+          0.39114806056022644,
+          0.18109682202339172,
+          -0.08368392288684845
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "click the object below <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 2.7582547664642334,
+          "auditory_cortex": 1.4183311462402344,
+          "somatosensory_cortex": 4.145021915435791,
+          "temporal_language": 6.597400665283203,
+          "parietal_association": 5.654079914093018,
+          "thalamus": 7.277931213378906,
+          "prefrontal_cortex": 4.9251556396484375,
+          "hippocampus": 4.071808338165283,
+          "basal_ganglia": 5.12047815322876,
+          "motor_cortex": 5.9471564292907715,
+          "cerebellum": 3.804596185684204,
+          "amygdala": 5.552221775054932,
+          "hypothalamus": 5.433488845825195
+        }
+      }
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "find \"dax\"",
+      "action": 1,
+      "reply": "selected top right.",
+      "status": "selected",
+      "target_scoring_only": 1,
+      "expected_reply_scoring_only": "selected top right.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          0.3860863447189331,
+          0.9224591255187988,
+          0.16975530982017517,
+          -0.20098157227039337
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "find <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 2.796671152114868,
+          "auditory_cortex": 1.2597101926803589,
+          "somatosensory_cortex": 3.351614475250244,
+          "temporal_language": 6.242988109588623,
+          "parietal_association": 5.5330328941345215,
+          "thalamus": 7.464427947998047,
+          "prefrontal_cortex": 4.961121082305908,
+          "hippocampus": 4.258435249328613,
+          "basal_ganglia": 5.406369686126709,
+          "motor_cortex": 5.801445960998535,
+          "cerebellum": 4.10727071762085,
+          "amygdala": 5.061903476715088,
+          "hypothalamus": 4.626608848571777
+        }
+      }
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "click the object left of \"dax\"",
+      "action": 0,
+      "reply": "selected top left.",
+      "status": "selected",
+      "target_scoring_only": 0,
+      "expected_reply_scoring_only": "selected top left.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          0.3860863447189331,
+          0.9224591255187988,
+          0.16975530982017517,
+          -0.20098157227039337
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "click the object left of <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 2.855569362640381,
+          "auditory_cortex": 1.34675133228302,
+          "somatosensory_cortex": 3.9528005123138428,
+          "temporal_language": 6.530970096588135,
+          "parietal_association": 5.655966758728027,
+          "thalamus": 6.376763820648193,
+          "prefrontal_cortex": 4.807121753692627,
+          "hippocampus": 4.7837443351745605,
+          "basal_ganglia": 5.4877753257751465,
+          "motor_cortex": 5.457015037536621,
+          "cerebellum": 3.9355685710906982,
+          "amygdala": 5.40311336517334,
+          "hypothalamus": 5.236197471618652
+        }
+      }
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "click the object right of \"dax\"",
+      "action": 10,
+      "reply": "cannot select.",
+      "status": "stopped",
+      "target_scoring_only": 10,
+      "expected_reply_scoring_only": "cannot select.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          0.3860863447189331,
+          0.9224591255187988,
+          0.16975530982017517,
+          -0.20098157227039337
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "click the object right of <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 3.0076565742492676,
+          "auditory_cortex": 1.4749795198440552,
+          "somatosensory_cortex": 4.112816333770752,
+          "temporal_language": 6.0746307373046875,
+          "parietal_association": 5.689073085784912,
+          "thalamus": 6.77046537399292,
+          "prefrontal_cortex": 5.270033836364746,
+          "hippocampus": 4.751504421234131,
+          "basal_ganglia": 5.649775981903076,
+          "motor_cortex": 6.249506950378418,
+          "cerebellum": 3.789069890975952,
+          "amygdala": 5.5236053466796875,
+          "hypothalamus": 5.366417407989502
+        }
+      }
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "click the object above \"dax\"",
+      "action": 10,
+      "reply": "cannot select.",
+      "status": "stopped",
+      "target_scoring_only": 10,
+      "expected_reply_scoring_only": "cannot select.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          0.3860863447189331,
+          0.9224591255187988,
+          0.16975530982017517,
+          -0.20098157227039337
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "click the object above <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 2.755068063735962,
+          "auditory_cortex": 0.9227707982063293,
+          "somatosensory_cortex": 2.6340701580047607,
+          "temporal_language": 6.379554271697998,
+          "parietal_association": 4.952641010284424,
+          "thalamus": 7.2836594581604,
+          "prefrontal_cortex": 4.990355968475342,
+          "hippocampus": 4.451658725738525,
+          "basal_ganglia": 5.830611228942871,
+          "motor_cortex": 6.1785993576049805,
+          "cerebellum": 3.758780002593994,
+          "amygdala": 5.207232475280762,
+          "hypothalamus": 4.145576477050781
+        }
+      }
+    },
+    {
+      "phase": "restart_without_teaching",
+      "prompt": "click the object below \"dax\"",
+      "action": 3,
+      "reply": "selected bottom right.",
+      "status": "selected",
+      "target_scoring_only": 3,
+      "expected_reply_scoring_only": "selected bottom right.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          0.3860863447189331,
+          0.9224591255187988,
+          0.16975530982017517,
+          -0.20098157227039337
+        ],
+        "name_in_memory": true,
+        "instruction_to_network": "click the object below <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 2.836709499359131,
+          "auditory_cortex": 1.3854122161865234,
+          "somatosensory_cortex": 3.92594838142395,
+          "temporal_language": 6.593782901763916,
+          "parietal_association": 5.603404521942139,
+          "thalamus": 7.536782741546631,
+          "prefrontal_cortex": 5.090056419372559,
+          "hippocampus": 4.3442606925964355,
+          "basal_ganglia": 5.368403434753418,
+          "motor_cortex": 5.794142246246338,
+          "cerebellum": 3.4514529705047607,
+          "amygdala": 5.224299907684326,
+          "hypothalamus": 5.166208744049072
+        }
+      }
+    },
+    {
+      "phase": "unknown_name",
+      "prompt": "find \"never_taught\"",
+      "action": 10,
+      "reply": "cannot select.",
+      "status": "stopped",
+      "target_scoring_only": 10,
+      "expected_reply_scoring_only": "cannot select.",
+      "action_correct": true,
+      "reply_correct": true,
+      "joint_correct": true,
+      "action_source": "regional_motor_cortex",
+      "response_source": "neural_byte_decoder",
+      "trace": {
+        "memory_cosine_similarities": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "name_in_memory": false,
+        "instruction_to_network": "find <name>",
+        "regional_activity_norms": {
+          "visual_cortex": 3.106123447418213,
+          "auditory_cortex": 1.0555669069290161,
+          "somatosensory_cortex": 4.037359237670898,
+          "temporal_language": 6.119932174682617,
+          "parietal_association": 5.374992370605469,
+          "thalamus": 6.823896408081055,
+          "prefrontal_cortex": 5.035859107971191,
+          "hippocampus": 4.459944725036621,
+          "basal_ganglia": 5.697379112243652,
+          "motor_cortex": 6.320962429046631,
+          "cerebellum": 3.6825308799743652,
+          "amygdala": 5.2854533195495605,
+          "hypothalamus": 5.324828147888184
+        }
+      }
+    }
+  ],
+  "missing_dependency_doctor": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-S",
+      "-m",
+      "brain_in_computer",
+      "doctor",
+      "--project-dir",
+      "/workspace/scratch/6029b557e0a9/brain-in-computer",
+      "--manifest",
+      "/workspace/scratch/6029b557e0a9/brain-in-computer/config/checkpoints.json"
+    ],
+    "exit_code": 1,
+    "diagnosis": {
+      "ready": false,
+      "requested_device": "cpu",
+      "mode": "both",
+      "python": {
+        "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "version": "3.12.14"
+      },
+      "dependencies": {
+        "torch": {
+          "available": false,
+          "version": null,
+          "error": "ModuleNotFoundError: No module named 'torch'"
+        },
+        "numpy": {
+          "available": false,
+          "version": null,
+          "error": "ModuleNotFoundError: No module named 'numpy'"
+        },
+        "Pillow": {
+          "available": false,
+          "version": null,
+          "error": "ModuleNotFoundError: No module named 'PIL'"
+        }
+      },
+      "cuda": {
+        "available": false,
+        "devices": []
+      },
+      "checkpoints": {
+        "computer": {
+          "path": "/workspace/scratch/6029b557e0a9/brain-in-computer/runs/retention-v06/checkpoint.pt",
+          "present": true,
+          "bytes": 2276247,
+          "required": true
+        },
+        "regional": {
+          "path": "/workspace/scratch/6029b557e0a9/brain-in-computer/runs/retention-v06/checkpoint.pt",
+          "present": true,
+          "bytes": 2276247,
+          "required": true
+        },
+        "encoder": {
+          "path": "/workspace/scratch/6029b557e0a9/brain-in-computer/runs/associative/encoder.pt",
+          "present": true,
+          "bytes": 734527,
+          "required": true
+        }
+      },
+      "problems": [
+        "Missing or broken dependencies. Activate the project environment and run python -m pip install -e ."
+      ],
+      "scope": "Read-only dependency/device and nonempty-file checks. No checkpoint loading, compatibility validation, training, download, or performance measurement.",
+      "selected_device": "cpu",
+      "project_dir": "/workspace/scratch/6029b557e0a9/brain-in-computer",
+      "manifest": "/workspace/scratch/6029b557e0a9/brain-in-computer/config/checkpoints.json",
+      "release": "0.6.0"
+    },
+    "stderr": "",
+    "method": "Python -S disables site packages for this diagnostic subprocess only"
+  },
+  "memory_sha256": "48852aea24babb6c3e4553bb9b07a88eaa1071d0bc7ce413797ad93f8514b3f4",
+  "teaching_calls_after_restart": 0,
+  "transport_checks_passed": true,
+  "structural_checks_passed": true,
+  "model_results": {
+    "desktop": {
+      "total": 10,
+      "joint_correct": 10
+    },
+    "regional_memory": {
+      "total": 11,
+      "joint_correct": 11
+    },
+    "interpretation": "A fixed interface demonstration; errors do not become transport failures or justify model tuning on these cases."
+  },
+  "elapsed_seconds": 3.717
+}

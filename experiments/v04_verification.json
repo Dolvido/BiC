@@ -1,0 +1,65 @@
+{
+  "version": "0.4.0",
+  "verified_utc": "2026-09-16T14:21:52.397510+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "cuda_available": false,
+    "user_desktop_measured": false
+  },
+  "unit_and_integration_tests": {
+    "command": "python -m unittest discover -s tests -q",
+    "count": 109,
+    "seconds": 10.129,
+    "passed": true,
+    "log": "experiments/v04_tests.log"
+  },
+  "checkpoint_sha256": {
+    "runs/reference/checkpoint.pt": "830e0ec6bd74b51b66acb7017c4c1bae2f95e3503335f84136e2597a636fa153",
+    "runs/computer/checkpoint.pt": "3a9bb01ddbd1313d16c12e4dee136bcc95f5a398a0d32a8b73756ddaf0e4ec6b",
+    "runs/grounding-v04/checkpoint.pt": "5081e6c4767bfa27ca14ca398c6b8193a0ba56b5ec97e18e6160963cd57fd680",
+    "runs/associative/encoder.pt": "7206dbb6a6c0d90cdeffb7d78b29a7950ba6bb07d1a9997e565aeccd65b507d8"
+  },
+  "prior_checkpoints_unchanged": true,
+  "grounding_evaluation": "runs/grounding-v04/final_evaluation.json",
+  "associative_evaluation": "runs/associative/report.json",
+  "computer_ui": {
+    "report": "experiments/computer_ui_v04_verification.json",
+    "http_integration_passed": true,
+    "observed_probe_turns": 4,
+    "recorded_session": "runs/grounding-v04/demo.json",
+    "recorded_session_correct_turns": 6,
+    "browser_visual_verified": false
+  },
+  "memory_ui": {
+    "report": "experiments/teaching_ui_verification.json",
+    "http_integration_passed": true,
+    "javascript_syntax_passed": true,
+    "recall_correct_after_restart": 4,
+    "recall_total": 4,
+    "different_os_processes": true,
+    "teaching_calls_after_restart": 0,
+    "memory_and_encoder_bytes_unchanged": true,
+    "changed_appearance_and_order": true,
+    "browser_visual_verified": false
+  },
+  "packaging_check": {
+    "wheel_built": true,
+    "version_metadata_correct": true,
+    "html_and_new_modules_present": true,
+    "benchmark_cli_parameter_cap_passed": true
+  },
+  "readiness_diagnostic_correction": {
+    "comparison": "Same batch positions across text interventions with identical observations",
+    "strict_equality_retained": true,
+    "network_weights_or_behavior_modified": false
+  },
+  "limits": [
+    "Single grounding training seed and finite synthetic task family.",
+    "Persistent associations use separate learned vision plus explicit exemplar storage; names and teaching-lab replies use templates.",
+    "Memory is not yet routed through the 13-region controller.",
+    "The largest benchmarked model measures short synthetic optimizer updates, not trained competence.",
+    "The user desktop and GPU were not accessed; a home computation limit is not established."
+  ]
+}

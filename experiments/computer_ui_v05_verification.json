@@ -1,0 +1,282 @@
+{
+  "kind": "local_http_integration_with_saved_policy",
+  "interpretation": "Transport and UI-state assertions are separate from model capability. Probe replies/actions are recorded as observed, including any mistakes.",
+  "checkpoint": {
+    "path": "runs/regional-memory-v05/checkpoint.pt",
+    "sha256": "6041ee317d6ef9c8cba6b85154f8e6b675a6cee4ec26138bc210bfb2f79057a3"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "threads": 1
+  },
+  "teacher_or_oracle_called_by_this_script": false,
+  "structural_checks": [
+    {
+      "endpoint": "GET /",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "endpoint": "GET /state",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "endpoint": "POST /chat",
+      "turns": 4,
+      "result": "passed"
+    },
+    {
+      "endpoint": "POST /reset and /event",
+      "result": "passed"
+    },
+    {
+      "endpoint": "POST /chat",
+      "invalid_input": {
+        "text": ""
+      },
+      "status": 400,
+      "error": "Enter a nonempty message in the text field",
+      "result": "passed"
+    },
+    {
+      "endpoint": "POST /event",
+      "invalid_input": {
+        "kind": "click",
+        "x": 96,
+        "y": 0
+      },
+      "status": 400,
+      "error": "x must be an integer between 0 and 95",
+      "result": "passed"
+    },
+    {
+      "endpoint": "POST /event",
+      "invalid_input": {
+        "kind": "key",
+        "key": "z"
+      },
+      "status": 400,
+      "error": "This desktop supports h, i, o, k, and Backspace; the text field holds two characters",
+      "result": "passed"
+    },
+    {
+      "endpoint": "POST /chat",
+      "origin": "https://example.invalid",
+      "status": 403,
+      "result": "passed"
+    }
+  ],
+  "capability_probes": [
+    {
+      "prompt": "hello",
+      "http_status": 200,
+      "seconds": 0.021443479000481602,
+      "observed": {
+        "state": {
+          "text": "",
+          "last_clicked": null
+        },
+        "terminated": true,
+        "screen_size": {
+          "width": 96,
+          "height": 96
+        },
+        "reply": "hello.",
+        "actions": [
+          "stop"
+        ],
+        "image": {
+          "format": "PNG",
+          "width": 96,
+          "height": 96,
+          "bytes": 957,
+          "sha256": "a3ef98d2faaa344af543a99d8504d660830a8ef2c92cfcd304e1d8fb2067f24f"
+        }
+      }
+    },
+    {
+      "prompt": "click red",
+      "http_status": 200,
+      "seconds": 0.023042656999678002,
+      "observed": {
+        "state": {
+          "text": "",
+          "last_clicked": "red"
+        },
+        "terminated": true,
+        "screen_size": {
+          "width": 96,
+          "height": 96
+        },
+        "reply": "clicked red.",
+        "actions": [
+          "click_bottom_left",
+          "stop"
+        ],
+        "image": {
+          "format": "PNG",
+          "width": 96,
+          "height": 96,
+          "bytes": 880,
+          "sha256": "4bd201cd6f3700f1a851fd7d5ddb2bb0dfcab44e23d31964003c3d292d9bbb74"
+        }
+      }
+    },
+    {
+      "prompt": "what did you click",
+      "http_status": 200,
+      "seconds": 0.02143544699993072,
+      "observed": {
+        "state": {
+          "text": "",
+          "last_clicked": "red"
+        },
+        "terminated": true,
+        "screen_size": {
+          "width": 96,
+          "height": 96
+        },
+        "reply": "last was red.",
+        "actions": [
+          "stop"
+        ],
+        "image": {
+          "format": "PNG",
+          "width": 96,
+          "height": 96,
+          "bytes": 880,
+          "sha256": "4bd201cd6f3700f1a851fd7d5ddb2bb0dfcab44e23d31964003c3d292d9bbb74"
+        }
+      }
+    },
+    {
+      "prompt": "type hi",
+      "http_status": 200,
+      "seconds": 0.032396302000051946,
+      "observed": {
+        "state": {
+          "text": "hi",
+          "last_clicked": "red"
+        },
+        "terminated": true,
+        "screen_size": {
+          "width": 96,
+          "height": 96
+        },
+        "reply": "typed hi.",
+        "actions": [
+          "click_field",
+          "key_h",
+          "key_i",
+          "stop"
+        ],
+        "image": {
+          "format": "PNG",
+          "width": 96,
+          "height": 96,
+          "bytes": 1033,
+          "sha256": "a9b2a00299534811d46d316214b610b0e1eb4b96fafe79490f9a3b5ae3c86e46"
+        }
+      }
+    }
+  ],
+  "manual_interactions": [
+    {
+      "event": "reset seed 23",
+      "observed": {
+        "state": {
+          "text": "",
+          "last_clicked": null
+        },
+        "terminated": false,
+        "screen_size": {
+          "width": 96,
+          "height": 96
+        },
+        "image": {
+          "format": "PNG",
+          "width": 96,
+          "height": 96,
+          "bytes": 961,
+          "sha256": "4d354ff05e65a92643e3d3e8871ddb546cc557a936221ce609a5c4d7cf287b91"
+        }
+      }
+    },
+    {
+      "event": {
+        "kind": "click",
+        "x": 32,
+        "y": 83
+      },
+      "observed": {
+        "state": {
+          "text": "",
+          "last_clicked": null
+        },
+        "terminated": false,
+        "screen_size": {
+          "width": 96,
+          "height": 96
+        },
+        "image": {
+          "format": "PNG",
+          "width": 96,
+          "height": 96,
+          "bytes": 945,
+          "sha256": "d786301754bd9c0f88d9d862a121b98dd051988d537a74b82a156b67a7208ba6"
+        }
+      }
+    },
+    {
+      "event": {
+        "kind": "key",
+        "key": "ok"
+      },
+      "observed": {
+        "state": {
+          "text": "ok",
+          "last_clicked": null
+        },
+        "terminated": false,
+        "screen_size": {
+          "width": 96,
+          "height": 96
+        },
+        "image": {
+          "format": "PNG",
+          "width": 96,
+          "height": 96,
+          "bytes": 1302,
+          "sha256": "de8580498fce05bcced618f5fa4c0da536a99721a435146c8f7782a840818339"
+        }
+      }
+    }
+  ],
+  "browser_visual_verification": {
+    "completed": false,
+    "limitation": "Cloud browser access to the loopback UI was blocked with ERR_BLOCKED_BY_CLIENT; these HTTP checks do not verify visual rendering."
+  },
+  "initial_state": {
+    "state": {
+      "text": "",
+      "last_clicked": null
+    },
+    "terminated": false,
+    "screen_size": {
+      "width": 96,
+      "height": 96
+    },
+    "image": {
+      "format": "PNG",
+      "width": 96,
+      "height": 96,
+      "bytes": 957,
+      "sha256": "a3ef98d2faaa344af543a99d8504d660830a8ef2c92cfcd304e1d8fb2067f24f"
+    }
+  },
+  "structural_result": "passed",
+  "elapsed_seconds": 0.6231368079997992
+}

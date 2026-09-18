@@ -1,0 +1,74 @@
+{
+  "version": "0.6.0",
+  "verified_utc": "2026-09-16T15:22:37.398547+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "cuda_available": false,
+    "user_gpu_measured": false
+  },
+  "full_test_suite": {
+    "command": "python -m unittest discover -s tests -q",
+    "count": 146,
+    "seconds": 11.119,
+    "passed": true,
+    "log": "experiments/v06_tests.log"
+  },
+  "checkpoints": {
+    "runs/reference/checkpoint.pt": "830e0ec6bd74b51b66acb7017c4c1bae2f95e3503335f84136e2597a636fa153",
+    "runs/computer/checkpoint.pt": "3a9bb01ddbd1313d16c12e4dee136bcc95f5a398a0d32a8b73756ddaf0e4ec6b",
+    "runs/grounding-v04/checkpoint.pt": "5081e6c4767bfa27ca14ca398c6b8193a0ba56b5ec97e18e6160963cd57fd680",
+    "runs/associative/encoder.pt": "7206dbb6a6c0d90cdeffb7d78b29a7950ba6bb07d1a9997e565aeccd65b507d8",
+    "runs/regional-memory-v05/checkpoint.pt": "6041ee317d6ef9c8cba6b85154f8e6b675a6cee4ec26138bc210bfb2f79057a3",
+    "runs/retention-v06/checkpoint.pt": "7e0e1bbdc759abd3a975c4555cef4eaa268fb15387a909698159a3364fff29ff"
+  },
+  "earlier_checkpoints_unchanged": true,
+  "embedded_visual_encoder_exactly_unchanged": true,
+  "active_manifest": "config/checkpoints.json",
+  "release_controller_parameters": 558467,
+  "retention_protocol": {
+    "path": "runs/retention-v06/protocol.json",
+    "driver_hash_matches": true,
+    "fresh_test_used_for_selection": false,
+    "report": "runs/retention-v06/final_evaluation.json"
+  },
+  "consolidation": {
+    "report": "runs/consolidation-v06/final_evaluation.json",
+    "source_erasure_restart_report": "runs/consolidation-v06/restart_verification.json",
+    "public_evidence_parity_report": "runs/consolidation-v06/evidence_parity.json",
+    "frozen_controller": "runs/regional-memory-v05/checkpoint.pt",
+    "original_runner_snapshot_matches_protocol": true,
+    "production_module_hash_matches_protocol": true
+  },
+  "interface_verification": {
+    "report": "experiments/launcher_v06_verification.json",
+    "structural_checks": 16,
+    "all_structural_checks_passed": true,
+    "http_checks": 32,
+    "desktop_cases": 10,
+    "desktop_joint_correct": 10,
+    "memory_cases": 11,
+    "memory_joint_correct": 11,
+    "browser_rendering_verified": false
+  },
+  "packaging_check": {
+    "wheel_version": "0.6.0",
+    "new_modules_and_both_html_interfaces_present": true,
+    "console_entrypoint": "brain_in_computer.__main__:main",
+    "readme_and_current_doc_relative_links_checked": 38
+  },
+  "local_llm": {
+    "study": "docs/LOCAL_LLM_TEACHER.md",
+    "downloaded": false,
+    "invoked": false,
+    "generated_lessons_used": false
+  },
+  "limits": [
+    "Restricted English and miniature environments, not general conversation or general intelligence.",
+    "Retention repair uses one seed. Earlier reserved wording is rehearsed and is now a restoration diagnostic.",
+    "Neural recall measures32 taught names per seed across2 seeds, with frozen v0.5 controller; it is a separate research API, not automatic UI training.",
+    "Known-name membership remains symbolic; neural recall weights are larger than this small exemplar bank.",
+    "Original source-file absence discrepancy remains in the sealed report; a separate unchanged-checkpoint test verifies explicit exemplar erasure."
+  ]
+}

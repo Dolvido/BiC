@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "tests_run": 43,
+  "failures": 0,
+  "errors": 0,
+  "test_seconds": 1.2764343830021971,
+  "test_files": [
+    "test_model.py",
+    "test_tasks.py",
+    "test_language.py",
+    "test_resources.py",
+    "test_readiness.py"
+  ],
+  "not_run": "test_training.py (contains symbolic optimizer updates; its v0.1 results are historical)",
+  "optimizer_steps": 0,
+  "english_training_performed": false,
+  "language_model_downloaded": false,
+  "language_checkpoint_saved": false,
+  "reference_checkpoint_unchanged": true,
+  "reference_checkpoint_sha256": "830e0ec6bd74b51b66acb7017c4c1bae2f95e3503335f84136e2597a636fa153",
+  "scope": "Structural forward/backward connectivity checks without optimizer updates; no language learning measured"
+}

@@ -1,0 +1,24 @@
+{
+  "version": "0.3.0",
+  "unittest_passed": 82,
+  "test_log": "experiments/v03_tests.log",
+  "symbolic_checkpoint_unchanged": true,
+  "symbolic_checkpoint_sha256": "830e0ec6bd74b51b66acb7017c4c1bae2f95e3503335f84136e2597a636fa153",
+  "computer_parameters": {
+    "retina": 17080,
+    "scene_readout": 2058,
+    "brain": 167662,
+    "posterior_temporal": 54480,
+    "inferior_frontal": 116563,
+    "semantic_bridge": 18864,
+    "total": 376707,
+    "trainable": 376707,
+    "frozen": 0
+  },
+  "python": "3.12.14",
+  "torch": "2.14.0+cpu",
+  "browser_visual_verification": {
+    "performed": false,
+    "reason": "Cloud Browser rejected http://127.0.0.1:8765 with net::ERR_BLOCKED_BY_CLIENT; local HTTP integration is recorded separately."
+  }
+}

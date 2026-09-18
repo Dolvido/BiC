@@ -1,0 +1,68 @@
+{
+  "version": "0.5.0",
+  "verified_utc": "2026-09-16T14:59:53.369818+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "cuda_available": false,
+    "user_gpu_measured": false
+  },
+  "full_test_suite": {
+    "command": "python -m unittest discover -s tests -q",
+    "count": 121,
+    "seconds": 12.368,
+    "passed": true,
+    "log": "experiments/v05_tests.log"
+  },
+  "checkpoints": {
+    "runs/reference/checkpoint.pt": "830e0ec6bd74b51b66acb7017c4c1bae2f95e3503335f84136e2597a636fa153",
+    "runs/computer/checkpoint.pt": "3a9bb01ddbd1313d16c12e4dee136bcc95f5a398a0d32a8b73756ddaf0e4ec6b",
+    "runs/grounding-v04/checkpoint.pt": "5081e6c4767bfa27ca14ca398c6b8193a0ba56b5ec97e18e6160963cd57fd680",
+    "runs/associative/encoder.pt": "7206dbb6a6c0d90cdeffb7d78b29a7950ba6bb07d1a9997e565aeccd65b507d8",
+    "runs/regional-memory-v05/checkpoint.pt": "6041ee317d6ef9c8cba6b85154f8e6b675a6cee4ec26138bc210bfb2f79057a3"
+  },
+  "earlier_checkpoints_unchanged": true,
+  "embedded_visual_encoder_exactly_unchanged": true,
+  "legacy_code_compatibility": {
+    "report": "experiments/v05_compatibility.json",
+    "matching_tensor_count": 23,
+    "all_equal": true
+  },
+  "protocol": {
+    "path": "runs/regional-memory-v05/protocol.json",
+    "runner_hash_still_matches": true,
+    "all_identity_partitions_disjoint": true,
+    "sealed_used_for_selection": false
+  },
+  "new_task_evaluation": {
+    "path": "runs/regional-memory-v05/final_evaluation.json",
+    "episodes": 1280,
+    "action_accuracy": 0.99375,
+    "reply_exact": 0.990625,
+    "joint_success": 0.98984375
+  },
+  "interface_verification": {
+    "regional_report": "experiments/regional_ui_verification.json",
+    "neural_actions_correct": 50,
+    "neural_replies_correct": 50,
+    "cases": 50,
+    "structural_checks": 18,
+    "fresh_process_restart": true,
+    "reteaching_after_restart": false,
+    "computer_report": "experiments/computer_ui_v05_verification.json",
+    "computer_http_passed": true,
+    "browser_rendering_verified": false
+  },
+  "packaging_check": {
+    "wheel_version": "0.5.0",
+    "new_module_and_both_html_interfaces_present": true
+  },
+  "limits": [
+    "Fixed2x2 syntheticobject board andfive spatialinstructions.",
+    "Exactquoted names are symbolic memory addresses, not vocabulary acquired through neural weight updates.",
+    "Replay uses extra examples and compute; one training seed per arm.",
+    "Remaining regression: older held-out greeting jointsuccess falls from100% to81.25%.",
+    "Cortical consolidation of named memories and general intelligence are not demonstrated."
+  ]
+}

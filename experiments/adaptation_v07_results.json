@@ -1,0 +1,1617 @@
+{
+  "training": [
+    {
+      "kind": "bic",
+      "seed": 11,
+      "parameters": 19566,
+      "selected_update": 300,
+      "development_late_reward": 0.9970703125,
+      "training_seconds": 30.705596600004355,
+      "checkpoint": "bic-11.pt"
+    },
+    {
+      "kind": "gru",
+      "seed": 11,
+      "parameters": 19367,
+      "selected_update": 400,
+      "development_late_reward": 0.72607421875,
+      "training_seconds": 3.2337238999971305,
+      "checkpoint": "gru-11.pt"
+    },
+    {
+      "kind": "bic",
+      "seed": 23,
+      "parameters": 19566,
+      "selected_update": 400,
+      "development_late_reward": 0.9990234375,
+      "training_seconds": 30.549828300005174,
+      "checkpoint": "bic-23.pt"
+    },
+    {
+      "kind": "gru",
+      "seed": 23,
+      "parameters": 19367,
+      "selected_update": 400,
+      "development_late_reward": 0.6630859375,
+      "training_seconds": 3.256656600002316,
+      "checkpoint": "gru-23.pt"
+    },
+    {
+      "kind": "bic",
+      "seed": 37,
+      "parameters": 19566,
+      "selected_update": 400,
+      "development_late_reward": 0.99462890625,
+      "training_seconds": 30.681644500000402,
+      "checkpoint": "bic-37.pt"
+    },
+    {
+      "kind": "gru",
+      "seed": 37,
+      "parameters": 19367,
+      "selected_update": 400,
+      "development_late_reward": 0.5810546875,
+      "training_seconds": 3.3595493999964674,
+      "checkpoint": "gru-37.pt"
+    },
+    {
+      "kind": "bic",
+      "seed": 51,
+      "parameters": 19566,
+      "selected_update": 400,
+      "development_late_reward": 0.99853515625,
+      "training_seconds": 30.62838219999685,
+      "checkpoint": "bic-51.pt"
+    },
+    {
+      "kind": "gru",
+      "seed": 51,
+      "parameters": 19367,
+      "selected_update": 400,
+      "development_late_reward": 0.6630859375,
+      "training_seconds": 3.172466899995925,
+      "checkpoint": "gru-51.pt"
+    },
+    {
+      "kind": "bic",
+      "seed": 71,
+      "parameters": 19566,
+      "selected_update": 400,
+      "development_late_reward": 0.99853515625,
+      "training_seconds": 30.649833399998897,
+      "checkpoint": "bic-71.pt"
+    },
+    {
+      "kind": "gru",
+      "seed": 71,
+      "parameters": 19367,
+      "selected_update": 400,
+      "development_late_reward": 0.52294921875,
+      "training_seconds": 3.195085499995912,
+      "checkpoint": "gru-71.pt"
+    }
+  ],
+  "aggregate": {
+    "bic": {
+      "persistent": {
+        "reward": {
+          "mean": 0.906484375,
+          "sd": 0.008195157496001963
+        },
+        "late_reward": {
+          "mean": 0.97880859375,
+          "sd": 0.0059135475891990315
+        },
+        "initial_late_reward": {
+          "mean": 0.9873046875,
+          "sd": 0.0038291960794331354
+        },
+        "reversal_late_reward": {
+          "mean": 0.9703125,
+          "sd": 0.010244601432974726
+        },
+        "post_reversal_reward": {
+          "mean": 0.8619620928151335,
+          "sd": 0.02000811085450766
+        },
+        "initial_first4_reward": {
+          "mean": 0.624609375,
+          "sd": 0.010508828947120786
+        },
+        "reversal_first4_reward": {
+          "mean": 0.464453125,
+          "sd": 0.044218982925071156
+        },
+        "initial_recovery_trials": {
+          "mean": 4.5015625,
+          "sd": 0.042035315788483144
+        },
+        "reversal_recovery_trials": {
+          "mean": 5.2375,
+          "sd": 0.304930291886779
+        },
+        "initial_recovery_failed": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "reversal_recovery_failed": {
+          "mean": 0.00234375,
+          "sd": 0.005240784322265132
+        },
+        "initial_repeated_errors": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "reversal_repeated_errors": {
+          "mean": 0.24140625,
+          "sd": 0.3321162575004327
+        },
+        "initial_repeated_error_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "reversal_repeated_error_rate": {
+          "mean": 0.015227227730797634,
+          "sd": 0.02126007768395942
+        }
+      },
+      "reset_state": {
+        "reward": {
+          "mean": 0.59869140625,
+          "sd": 0.0950519088673841
+        },
+        "late_reward": {
+          "mean": 0.622314453125,
+          "sd": 0.10070438262888097
+        },
+        "initial_late_reward": {
+          "mean": 0.7458984375,
+          "sd": 0.17642656342801677
+        },
+        "reversal_late_reward": {
+          "mean": 0.49873046875,
+          "sd": 0.03254606064076606
+        },
+        "post_reversal_reward": {
+          "mean": 0.46970388715836164,
+          "sd": 0.023440067492016194
+        },
+        "initial_first4_reward": {
+          "mean": 0.548828125,
+          "sd": 0.0814742295412832
+        },
+        "reversal_first4_reward": {
+          "mean": 0.3650390625,
+          "sd": 0.029856312289780897
+        },
+        "initial_recovery_trials": {
+          "mean": 8.46328125,
+          "sd": 3.0649673176402916
+        },
+        "reversal_recovery_trials": {
+          "mean": 12.0984375,
+          "sd": 0.4862567404939301
+        },
+        "initial_recovery_failed": {
+          "mean": 0.2484375,
+          "sd": 0.17884909703914847
+        },
+        "reversal_recovery_failed": {
+          "mean": 0.496875,
+          "sd": 0.03353465004896055
+        },
+        "initial_repeated_errors": {
+          "mean": 4.51015625,
+          "sd": 3.4966530191635803
+        },
+        "reversal_repeated_errors": {
+          "mean": 8.48125,
+          "sd": 0.6981617359683303
+        },
+        "initial_repeated_error_rate": {
+          "mean": 0.21196764135914642,
+          "sd": 0.16106224655876925
+        },
+        "reversal_repeated_error_rate": {
+          "mean": 0.4308923893008495,
+          "sd": 0.03128249091108259
+        }
+      },
+      "no_feedback": {
+        "reward": {
+          "mean": 0.2503125,
+          "sd": 0.0028964586932020563
+        },
+        "late_reward": {
+          "mean": 0.2501953125,
+          "sd": 0.004719560970319536
+        },
+        "initial_late_reward": {
+          "mean": 0.25029296875,
+          "sd": 0.0026430407427196012
+        },
+        "reversal_late_reward": {
+          "mean": 0.25009765625,
+          "sd": 0.0072292013762975576
+        },
+        "post_reversal_reward": {
+          "mean": 0.25104265830473677,
+          "sd": 0.005294930805948374
+        },
+        "initial_first4_reward": {
+          "mean": 0.25,
+          "sd": 0.0
+        },
+        "reversal_first4_reward": {
+          "mean": 0.253125,
+          "sd": 0.012981303929458872
+        },
+        "initial_recovery_trials": {
+          "mean": 21.60859375,
+          "sd": 0.0017469281074217107
+        },
+        "reversal_recovery_trials": {
+          "mean": 20.36953125,
+          "sd": 0.04716705890038619
+        },
+        "initial_recovery_failed": {
+          "mean": 0.99921875,
+          "sd": 0.0017469281074217107
+        },
+        "reversal_recovery_failed": {
+          "mean": 0.99921875,
+          "sd": 0.0017469281074217107
+        },
+        "initial_repeated_errors": {
+          "mean": 12.4640625,
+          "sd": 0.05236415180761787
+        },
+        "reversal_repeated_errors": {
+          "mean": 11.528125,
+          "sd": 0.0744957823103513
+        },
+        "initial_repeated_error_rate": {
+          "mean": 0.5791714103560924,
+          "sd": 0.0028784102516845995
+        },
+        "reversal_repeated_error_rate": {
+          "mean": 0.5654153986267426,
+          "sd": 0.004464569163499528
+        }
+      }
+    },
+    "gru": {
+      "persistent": {
+        "reward": {
+          "mean": 0.58083984375,
+          "sd": 0.05900011269510143
+        },
+        "late_reward": {
+          "mean": 0.631298828125,
+          "sd": 0.07754980056166444
+        },
+        "initial_late_reward": {
+          "mean": 0.82216796875,
+          "sd": 0.1197899306904049
+        },
+        "reversal_late_reward": {
+          "mean": 0.4404296875,
+          "sd": 0.04748268414142071
+        },
+        "post_reversal_reward": {
+          "mean": 0.39518863801927795,
+          "sd": 0.031411759999199054
+        },
+        "initial_first4_reward": {
+          "mean": 0.568359375,
+          "sd": 0.03287840990143052
+        },
+        "reversal_first4_reward": {
+          "mean": 0.2376953125,
+          "sd": 0.02509404612897344
+        },
+        "initial_recovery_trials": {
+          "mean": 7.246875,
+          "sd": 1.9455799577684574
+        },
+        "reversal_recovery_trials": {
+          "mean": 14.08828125,
+          "sd": 0.4386198697468216
+        },
+        "initial_recovery_failed": {
+          "mean": 0.16953125,
+          "sd": 0.12161555919487133
+        },
+        "reversal_recovery_failed": {
+          "mean": 0.54765625,
+          "sd": 0.05547700202702242
+        },
+        "initial_repeated_errors": {
+          "mean": 3.10625,
+          "sd": 2.278809629529575
+        },
+        "reversal_repeated_errors": {
+          "mean": 10.59296875,
+          "sd": 0.6130908840693248
+        },
+        "initial_repeated_error_rate": {
+          "mean": 0.1452071514911856,
+          "sd": 0.10619927773170566
+        },
+        "reversal_repeated_error_rate": {
+          "mean": 0.5059631831611219,
+          "sd": 0.039234563763366745
+        }
+      },
+      "reset_state": {
+        "reward": {
+          "mean": 0.6412109375,
+          "sd": 0.06347967991143083
+        },
+        "late_reward": {
+          "mean": 0.689697265625,
+          "sd": 0.08398863315876696
+        },
+        "initial_late_reward": {
+          "mean": 0.73759765625,
+          "sd": 0.05697281861960493
+        },
+        "reversal_late_reward": {
+          "mean": 0.641796875,
+          "sd": 0.12035394920649513
+        },
+        "post_reversal_reward": {
+          "mean": 0.5828699413538418,
+          "sd": 0.08807240429415965
+        },
+        "initial_first4_reward": {
+          "mean": 0.52109375,
+          "sd": 0.04151596791646577
+        },
+        "reversal_first4_reward": {
+          "mean": 0.4037109375,
+          "sd": 0.034260507127490285
+        },
+        "initial_recovery_trials": {
+          "mean": 8.92109375,
+          "sd": 0.7056670627271537
+        },
+        "reversal_recovery_trials": {
+          "mean": 10.2515625,
+          "sd": 1.6216739360859411
+        },
+        "initial_recovery_failed": {
+          "mean": 0.253125,
+          "sd": 0.060097881585741024
+        },
+        "reversal_recovery_failed": {
+          "mean": 0.34453125,
+          "sd": 0.12731019496563306
+        },
+        "initial_repeated_errors": {
+          "mean": 4.99375,
+          "sd": 0.8603935725058475
+        },
+        "reversal_repeated_errors": {
+          "mean": 6.26015625,
+          "sd": 2.0304509395861814
+        },
+        "initial_repeated_error_rate": {
+          "mean": 0.23320863875737413,
+          "sd": 0.03566266071891463
+        },
+        "reversal_repeated_error_rate": {
+          "mean": 0.31534937172831945,
+          "sd": 0.09717264679460343
+        }
+      },
+      "no_feedback": {
+        "reward": {
+          "mean": 0.25365234375,
+          "sd": 0.02168591109290082
+        },
+        "late_reward": {
+          "mean": 0.255810546875,
+          "sd": 0.023951551610902
+        },
+        "initial_late_reward": {
+          "mean": 0.26240234375,
+          "sd": 0.018336895105413392
+        },
+        "reversal_late_reward": {
+          "mean": 0.24921875,
+          "sd": 0.03573738441088337
+        },
+        "post_reversal_reward": {
+          "mean": 0.24921875,
+          "sd": 0.03573738441088337
+        },
+        "initial_first4_reward": {
+          "mean": 0.25078125,
+          "sd": 0.010016313597623503
+        },
+        "reversal_first4_reward": {
+          "mean": 0.24921875,
+          "sd": 0.03573738441088337
+        },
+        "initial_recovery_trials": {
+          "mean": 17.33359375,
+          "sd": 0.3621622551059642
+        },
+        "reversal_recovery_trials": {
+          "mean": 16.04609375,
+          "sd": 0.587461559580178
+        },
+        "initial_recovery_failed": {
+          "mean": 0.73046875,
+          "sd": 0.0235996991671769
+        },
+        "reversal_recovery_failed": {
+          "mean": 0.75078125,
+          "sd": 0.03573738441088337
+        },
+        "initial_repeated_errors": {
+          "mean": 12.82109375,
+          "sd": 0.46421471356794447
+        },
+        "reversal_repeated_errors": {
+          "mean": 13.796875,
+          "sd": 0.6230989153423245
+        },
+        "initial_repeated_error_rate": {
+          "mean": 0.5983795178937082,
+          "sd": 0.03059469823019458
+        },
+        "reversal_repeated_error_rate": {
+          "mean": 0.7048281940420744,
+          "sd": 0.03349815952514923
+        }
+      }
+    }
+  },
+  "baselines": {
+    "candidate": {
+      "reward": 0.91318359375,
+      "late_reward": 0.981689453125,
+      "initial_late_reward": 0.98583984375,
+      "reversal_late_reward": 0.9775390625,
+      "post_reversal_reward": 0.880185094627585,
+      "initial_first4_reward": 0.6201171875,
+      "reversal_first4_reward": 0.51171875,
+      "initial_recovery_trials": 4.51953125,
+      "reversal_recovery_trials": 4.953125,
+      "initial_recovery_failed": 0,
+      "reversal_recovery_failed": 0,
+      "initial_repeated_errors": 0,
+      "reversal_repeated_errors": 0,
+      "initial_repeated_error_rate": 0.0,
+      "reversal_repeated_error_rate": 0.0
+    },
+    "random": {
+      "reward": 0.255078125,
+      "late_reward": 0.25146484375,
+      "initial_late_reward": 0.26123046875,
+      "reversal_late_reward": 0.24169921875,
+      "post_reversal_reward": 0.25225943088224473,
+      "initial_first4_reward": 0.23046875,
+      "reversal_first4_reward": 0.3037109375,
+      "initial_recovery_trials": 19.28125,
+      "reversal_recovery_trials": 18.06640625,
+      "initial_recovery_failed": 0.79296875,
+      "reversal_recovery_failed": 0.81640625,
+      "initial_repeated_errors": 12.37109375,
+      "reversal_repeated_errors": 11.5390625,
+      "initial_repeated_error_rate": 0.5775991974781308,
+      "reversal_repeated_error_rate": 0.5695935333019084
+    }
+  },
+  "per_seed": {
+    "bic-11": {
+      "persistent": {
+        "reward": 0.899609375,
+        "late_reward": 0.9755859375,
+        "initial_late_reward": 0.990234375,
+        "reversal_late_reward": 0.9609375,
+        "post_reversal_reward": 0.8434188929962422,
+        "initial_first4_reward": 0.6337890625,
+        "reversal_first4_reward": 0.4072265625,
+        "initial_recovery_trials": 4.46484375,
+        "reversal_recovery_trials": 5.55078125,
+        "initial_recovery_failed": 0,
+        "reversal_recovery_failed": 0,
+        "initial_repeated_errors": 0,
+        "reversal_repeated_errors": 0.53515625,
+        "initial_repeated_error_rate": 0.0,
+        "reversal_repeated_error_rate": 0.03175316575725756
+      },
+      "reset_state": {
+        "reward": 0.63115234375,
+        "late_reward": 0.6552734375,
+        "initial_late_reward": 0.8330078125,
+        "reversal_late_reward": 0.4775390625,
+        "post_reversal_reward": 0.4458947775597645,
+        "initial_first4_reward": 0.5908203125,
+        "reversal_first4_reward": 0.328125,
+        "initial_recovery_trials": 6.97265625,
+        "reversal_recovery_trials": 12.4296875,
+        "initial_recovery_failed": 0.16015625,
+        "reversal_recovery_failed": 0.515625,
+        "initial_repeated_errors": 2.81640625,
+        "reversal_repeated_errors": 8.71875,
+        "initial_repeated_error_rate": 0.13267019908449415,
+        "reversal_repeated_error_rate": 0.4462364322283877
+      },
+      "no_feedback": {
+        "reward": 0.2458984375,
+        "late_reward": 0.244140625,
+        "initial_late_reward": 0.2470703125,
+        "reversal_late_reward": 0.2412109375,
+        "post_reversal_reward": 0.24417208838382595,
+        "initial_first4_reward": 0.25,
+        "reversal_first4_reward": 0.2421875,
+        "initial_recovery_trials": 21.60546875,
+        "reversal_recovery_trials": 20.28515625,
+        "initial_recovery_failed": 0.99609375,
+        "reversal_recovery_failed": 0.99609375,
+        "initial_repeated_errors": 12.5546875,
+        "reversal_repeated_errors": 11.609375,
+        "initial_repeated_error_rate": 0.583543672606492,
+        "reversal_repeated_error_rate": 0.5717890067420979
+      }
+    },
+    "gru-11": {
+      "persistent": {
+        "reward": 0.63828125,
+        "late_reward": 0.709228515625,
+        "initial_late_reward": 0.90283203125,
+        "reversal_late_reward": 0.515625,
+        "post_reversal_reward": 0.4436685918585124,
+        "initial_first4_reward": 0.6025390625,
+        "reversal_first4_reward": 0.208984375,
+        "initial_recovery_trials": 5.88671875,
+        "reversal_recovery_trials": 13.515625,
+        "initial_recovery_failed": 0.0859375,
+        "reversal_recovery_failed": 0.45703125,
+        "initial_repeated_errors": 1.6328125,
+        "reversal_repeated_errors": 9.69140625,
+        "initial_repeated_error_rate": 0.07661466199202863,
+        "reversal_repeated_error_rate": 0.4505264823560589
+      },
+      "reset_state": {
+        "reward": 0.7134765625,
+        "late_reward": 0.7919921875,
+        "initial_late_reward": 0.83349609375,
+        "reversal_late_reward": 0.75048828125,
+        "post_reversal_reward": 0.6477206948420506,
+        "initial_first4_reward": 0.5166015625,
+        "reversal_first4_reward": 0.392578125,
+        "initial_recovery_trials": 7.74609375,
+        "reversal_recovery_trials": 8.9921875,
+        "initial_recovery_failed": 0.15234375,
+        "reversal_recovery_failed": 0.234375,
+        "initial_repeated_errors": 3.61328125,
+        "reversal_repeated_errors": 4.62109375,
+        "initial_repeated_error_rate": 0.17697531499208838,
+        "reversal_repeated_error_rate": 0.24282245105939584
+      },
+      "no_feedback": {
+        "reward": 0.25361328125,
+        "late_reward": 0.25048828125,
+        "initial_late_reward": 0.2626953125,
+        "reversal_late_reward": 0.23828125,
+        "post_reversal_reward": 0.23828125,
+        "initial_first4_reward": 0.26171875,
+        "reversal_first4_reward": 0.23828125,
+        "initial_recovery_trials": 16.890625,
+        "reversal_recovery_trials": 16.1484375,
+        "initial_recovery_failed": 0.703125,
+        "reversal_recovery_failed": 0.76171875,
+        "initial_repeated_errors": 12.54296875,
+        "reversal_repeated_errors": 13.91015625,
+        "initial_repeated_error_rate": 0.5859843128128132,
+        "reversal_repeated_error_rate": 0.7149890649414519
+      }
+    },
+    "bic-23": {
+      "persistent": {
+        "reward": 0.9123046875,
+        "late_reward": 0.984130859375,
+        "initial_late_reward": 0.9892578125,
+        "reversal_late_reward": 0.97900390625,
+        "post_reversal_reward": 0.8774062815131042,
+        "initial_first4_reward": 0.626953125,
+        "reversal_first4_reward": 0.49609375,
+        "initial_recovery_trials": 4.4921875,
+        "reversal_recovery_trials": 5.015625,
+        "initial_recovery_failed": 0,
+        "reversal_recovery_failed": 0,
+        "initial_repeated_errors": 0,
+        "reversal_repeated_errors": 0.00390625,
+        "initial_repeated_error_rate": 0.0,
+        "reversal_repeated_error_rate": 0.0001220703125
+      },
+      "reset_state": {
+        "reward": 0.58671875,
+        "late_reward": 0.60693359375,
+        "initial_late_reward": 0.7236328125,
+        "reversal_late_reward": 0.490234375,
+        "post_reversal_reward": 0.4638632455488874,
+        "initial_first4_reward": 0.546875,
+        "reversal_first4_reward": 0.3720703125,
+        "initial_recovery_trials": 8.78515625,
+        "reversal_recovery_trials": 12.18359375,
+        "initial_recovery_failed": 0.2734375,
+        "reversal_recovery_failed": 0.5078125,
+        "initial_repeated_errors": 4.79296875,
+        "reversal_repeated_errors": 8.62890625,
+        "initial_repeated_error_rate": 0.2260726509369719,
+        "reversal_repeated_error_rate": 0.43984653558887127
+      },
+      "no_feedback": {
+        "reward": 0.24990234375,
+        "late_reward": 0.24755859375,
+        "initial_late_reward": 0.25,
+        "reversal_late_reward": 0.2451171875,
+        "post_reversal_reward": 0.249079474454416,
+        "initial_first4_reward": 0.25,
+        "reversal_first4_reward": 0.2509765625,
+        "initial_recovery_trials": 21.609375,
+        "reversal_recovery_trials": 20.390625,
+        "initial_recovery_failed": 1,
+        "reversal_recovery_failed": 1,
+        "initial_repeated_errors": 12.42578125,
+        "reversal_repeated_errors": 11.578125,
+        "initial_repeated_error_rate": 0.575885558460739,
+        "reversal_repeated_error_rate": 0.5668816206715078
+      }
+    },
+    "gru-23": {
+      "persistent": {
+        "reward": 0.600390625,
+        "late_reward": 0.65234375,
+        "initial_late_reward": 0.85595703125,
+        "reversal_late_reward": 0.44873046875,
+        "post_reversal_reward": 0.40389846803181134,
+        "initial_first4_reward": 0.56640625,
+        "reversal_first4_reward": 0.2509765625,
+        "initial_recovery_trials": 6.45703125,
+        "reversal_recovery_trials": 14.16796875,
+        "initial_recovery_failed": 0.13671875,
+        "reversal_recovery_failed": 0.54296875,
+        "initial_repeated_errors": 2.1328125,
+        "reversal_repeated_errors": 10.61328125,
+        "initial_repeated_error_rate": 0.11006717928856466,
+        "reversal_repeated_error_rate": 0.49394539201985455
+      },
+      "reset_state": {
+        "reward": 0.5732421875,
+        "late_reward": 0.595458984375,
+        "initial_late_reward": 0.6904296875,
+        "reversal_late_reward": 0.50048828125,
+        "post_reversal_reward": 0.47608494625266484,
+        "initial_first4_reward": 0.537109375,
+        "reversal_first4_reward": 0.38671875,
+        "initial_recovery_trials": 9.3046875,
+        "reversal_recovery_trials": 12.171875,
+        "initial_recovery_failed": 0.3046875,
+        "reversal_recovery_failed": 0.4921875,
+        "initial_repeated_errors": 5.51171875,
+        "reversal_repeated_errors": 8.63671875,
+        "initial_repeated_error_rate": 0.26065452213736734,
+        "reversal_repeated_error_rate": 0.43021219723315307
+      },
+      "no_feedback": {
+        "reward": 0.230078125,
+        "late_reward": 0.234130859375,
+        "initial_late_reward": 0.24951171875,
+        "reversal_late_reward": 0.21875,
+        "post_reversal_reward": 0.21875,
+        "initial_first4_reward": 0.234375,
+        "reversal_first4_reward": 0.21875,
+        "initial_recovery_trials": 17.85546875,
+        "reversal_recovery_trials": 16.5625,
+        "initial_recovery_failed": 0.75390625,
+        "reversal_recovery_failed": 0.78125,
+        "initial_repeated_errors": 12.92578125,
+        "reversal_repeated_errors": 14.34375,
+        "initial_repeated_error_rate": 0.6000437640135947,
+        "reversal_repeated_error_rate": 0.7327403456089288
+      }
+    },
+    "bic-37": {
+      "persistent": {
+        "reward": 0.895703125,
+        "late_reward": 0.970458984375,
+        "initial_late_reward": 0.9833984375,
+        "reversal_late_reward": 0.95751953125,
+        "post_reversal_reward": 0.8372413324643918,
+        "initial_first4_reward": 0.6064453125,
+        "reversal_first4_reward": 0.4267578125,
+        "initial_recovery_trials": 4.57421875,
+        "reversal_recovery_trials": 5.58984375,
+        "initial_recovery_failed": 0,
+        "reversal_recovery_failed": 0.01171875,
+        "initial_repeated_errors": 0,
+        "reversal_repeated_errors": 0.66796875,
+        "initial_repeated_error_rate": 0.0,
+        "reversal_repeated_error_rate": 0.044260902584230606
+      },
+      "reset_state": {
+        "reward": 0.45029296875,
+        "late_reward": 0.468505859375,
+        "initial_late_reward": 0.46630859375,
+        "reversal_late_reward": 0.470703125,
+        "post_reversal_reward": 0.4563403576992919,
+        "initial_first4_reward": 0.4091796875,
+        "reversal_first4_reward": 0.4033203125,
+        "initial_recovery_trials": 13.44921875,
+        "reversal_recovery_trials": 12.421875,
+        "initial_recovery_failed": 0.53125,
+        "reversal_recovery_failed": 0.52734375,
+        "initial_repeated_errors": 10.2109375,
+        "reversal_repeated_errors": 9.14453125,
+        "initial_repeated_error_rate": 0.472162770831873,
+        "reversal_repeated_error_rate": 0.4608486972726967
+      },
+      "no_feedback": {
+        "reward": 0.25390625,
+        "late_reward": 0.255615234375,
+        "initial_late_reward": 0.25439453125,
+        "reversal_late_reward": 0.2568359375,
+        "post_reversal_reward": 0.25855934832044175,
+        "initial_first4_reward": 0.25,
+        "reversal_first4_reward": 0.275390625,
+        "initial_recovery_trials": 21.609375,
+        "reversal_recovery_trials": 20.390625,
+        "initial_recovery_failed": 1,
+        "reversal_recovery_failed": 1,
+        "initial_repeated_errors": 12.4453125,
+        "reversal_repeated_errors": 11.421875,
+        "initial_repeated_error_rate": 0.5777854605781503,
+        "reversal_repeated_error_rate": 0.5598865558332599
+      }
+    },
+    "gru-37": {
+      "persistent": {
+        "reward": 0.55283203125,
+        "late_reward": 0.589111328125,
+        "initial_late_reward": 0.75439453125,
+        "reversal_late_reward": 0.423828125,
+        "post_reversal_reward": 0.38898439448464983,
+        "initial_first4_reward": 0.5634765625,
+        "reversal_first4_reward": 0.2568359375,
+        "initial_recovery_trials": 8.48828125,
+        "reversal_recovery_trials": 13.77734375,
+        "initial_recovery_failed": 0.23828125,
+        "reversal_recovery_failed": 0.5703125,
+        "initial_repeated_errors": 4.48046875,
+        "reversal_repeated_errors": 10.38671875,
+        "initial_repeated_error_rate": 0.20029963923418276,
+        "reversal_repeated_error_rate": 0.5144091876415404
+      },
+      "reset_state": {
+        "reward": 0.67607421875,
+        "late_reward": 0.72119140625,
+        "initial_late_reward": 0.73388671875,
+        "reversal_late_reward": 0.70849609375,
+        "post_reversal_reward": 0.6533259615739676,
+        "initial_first4_reward": 0.5537109375,
+        "reversal_first4_reward": 0.4609375,
+        "initial_recovery_trials": 8.9140625,
+        "reversal_recovery_trials": 8.96484375,
+        "initial_recovery_failed": 0.2578125,
+        "reversal_recovery_failed": 0.28125,
+        "initial_repeated_errors": 4.94140625,
+        "reversal_repeated_errors": 4.75,
+        "initial_repeated_error_rate": 0.21892806183301913,
+        "reversal_repeated_error_rate": 0.23689211334564447
+      },
+      "no_feedback": {
+        "reward": 0.233984375,
+        "late_reward": 0.234619140625,
+        "initial_late_reward": 0.25439453125,
+        "reversal_late_reward": 0.21484375,
+        "post_reversal_reward": 0.21484375,
+        "initial_first4_reward": 0.25390625,
+        "reversal_first4_reward": 0.21484375,
+        "initial_recovery_trials": 17.4765625,
+        "reversal_recovery_trials": 16.64453125,
+        "initial_recovery_failed": 0.7421875,
+        "reversal_recovery_failed": 0.78515625,
+        "initial_repeated_errors": 13.10546875,
+        "reversal_repeated_errors": 14.4296875,
+        "initial_repeated_error_rate": 0.6109783967837636,
+        "reversal_repeated_error_rate": 0.7377424051026346
+      }
+    },
+    "bic-51": {
+      "persistent": {
+        "reward": 0.91318359375,
+        "late_reward": 0.984375,
+        "initial_late_reward": 0.99072265625,
+        "reversal_late_reward": 0.97802734375,
+        "post_reversal_reward": 0.8790998990206058,
+        "initial_first4_reward": 0.6279296875,
+        "reversal_first4_reward": 0.50390625,
+        "initial_recovery_trials": 4.48828125,
+        "reversal_recovery_trials": 4.984375,
+        "initial_recovery_failed": 0,
+        "reversal_recovery_failed": 0,
+        "initial_repeated_errors": 0,
+        "reversal_repeated_errors": 0,
+        "initial_repeated_error_rate": 0.0,
+        "reversal_repeated_error_rate": 0.0
+      },
+      "reset_state": {
+        "reward": 0.711328125,
+        "late_reward": 0.74658203125,
+        "initial_late_reward": 0.9404296875,
+        "reversal_late_reward": 0.552734375,
+        "post_reversal_reward": 0.5069125207627595,
+        "initial_first4_reward": 0.611328125,
+        "reversal_first4_reward": 0.3427734375,
+        "initial_recovery_trials": 5.30859375,
+        "reversal_recovery_trials": 11.25390625,
+        "initial_recovery_failed": 0.05078125,
+        "reversal_recovery_failed": 0.44140625,
+        "initial_repeated_errors": 0.90625,
+        "reversal_repeated_errors": 7.29296875,
+        "initial_repeated_error_rate": 0.04179366351734709,
+        "reversal_repeated_error_rate": 0.37896993006612606
+      },
+      "no_feedback": {
+        "reward": 0.25126953125,
+        "late_reward": 0.254150390625,
+        "initial_late_reward": 0.25048828125,
+        "reversal_late_reward": 0.2578125,
+        "post_reversal_reward": 0.25306471316187734,
+        "initial_first4_reward": 0.25,
+        "reversal_first4_reward": 0.24609375,
+        "initial_recovery_trials": 21.609375,
+        "reversal_recovery_trials": 20.390625,
+        "initial_recovery_failed": 1,
+        "reversal_recovery_failed": 1,
+        "initial_repeated_errors": 12.4609375,
+        "reversal_repeated_errors": 11.48828125,
+        "initial_repeated_error_rate": 0.5801154607873219,
+        "reversal_repeated_error_rate": 0.5628963819640465
+      }
+    },
+    "gru-51": {
+      "persistent": {
+        "reward": 0.62060546875,
+        "late_reward": 0.68701171875,
+        "initial_late_reward": 0.947265625,
+        "reversal_late_reward": 0.4267578125,
+        "post_reversal_reward": 0.3792450118887163,
+        "initial_first4_reward": 0.591796875,
+        "reversal_first4_reward": 0.2119140625,
+        "initial_recovery_trials": 5.38671875,
+        "reversal_recovery_trials": 14.578125,
+        "initial_recovery_failed": 0.04296875,
+        "reversal_recovery_failed": 0.5625,
+        "initial_repeated_errors": 0.88671875,
+        "reversal_repeated_errors": 10.96875,
+        "initial_repeated_error_rate": 0.03732408751905073,
+        "reversal_repeated_error_rate": 0.5117249219024916
+      },
+      "reset_state": {
+        "reward": 0.66796875,
+        "late_reward": 0.7294921875,
+        "initial_late_reward": 0.7314453125,
+        "reversal_late_reward": 0.7275390625,
+        "post_reversal_reward": 0.6394876153580511,
+        "initial_first4_reward": 0.451171875,
+        "reversal_first4_reward": 0.3720703125,
+        "initial_recovery_trials": 9.05078125,
+        "reversal_recovery_trials": 9.26171875,
+        "initial_recovery_failed": 0.2578125,
+        "reversal_recovery_failed": 0.2421875,
+        "initial_repeated_errors": 5.0234375,
+        "reversal_repeated_errors": 4.9765625,
+        "initial_repeated_error_rate": 0.25024396275857114,
+        "reversal_repeated_error_rate": 0.254326065446807
+      },
+      "no_feedback": {
+        "reward": 0.27626953125,
+        "late_reward": 0.28955078125,
+        "initial_late_reward": 0.2939453125,
+        "reversal_late_reward": 0.28515625,
+        "post_reversal_reward": 0.28515625,
+        "initial_first4_reward": 0.251953125,
+        "reversal_first4_reward": 0.28515625,
+        "initial_recovery_trials": 17.296875,
+        "reversal_recovery_trials": 15.484375,
+        "initial_recovery_failed": 0.70703125,
+        "reversal_recovery_failed": 0.71484375,
+        "initial_repeated_errors": 12.1796875,
+        "reversal_repeated_errors": 13.19921875,
+        "initial_repeated_error_rate": 0.5560495732004412,
+        "reversal_repeated_error_rate": 0.6706066449128437
+      }
+    },
+    "bic-71": {
+      "persistent": {
+        "reward": 0.91162109375,
+        "late_reward": 0.9794921875,
+        "initial_late_reward": 0.98291015625,
+        "reversal_late_reward": 0.97607421875,
+        "post_reversal_reward": 0.8726440580813233,
+        "initial_first4_reward": 0.6279296875,
+        "reversal_first4_reward": 0.48828125,
+        "initial_recovery_trials": 4.48828125,
+        "reversal_recovery_trials": 5.046875,
+        "initial_recovery_failed": 0,
+        "reversal_recovery_failed": 0,
+        "initial_repeated_errors": 0,
+        "reversal_repeated_errors": 0,
+        "initial_repeated_error_rate": 0.0,
+        "reversal_repeated_error_rate": 0.0
+      },
+      "reset_state": {
+        "reward": 0.61396484375,
+        "late_reward": 0.63427734375,
+        "initial_late_reward": 0.76611328125,
+        "reversal_late_reward": 0.50244140625,
+        "post_reversal_reward": 0.47550853422110484,
+        "initial_first4_reward": 0.5859375,
+        "reversal_first4_reward": 0.37890625,
+        "initial_recovery_trials": 7.80078125,
+        "reversal_recovery_trials": 12.203125,
+        "initial_recovery_failed": 0.2265625,
+        "reversal_recovery_failed": 0.4921875,
+        "initial_repeated_errors": 3.82421875,
+        "reversal_repeated_errors": 8.62109375,
+        "initial_repeated_error_rate": 0.1871389224250459,
+        "reversal_repeated_error_rate": 0.4285603513481657
+      },
+      "no_feedback": {
+        "reward": 0.2505859375,
+        "late_reward": 0.24951171875,
+        "initial_late_reward": 0.24951171875,
+        "reversal_late_reward": 0.24951171875,
+        "post_reversal_reward": 0.2503376672031228,
+        "initial_first4_reward": 0.25,
+        "reversal_first4_reward": 0.2509765625,
+        "initial_recovery_trials": 21.609375,
+        "reversal_recovery_trials": 20.390625,
+        "initial_recovery_failed": 1,
+        "reversal_recovery_failed": 1,
+        "initial_repeated_errors": 12.43359375,
+        "reversal_repeated_errors": 11.54296875,
+        "initial_repeated_error_rate": 0.5785268993477592,
+        "reversal_repeated_error_rate": 0.565623427922801
+      }
+    },
+    "gru-71": {
+      "persistent": {
+        "reward": 0.49208984375,
+        "late_reward": 0.518798828125,
+        "initial_late_reward": 0.650390625,
+        "reversal_late_reward": 0.38720703125,
+        "post_reversal_reward": 0.36014672383269997,
+        "initial_first4_reward": 0.517578125,
+        "reversal_first4_reward": 0.259765625,
+        "initial_recovery_trials": 10.015625,
+        "reversal_recovery_trials": 14.40234375,
+        "initial_recovery_failed": 0.34375,
+        "reversal_recovery_failed": 0.60546875,
+        "initial_repeated_errors": 6.3984375,
+        "reversal_repeated_errors": 11.3046875,
+        "initial_repeated_error_rate": 0.3017301894221012,
+        "reversal_repeated_error_rate": 0.5592099318856639
+      },
+      "reset_state": {
+        "reward": 0.57529296875,
+        "late_reward": 0.6103515625,
+        "initial_late_reward": 0.69873046875,
+        "reversal_late_reward": 0.52197265625,
+        "post_reversal_reward": 0.4977304887424752,
+        "initial_first4_reward": 0.546875,
+        "reversal_first4_reward": 0.40625,
+        "initial_recovery_trials": 9.58984375,
+        "reversal_recovery_trials": 11.8671875,
+        "initial_recovery_failed": 0.29296875,
+        "reversal_recovery_failed": 0.47265625,
+        "initial_repeated_errors": 5.87890625,
+        "reversal_repeated_errors": 8.31640625,
+        "initial_repeated_error_rate": 0.2592413320658247,
+        "reversal_repeated_error_rate": 0.41249403155659675
+      },
+      "no_feedback": {
+        "reward": 0.27431640625,
+        "late_reward": 0.270263671875,
+        "initial_late_reward": 0.25146484375,
+        "reversal_late_reward": 0.2890625,
+        "post_reversal_reward": 0.2890625,
+        "initial_first4_reward": 0.251953125,
+        "reversal_first4_reward": 0.2890625,
+        "initial_recovery_trials": 17.1484375,
+        "reversal_recovery_trials": 15.390625,
+        "initial_recovery_failed": 0.74609375,
+        "reversal_recovery_failed": 0.7109375,
+        "initial_repeated_errors": 13.3515625,
+        "reversal_repeated_errors": 13.1015625,
+        "initial_repeated_error_rate": 0.6388415426579283,
+        "reversal_repeated_error_rate": 0.6680625096445133
+      }
+    }
+  },
+  "paired_bic_minus_comparator": {
+    "reset_state": {
+      "reward": {
+        "mean": 0.30779296875000006,
+        "sd": 0.08962129069676905,
+        "per_seed": [
+          0.2684570312500001,
+          0.3255859375000001,
+          0.44541015625,
+          0.20185546875000004,
+          0.29765624999999996
+        ]
+      },
+      "late_reward": {
+        "mean": 0.356494140625,
+        "sd": 0.09632398115342493,
+        "per_seed": [
+          0.3203125,
+          0.377197265625,
+          0.501953125,
+          0.23779296875,
+          0.34521484375
+        ]
+      },
+      "initial_late_reward": {
+        "mean": 0.24140625,
+        "sd": 0.1737844347964652,
+        "per_seed": [
+          0.1572265625,
+          0.265625,
+          0.51708984375,
+          0.05029296875,
+          0.216796875
+        ]
+      },
+      "reversal_late_reward": {
+        "mean": 0.47158203125,
+        "sd": 0.026523606492235938,
+        "per_seed": [
+          0.4833984375,
+          0.48876953125,
+          0.48681640625,
+          0.42529296875,
+          0.4736328125
+        ]
+      },
+      "post_reversal_reward": {
+        "mean": 0.39225820565677183,
+        "sd": 0.016096481338219587,
+        "per_seed": [
+          0.3975241154364777,
+          0.41354303596421677,
+          0.38090097476509993,
+          0.3721873782578463,
+          0.39713552386021844
+        ]
+      },
+      "initial_first4_reward": {
+        "mean": 0.07578125,
+        "sd": 0.0715847623754225,
+        "per_seed": [
+          0.04296875,
+          0.080078125,
+          0.197265625,
+          0.0166015625,
+          0.0419921875
+        ]
+      },
+      "reversal_first4_reward": {
+        "mean": 0.0994140625,
+        "sd": 0.051718182056454856,
+        "per_seed": [
+          0.0791015625,
+          0.1240234375,
+          0.0234375,
+          0.1611328125,
+          0.109375
+        ]
+      },
+      "initial_recovery_trials": {
+        "mean": -3.96171875,
+        "sd": 3.027119951405182,
+        "per_seed": [
+          -2.5078125,
+          -4.29296875,
+          -8.875,
+          -0.8203125,
+          -3.3125
+        ]
+      },
+      "reversal_recovery_trials": {
+        "mean": -6.8609375,
+        "sd": 0.36482785698788817,
+        "per_seed": [
+          -6.87890625,
+          -7.16796875,
+          -6.83203125,
+          -6.26953125,
+          -7.15625
+        ]
+      },
+      "initial_recovery_failed": {
+        "mean": -0.2484375,
+        "sd": 0.17884909703914847,
+        "per_seed": [
+          -0.16015625,
+          -0.2734375,
+          -0.53125,
+          -0.05078125,
+          -0.2265625
+        ]
+      },
+      "reversal_recovery_failed": {
+        "mean": -0.49453125,
+        "sd": 0.031201133668306028,
+        "per_seed": [
+          -0.515625,
+          -0.5078125,
+          -0.515625,
+          -0.44140625,
+          -0.4921875
+        ]
+      },
+      "initial_repeated_errors": {
+        "mean": -4.51015625,
+        "sd": 3.4966530191635803,
+        "per_seed": [
+          -2.81640625,
+          -4.79296875,
+          -10.2109375,
+          -0.90625,
+          -3.82421875
+        ]
+      },
+      "reversal_repeated_errors": {
+        "mean": -8.23984375,
+        "sd": 0.5588982452425094,
+        "per_seed": [
+          -8.18359375,
+          -8.625,
+          -8.4765625,
+          -7.29296875,
+          -8.62109375
+        ]
+      },
+      "initial_repeated_error_rate": {
+        "mean": -0.21196764135914642,
+        "sd": 0.16106224655876925,
+        "per_seed": [
+          -0.13267019908449415,
+          -0.2260726509369719,
+          -0.472162770831873,
+          -0.04179366351734709,
+          -0.1871389224250459
+        ]
+      },
+      "reversal_repeated_error_rate": {
+        "mean": -0.41566516157005184,
+        "sd": 0.022879708025176183,
+        "per_seed": [
+          -0.41448326647113015,
+          -0.43972446527637127,
+          -0.4165877946884661,
+          -0.37896993006612606,
+          -0.4285603513481657
+        ]
+      }
+    },
+    "no_feedback": {
+      "reward": {
+        "mean": 0.6561718750000001,
+        "sd": 0.008776955637141346,
+        "per_seed": [
+          0.6537109375000001,
+          0.6624023437500001,
+          0.641796875,
+          0.6619140625,
+          0.66103515625
+        ]
+      },
+      "late_reward": {
+        "mean": 0.72861328125,
+        "sd": 0.008146032839882392,
+        "per_seed": [
+          0.7314453125,
+          0.736572265625,
+          0.71484375,
+          0.730224609375,
+          0.72998046875
+        ]
+      },
+      "initial_late_reward": {
+        "mean": 0.73701171875,
+        "sd": 0.005711012311411502,
+        "per_seed": [
+          0.7431640625,
+          0.7392578125,
+          0.72900390625,
+          0.740234375,
+          0.7333984375
+        ]
+      },
+      "reversal_late_reward": {
+        "mean": 0.72021484375,
+        "sd": 0.012338162859856717,
+        "per_seed": [
+          0.7197265625,
+          0.73388671875,
+          0.70068359375,
+          0.72021484375,
+          0.7265625
+        ]
+      },
+      "post_reversal_reward": {
+        "mean": 0.6109194345103967,
+        "sd": 0.02142818720777734,
+        "per_seed": [
+          0.5992468046124162,
+          0.6283268070586882,
+          0.5786819841439501,
+          0.6260351858587285,
+          0.6223063908782005
+        ]
+      },
+      "initial_first4_reward": {
+        "mean": 0.374609375,
+        "sd": 0.010508828947120786,
+        "per_seed": [
+          0.3837890625,
+          0.376953125,
+          0.3564453125,
+          0.3779296875,
+          0.3779296875
+        ]
+      },
+      "reversal_first4_reward": {
+        "mean": 0.211328125,
+        "sd": 0.04928303713270356,
+        "per_seed": [
+          0.1650390625,
+          0.2451171875,
+          0.1513671875,
+          0.2578125,
+          0.2373046875
+        ]
+      },
+      "initial_recovery_trials": {
+        "mean": -17.10703125,
+        "sd": 0.04121047467157167,
+        "per_seed": [
+          -17.140625,
+          -17.1171875,
+          -17.03515625,
+          -17.12109375,
+          -17.12109375
+        ]
+      },
+      "reversal_recovery_trials": {
+        "mean": -15.13203125,
+        "sd": 0.33425724415999947,
+        "per_seed": [
+          -14.734375,
+          -15.375,
+          -14.80078125,
+          -15.40625,
+          -15.34375
+        ]
+      },
+      "initial_recovery_failed": {
+        "mean": -0.99921875,
+        "sd": 0.0017469281074217107,
+        "per_seed": [
+          -0.99609375,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "reversal_recovery_failed": {
+        "mean": -0.996875,
+        "sd": 0.005093126879064569,
+        "per_seed": [
+          -0.99609375,
+          -1,
+          -0.98828125,
+          -1,
+          -1
+        ]
+      },
+      "initial_repeated_errors": {
+        "mean": -12.4640625,
+        "sd": 0.05236415180761787,
+        "per_seed": [
+          -12.5546875,
+          -12.42578125,
+          -12.4453125,
+          -12.4609375,
+          -12.43359375
+        ]
+      },
+      "reversal_repeated_errors": {
+        "mean": -11.28671875,
+        "sd": 0.35985870979542095,
+        "per_seed": [
+          -11.07421875,
+          -11.57421875,
+          -10.75390625,
+          -11.48828125,
+          -11.54296875
+        ]
+      },
+      "initial_repeated_error_rate": {
+        "mean": -0.5791714103560924,
+        "sd": 0.0028784102516845995,
+        "per_seed": [
+          -0.583543672606492,
+          -0.575885558460739,
+          -0.5777854605781503,
+          -0.5801154607873219,
+          -0.5785268993477592
+        ]
+      },
+      "reversal_repeated_error_rate": {
+        "mean": -0.550188170895945,
+        "sd": 0.02220356859866574,
+        "per_seed": [
+          -0.5400358409848403,
+          -0.5667595503590078,
+          -0.5156256532490292,
+          -0.5628963819640465,
+          -0.565623427922801
+        ]
+      }
+    },
+    "gru": {
+      "reward": {
+        "mean": 0.32564453125000004,
+        "sd": 0.06027019064286219,
+        "per_seed": [
+          0.261328125,
+          0.3119140625000001,
+          0.34287109375,
+          0.292578125,
+          0.41953125
+        ]
+      },
+      "late_reward": {
+        "mean": 0.347509765625,
+        "sd": 0.07632677028238594,
+        "per_seed": [
+          0.266357421875,
+          0.331787109375,
+          0.38134765625,
+          0.29736328125,
+          0.460693359375
+        ]
+      },
+      "initial_late_reward": {
+        "mean": 0.16513671875,
+        "sd": 0.11614444657710986,
+        "per_seed": [
+          0.08740234375,
+          0.13330078125,
+          0.22900390625,
+          0.04345703125,
+          0.33251953125
+        ]
+      },
+      "reversal_late_reward": {
+        "mean": 0.5298828125,
+        "sd": 0.05268620304126842,
+        "per_seed": [
+          0.4453125,
+          0.5302734375,
+          0.53369140625,
+          0.55126953125,
+          0.5888671875
+        ]
+      },
+      "post_reversal_reward": {
+        "mean": 0.46677345479585547,
+        "sd": 0.04490370370526553,
+        "per_seed": [
+          0.3997503011377298,
+          0.47350781348129284,
+          0.448256937979742,
+          0.4998548871318895,
+          0.5124973342486233
+        ]
+      },
+      "initial_first4_reward": {
+        "mean": 0.05625,
+        "sd": 0.03221620335397891,
+        "per_seed": [
+          0.03125,
+          0.060546875,
+          0.04296875,
+          0.0361328125,
+          0.1103515625
+        ]
+      },
+      "reversal_first4_reward": {
+        "mean": 0.2267578125,
+        "sd": 0.04647350023793381,
+        "per_seed": [
+          0.1982421875,
+          0.2451171875,
+          0.169921875,
+          0.2919921875,
+          0.228515625
+        ]
+      },
+      "initial_recovery_trials": {
+        "mean": -2.7453125,
+        "sd": 1.9285512691029487,
+        "per_seed": [
+          -1.421875,
+          -1.96484375,
+          -3.9140625,
+          -0.8984375,
+          -5.52734375
+        ]
+      },
+      "reversal_recovery_trials": {
+        "mean": -8.85078125,
+        "sd": 0.7284365531820316,
+        "per_seed": [
+          -7.96484375,
+          -9.15234375,
+          -8.1875,
+          -9.59375,
+          -9.35546875
+        ]
+      },
+      "initial_recovery_failed": {
+        "mean": -0.16953125,
+        "sd": 0.12161555919487133,
+        "per_seed": [
+          -0.0859375,
+          -0.13671875,
+          -0.23828125,
+          -0.04296875,
+          -0.34375
+        ]
+      },
+      "reversal_recovery_failed": {
+        "mean": -0.5453125,
+        "sd": 0.05451983225739969,
+        "per_seed": [
+          -0.45703125,
+          -0.54296875,
+          -0.55859375,
+          -0.5625,
+          -0.60546875
+        ]
+      },
+      "initial_repeated_errors": {
+        "mean": -3.10625,
+        "sd": 2.278809629529575,
+        "per_seed": [
+          -1.6328125,
+          -2.1328125,
+          -4.48046875,
+          -0.88671875,
+          -6.3984375
+        ]
+      },
+      "reversal_repeated_errors": {
+        "mean": -10.3515625,
+        "sd": 0.8923366228265541,
+        "per_seed": [
+          -9.15625,
+          -10.609375,
+          -9.71875,
+          -10.96875,
+          -11.3046875
+        ]
+      },
+      "initial_repeated_error_rate": {
+        "mean": -0.1452071514911856,
+        "sd": 0.10619927773170566,
+        "per_seed": [
+          -0.07661466199202863,
+          -0.11006717928856466,
+          -0.20029963923418276,
+          -0.03732408751905073,
+          -0.3017301894221012
+        ]
+      },
+      "reversal_repeated_error_rate": {
+        "mean": -0.4907359554303243,
+        "sd": 0.05181994682235989,
+        "per_seed": [
+          -0.41877331659880135,
+          -0.49382332170735455,
+          -0.4701482850573098,
+          -0.5117249219024916,
+          -0.5592099318856639
+        ]
+      }
+    }
+  },
+  "restart": {
+    "bic-11": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    },
+    "gru-11": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    },
+    "bic-23": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    },
+    "gru-23": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    },
+    "bic-37": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    },
+    "gru-37": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    },
+    "bic-51": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    },
+    "gru-51": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    },
+    "bic-71": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    },
+    "gru-71": {
+      "exact_actions_rewards_observations": true,
+      "exact_final_neural_state": true,
+      "restart_after_steps": 13,
+      "weights_unchanged": true
+    }
+  },
+  "gates": {
+    "late_reward_at_least_075": true,
+    "feedback_gain_at_least_015": true,
+    "all_restart_and_weight_checks": true
+  },
+  "limitations": [
+    "symbolic categories and explicit category-to-cell mapping",
+    "strategy imitation, not reward-only reinforcement learning",
+    "same four categories; withheld layouts only",
+    "fast recurrent adaptation; no online weight updates or consolidation",
+    "new experimental checkpoint; no combined old/new skill retention claim"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "version": "0.2.0",
+  "device": "cpu",
+  "seed": 17,
+  "status": "Untrained language interfaces; English competence is not established",
+  "language_training_performed": false,
+  "english_optimizer_steps": 0,
+  "model_downloaded": false,
+  "language_checkpoint_saved": false,
+  "symbolic_core_checkpoint_sha256": "830e0ec6bd74b51b66acb7017c4c1bae2f95e3503335f84136e2597a636fa153",
+  "language_config": {
+    "hidden_size": 128,
+    "embedding_size": 64,
+    "max_input_bytes": 256,
+    "max_output_bytes": 128
+  },
+  "parameter_counts": {
+    "brain": 162810,
+    "posterior_temporal": 91072,
+    "inferior_frontal": 190147,
+    "semantic_bridge": 25104
+  },
+  "total_parameters": 469133,
+  "output_shapes": {
+    "logits": [
+      2,
+      2,
+      4
+    ],
+    "language_logits": [
+      2,
+      1,
+      259
+    ],
+    "concept_context": [
+      2,
+      48
+    ]
+  },
+  "checks": {
+    "all_output_logits_finite": true,
+    "weights_unchanged": true,
+    "utterance_changes_core_logits": true,
+    "utterance_changes_production_logits": true,
+    "temporal_lesion_blocks_text_to_production": true
+  },
+  "parameter_budget": {
+    "parameter_count": 469133,
+    "parameter_state_bytes": {
+      "inference_fp32": 1876532,
+      "inference_fp16_bf16": 938266,
+      "inference_4bit_ideal": 234567,
+      "training_fp32_adam": 7506128
+    },
+    "training_workload": {
+      "corpus_tokens": null,
+      "epochs": 1,
+      "processed_tokens": null,
+      "measured_tokens_per_second": null
+    },
+    "estimated_training_seconds": null,
+    "assumptions": [
+      "Parameter-state storage only; these values are not total VRAM estimates or fit guarantees.",
+      "FP32 inference weights use 4 bytes per parameter; FP16/BF16 inference weights use 2.",
+      "Ideal packed 4-bit inference weights use half a byte per parameter, rounded up to whole bytes.",
+      "4-bit storage assumes a compatible quantized representation; no model is quantized here.",
+      "FP32 Adam training state uses 4-byte weights, 4-byte gradients, and two 4-byte moment tensors: 16 bytes per parameter.",
+      "Activations, caches, workspaces, runtime allocations, quantization metadata, and temporary buffers are excluded.",
+      "Mixed-precision training, optimizer variants, offloading, and distributed replicas are not estimated.",
+      "Duration is unavailable unless corpus size and externally measured training throughput are both supplied.",
+      "Supplied throughput is not independently verified; it must represent the intended model, hardware, precision, batch size, and sequence length.",
+      "Duration assumes constant measured throughput for every corpus token in every epoch; unmeasured preprocessing, evaluation, and checkpoint overhead are excluded.",
+      "Neither parameter count nor this budget establishes English competence or general intelligence."
+    ],
+    "language_training_performed": false,
+    "model_downloaded": false
+  },
+  "limitations": [
+    "Input differences affect untrained random networks; this is not evidence of English comprehension.",
+    "The complete utterance must be available before the sensory/action episode starts.",
+    "Production is conditioned on final core state; no free-running text generation or language trainer is exposed.",
+    "Anatomical names describe functional inspirations, not one-to-one maps of human language regions."
+  ]
+}

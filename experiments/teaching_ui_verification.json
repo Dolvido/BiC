@@ -1,0 +1,107 @@
+{
+  "schema": "bic-teaching-http-restart-verification-v1",
+  "timestamp_utc": "2026-09-16T14:16:22.457925+00:00",
+  "checkpoint": "runs/associative/encoder.pt",
+  "checkpoint_sha256": "7206dbb6a6c0d90cdeffb7d78b29a7950ba6bb07d1a9997e565aeccd65b507d8",
+  "selection": "First four sealed test identities; seed 2026 fixed before this run",
+  "policy_patched": false,
+  "model_input": "RGB pixels and explicitly taught symbolic labels",
+  "scoring_only_ids": true,
+  "browser_visual_verification": false,
+  "browser_note": "Frontend served over real HTTP; no browser access bypass attempted",
+  "template_responses": true,
+  "english_decoder_used": false,
+  "processes": [
+    {
+      "phase": "teaching",
+      "pid": 13,
+      "url": "http://127.0.0.1:38077",
+      "stopped_before_restart": true
+    },
+    {
+      "phase": "recall_only",
+      "pid": 45,
+      "url": "http://127.0.0.1:44415"
+    }
+  ],
+  "retrieval": [
+    {
+      "label": "dax",
+      "expected_pattern_scoring_only": 35820,
+      "observed_pattern_scoring_only": 35820,
+      "observed_index": 1,
+      "correct": true,
+      "status": "matched",
+      "cosine_similarity": 0.9535928964614868,
+      "margin": 0.8826658055186272,
+      "reply": "Visual match for \"dax\": object 2."
+    },
+    {
+      "label": "wug",
+      "expected_pattern_scoring_only": 19528,
+      "observed_pattern_scoring_only": 19528,
+      "observed_index": 0,
+      "correct": true,
+      "status": "matched",
+      "cosine_similarity": 0.9871957302093506,
+      "margin": 0.5974995493888855,
+      "reply": "Visual match for \"wug\": object 1."
+    },
+    {
+      "label": "toma",
+      "expected_pattern_scoring_only": 26262,
+      "observed_pattern_scoring_only": 26262,
+      "observed_index": 3,
+      "correct": true,
+      "status": "matched",
+      "cosine_similarity": 0.9369515180587769,
+      "margin": 0.6436328291893005,
+      "reply": "Visual match for \"toma\": object 4."
+    },
+    {
+      "label": "kiki",
+      "expected_pattern_scoring_only": 60899,
+      "observed_pattern_scoring_only": 60899,
+      "observed_index": 2,
+      "correct": true,
+      "status": "matched",
+      "cosine_similarity": 0.9128929376602173,
+      "margin": 0.7788285315036774,
+      "reply": "Visual match for \"kiki\": object 3."
+    }
+  ],
+  "checks": {
+    "frontend_javascript_syntax": true,
+    "frontend_controls_served": true,
+    "get_state_nonmutating": true,
+    "unknown_endpoint_404": true,
+    "invalid_selection_400": true,
+    "cross_origin_rejected_403": true,
+    "distinct_os_processes": true,
+    "labels_loaded_without_teaching": true,
+    "scene_order_changed": true,
+    "all_objects_changed_pixels": true,
+    "unknown_label_abstained": true,
+    "memory_bytes_unchanged_after_restart_and_recall": true,
+    "checkpoint_bytes_unchanged": true
+  },
+  "saved_memory_sha256": "ae18bcd50b57d2a07b3548613c6e26ed0ba1c52364b2f718ca10f07df9d5ddeb",
+  "identification": {
+    "expected_label": "wug",
+    "result": {
+      "kind": "identify",
+      "confidence": 0.987195611000061,
+      "margin": 0.6938769519329071,
+      "status": "matched",
+      "label": "wug"
+    },
+    "correct": true,
+    "reply": "Object 1 visually matches \"wug\"."
+  },
+  "teaching_calls_after_restart": 0,
+  "recall_count": 4,
+  "recall_total": 4,
+  "contact_sheet": "runs/associative/restart_demo.png",
+  "elapsed_seconds": 2.293,
+  "passed": true
+}

@@ -1,0 +1,8889 @@
+{
+  "schema": "bic-public-rate-aggregate-v1",
+  "provenance": {
+    "kind": "derived_projection",
+    "source_report": "runs/shared-rate-analysis-local/attempt-002/independent-analysis.json",
+    "source_report_sha256": "922679ce9b665c836cd7f21b8af6aa5de0d0c23545da6e7d69ff30bb7e8e2943",
+    "source_status": "verified",
+    "launch_sha256": "057a6a06932749fd712dd10d32b9e68e6625d2db510aa739f8302af4a6bc21cf",
+    "summary_sha256": "6345f2128674853ea052712e590660914787defcf75ad75544ae2da59c0231ed",
+    "limitations": "Aggregate arithmetic only. Raw episode predictions, full optimizer archives and the complete historical input closure are not included."
+  },
+  "design": {
+    "common_lifetime_updates": 15592,
+    "additional_updates": [
+      0,
+      648,
+      1296,
+      2592
+    ],
+    "learning_rates": {
+      "control": 0.0003,
+      "lower": 0.0001
+    },
+    "auxiliary_weight": 0.3,
+    "acquisition_minimum_fraction": [
+      3,
+      4
+    ],
+    "capability_minimum_fraction": [
+      3,
+      4
+    ],
+    "maximum_retention_loss_fraction": [
+      1,
+      20
+    ],
+    "effect_minimum_fraction": [
+      1,
+      20
+    ],
+    "equal_weight_unit": "bank/family cell"
+  },
+  "observations": {
+    "control": {
+      "0": {
+        "basis_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              9,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                3,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                3,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                3,
+                32
+              ]
+            }
+          }
+        },
+        "basis_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              80,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                27,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                24,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                29,
+                32
+              ]
+            }
+          }
+        },
+        "basis_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              1,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                1,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "basis_sequence": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "complementary_fit_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              11,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                3,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                4,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                4,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_fit_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              39,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                13,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                12,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                14,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_dev_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              10,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                3,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                3,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                4,
+                40
+              ]
+            }
+          }
+        },
+        "complementary_dev_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              54,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                19,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                13,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                22,
+                40
+              ]
+            }
+          }
+        },
+        "definition_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              93,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            }
+          }
+        },
+        "definition_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              96,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "dev": {
+          "overall": {
+            "anchor_pair_both": [
+              268,
+              324
+            ],
+            "known_action": [
+              1345,
+              1440
+            ],
+            "known_reply": [
+              1344,
+              1440
+            ],
+            "unknown_action": [
+              1620,
+              1626
+            ],
+            "unknown_reply": [
+              1620,
+              1626
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                98,
+                108
+              ],
+              "known_action": [
+                463,
+                480
+              ],
+              "known_reply": [
+                464,
+                480
+              ],
+              "unknown_action": [
+                540,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                68,
+                108
+              ],
+              "known_action": [
+                413,
+                480
+              ],
+              "known_reply": [
+                412,
+                480
+              ],
+              "unknown_action": [
+                540,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                102,
+                108
+              ],
+              "known_action": [
+                469,
+                480
+              ],
+              "known_reply": [
+                468,
+                480
+              ],
+              "unknown_action": [
+                540,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            }
+          }
+        },
+        "retention": {
+          "overall": {
+            "anchor_pair_both": [
+              277,
+              360
+            ],
+            "known_action": [
+              1464,
+              1592
+            ],
+            "known_reply": [
+              1459,
+              1592
+            ],
+            "unknown_action": [
+              1774,
+              1784
+            ],
+            "unknown_reply": [
+              1773,
+              1784
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                104,
+                120
+              ],
+              "known_action": [
+                513,
+                536
+              ],
+              "known_reply": [
+                512,
+                536
+              ],
+              "unknown_action": [
+                586,
+                592
+              ],
+              "unknown_reply": [
+                586,
+                592
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                70,
+                120
+              ],
+              "known_action": [
+                452,
+                532
+              ],
+              "known_reply": [
+                449,
+                532
+              ],
+              "unknown_action": [
+                593,
+                596
+              ],
+              "unknown_reply": [
+                592,
+                596
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                103,
+                120
+              ],
+              "known_action": [
+                499,
+                524
+              ],
+              "known_reply": [
+                498,
+                524
+              ],
+              "unknown_action": [
+                595,
+                596
+              ],
+              "unknown_reply": [
+                595,
+                596
+              ]
+            }
+          }
+        },
+        "train_fit": {
+          "overall": {
+            "anchor_pair_both": [
+              52,
+              54
+            ],
+            "known_action": [
+              249,
+              252
+            ],
+            "known_reply": [
+              249,
+              252
+            ],
+            "unknown_action": [
+              264,
+              264
+            ],
+            "unknown_reply": [
+              264,
+              264
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                83,
+                84
+              ],
+              "known_reply": [
+                83,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                82,
+                84
+              ],
+              "known_reply": [
+                82,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            }
+          }
+        },
+        "transfer_original": {
+          "overall": {
+            "anchor_pair_both": [
+              144,
+              216
+            ],
+            "known_action": [
+              779,
+              918
+            ],
+            "known_reply": [
+              779,
+              918
+            ],
+            "unknown_action": [
+              910,
+              912
+            ],
+            "unknown_reply": [
+              909,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                63,
+                72
+              ],
+              "known_action": [
+                287,
+                306
+              ],
+              "known_reply": [
+                287,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                32,
+                72
+              ],
+              "known_action": [
+                226,
+                306
+              ],
+              "known_reply": [
+                226,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                302,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                49,
+                72
+              ],
+              "known_action": [
+                266,
+                306
+              ],
+              "known_reply": [
+                266,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            }
+          }
+        },
+        "transfer_varied": {
+          "overall": {
+            "anchor_pair_both": [
+              148,
+              216
+            ],
+            "known_action": [
+              785,
+              918
+            ],
+            "known_reply": [
+              785,
+              918
+            ],
+            "unknown_action": [
+              898,
+              912
+            ],
+            "unknown_reply": [
+              899,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                63,
+                72
+              ],
+              "known_action": [
+                281,
+                306
+              ],
+              "known_reply": [
+                280,
+                306
+              ],
+              "unknown_action": [
+                297,
+                304
+              ],
+              "unknown_reply": [
+                297,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                35,
+                72
+              ],
+              "known_action": [
+                234,
+                306
+              ],
+              "known_reply": [
+                234,
+                306
+              ],
+              "unknown_action": [
+                301,
+                304
+              ],
+              "unknown_reply": [
+                301,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                50,
+                72
+              ],
+              "known_action": [
+                270,
+                306
+              ],
+              "known_reply": [
+                271,
+                306
+              ],
+              "unknown_action": [
+                300,
+                304
+              ],
+              "unknown_reply": [
+                301,
+                304
+              ]
+            }
+          }
+        }
+      },
+      "648": {
+        "basis_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              13,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                7,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                5,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                1,
+                32
+              ]
+            }
+          }
+        },
+        "basis_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              82,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                27,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                25,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                30,
+                32
+              ]
+            }
+          }
+        },
+        "basis_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "basis_sequence": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "complementary_fit_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              15,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                2,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                4,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                9,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_fit_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              35,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                12,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                9,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                14,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_dev_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              27,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                6,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                10,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                11,
+                40
+              ]
+            }
+          }
+        },
+        "complementary_dev_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              68,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                21,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                20,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                27,
+                40
+              ]
+            }
+          }
+        },
+        "definition_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              95,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              95,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "dev": {
+          "overall": {
+            "anchor_pair_both": [
+              273,
+              324
+            ],
+            "known_action": [
+              1345,
+              1440
+            ],
+            "known_reply": [
+              1349,
+              1440
+            ],
+            "unknown_action": [
+              1619,
+              1626
+            ],
+            "unknown_reply": [
+              1616,
+              1626
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                99,
+                108
+              ],
+              "known_action": [
+                456,
+                480
+              ],
+              "known_reply": [
+                455,
+                480
+              ],
+              "unknown_action": [
+                536,
+                542
+              ],
+              "unknown_reply": [
+                535,
+                542
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                75,
+                108
+              ],
+              "known_action": [
+                424,
+                480
+              ],
+              "known_reply": [
+                428,
+                480
+              ],
+              "unknown_action": [
+                542,
+                542
+              ],
+              "unknown_reply": [
+                541,
+                542
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                99,
+                108
+              ],
+              "known_action": [
+                465,
+                480
+              ],
+              "known_reply": [
+                466,
+                480
+              ],
+              "unknown_action": [
+                541,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            }
+          }
+        },
+        "retention": {
+          "overall": {
+            "anchor_pair_both": [
+              287,
+              360
+            ],
+            "known_action": [
+              1452,
+              1592
+            ],
+            "known_reply": [
+              1460,
+              1592
+            ],
+            "unknown_action": [
+              1773,
+              1784
+            ],
+            "unknown_reply": [
+              1772,
+              1784
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                105,
+                120
+              ],
+              "known_action": [
+                510,
+                536
+              ],
+              "known_reply": [
+                510,
+                536
+              ],
+              "unknown_action": [
+                590,
+                592
+              ],
+              "unknown_reply": [
+                589,
+                592
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                74,
+                120
+              ],
+              "known_action": [
+                441,
+                532
+              ],
+              "known_reply": [
+                448,
+                532
+              ],
+              "unknown_action": [
+                590,
+                596
+              ],
+              "unknown_reply": [
+                590,
+                596
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                108,
+                120
+              ],
+              "known_action": [
+                501,
+                524
+              ],
+              "known_reply": [
+                502,
+                524
+              ],
+              "unknown_action": [
+                593,
+                596
+              ],
+              "unknown_reply": [
+                593,
+                596
+              ]
+            }
+          }
+        },
+        "train_fit": {
+          "overall": {
+            "anchor_pair_both": [
+              52,
+              54
+            ],
+            "known_action": [
+              250,
+              252
+            ],
+            "known_reply": [
+              250,
+              252
+            ],
+            "unknown_action": [
+              264,
+              264
+            ],
+            "unknown_reply": [
+              264,
+              264
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                16,
+                18
+              ],
+              "known_action": [
+                82,
+                84
+              ],
+              "known_reply": [
+                82,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            }
+          }
+        },
+        "transfer_original": {
+          "overall": {
+            "anchor_pair_both": [
+              155,
+              216
+            ],
+            "known_action": [
+              804,
+              918
+            ],
+            "known_reply": [
+              802,
+              918
+            ],
+            "unknown_action": [
+              907,
+              912
+            ],
+            "unknown_reply": [
+              907,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                64,
+                72
+              ],
+              "known_action": [
+                294,
+                306
+              ],
+              "known_reply": [
+                293,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                35,
+                72
+              ],
+              "known_action": [
+                233,
+                306
+              ],
+              "known_reply": [
+                233,
+                306
+              ],
+              "unknown_action": [
+                300,
+                304
+              ],
+              "unknown_reply": [
+                300,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                56,
+                72
+              ],
+              "known_action": [
+                277,
+                306
+              ],
+              "known_reply": [
+                276,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            }
+          }
+        },
+        "transfer_varied": {
+          "overall": {
+            "anchor_pair_both": [
+              156,
+              216
+            ],
+            "known_action": [
+              799,
+              918
+            ],
+            "known_reply": [
+              796,
+              918
+            ],
+            "unknown_action": [
+              895,
+              912
+            ],
+            "unknown_reply": [
+              892,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                63,
+                72
+              ],
+              "known_action": [
+                284,
+                306
+              ],
+              "known_reply": [
+                284,
+                306
+              ],
+              "unknown_action": [
+                296,
+                304
+              ],
+              "unknown_reply": [
+                295,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                33,
+                72
+              ],
+              "known_action": [
+                234,
+                306
+              ],
+              "known_reply": [
+                230,
+                306
+              ],
+              "unknown_action": [
+                298,
+                304
+              ],
+              "unknown_reply": [
+                297,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                60,
+                72
+              ],
+              "known_action": [
+                281,
+                306
+              ],
+              "known_reply": [
+                282,
+                306
+              ],
+              "unknown_action": [
+                301,
+                304
+              ],
+              "unknown_reply": [
+                300,
+                304
+              ]
+            }
+          }
+        }
+      },
+      "1296": {
+        "basis_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              8,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                6,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                2,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "basis_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              88,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                26,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            }
+          }
+        },
+        "basis_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "basis_sequence": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "complementary_fit_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              18,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                6,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                6,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                6,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_fit_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              39,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                13,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                11,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                15,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_dev_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              31,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                9,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                11,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                11,
+                40
+              ]
+            }
+          }
+        },
+        "complementary_dev_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              69,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                24,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                21,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                24,
+                40
+              ]
+            }
+          }
+        },
+        "definition_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              91,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                30,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                30,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            }
+          }
+        },
+        "definition_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              92,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                29,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "dev": {
+          "overall": {
+            "anchor_pair_both": [
+              266,
+              324
+            ],
+            "known_action": [
+              1339,
+              1440
+            ],
+            "known_reply": [
+              1340,
+              1440
+            ],
+            "unknown_action": [
+              1620,
+              1626
+            ],
+            "unknown_reply": [
+              1621,
+              1626
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                99,
+                108
+              ],
+              "known_action": [
+                454,
+                480
+              ],
+              "known_reply": [
+                454,
+                480
+              ],
+              "unknown_action": [
+                540,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                67,
+                108
+              ],
+              "known_action": [
+                417,
+                480
+              ],
+              "known_reply": [
+                418,
+                480
+              ],
+              "unknown_action": [
+                539,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                100,
+                108
+              ],
+              "known_action": [
+                468,
+                480
+              ],
+              "known_reply": [
+                468,
+                480
+              ],
+              "unknown_action": [
+                541,
+                542
+              ],
+              "unknown_reply": [
+                541,
+                542
+              ]
+            }
+          }
+        },
+        "retention": {
+          "overall": {
+            "anchor_pair_both": [
+              288,
+              360
+            ],
+            "known_action": [
+              1456,
+              1592
+            ],
+            "known_reply": [
+              1457,
+              1592
+            ],
+            "unknown_action": [
+              1776,
+              1784
+            ],
+            "unknown_reply": [
+              1775,
+              1784
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                106,
+                120
+              ],
+              "known_action": [
+                509,
+                536
+              ],
+              "known_reply": [
+                509,
+                536
+              ],
+              "unknown_action": [
+                589,
+                592
+              ],
+              "unknown_reply": [
+                588,
+                592
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                75,
+                120
+              ],
+              "known_action": [
+                450,
+                532
+              ],
+              "known_reply": [
+                450,
+                532
+              ],
+              "unknown_action": [
+                592,
+                596
+              ],
+              "unknown_reply": [
+                592,
+                596
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                107,
+                120
+              ],
+              "known_action": [
+                497,
+                524
+              ],
+              "known_reply": [
+                498,
+                524
+              ],
+              "unknown_action": [
+                595,
+                596
+              ],
+              "unknown_reply": [
+                595,
+                596
+              ]
+            }
+          }
+        },
+        "train_fit": {
+          "overall": {
+            "anchor_pair_both": [
+              51,
+              54
+            ],
+            "known_action": [
+              249,
+              252
+            ],
+            "known_reply": [
+              248,
+              252
+            ],
+            "unknown_action": [
+              264,
+              264
+            ],
+            "unknown_reply": [
+              264,
+              264
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                83,
+                84
+              ],
+              "known_reply": [
+                83,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                16,
+                18
+              ],
+              "known_action": [
+                82,
+                84
+              ],
+              "known_reply": [
+                82,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                83,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            }
+          }
+        },
+        "transfer_original": {
+          "overall": {
+            "anchor_pair_both": [
+              144,
+              216
+            ],
+            "known_action": [
+              784,
+              918
+            ],
+            "known_reply": [
+              782,
+              918
+            ],
+            "unknown_action": [
+              906,
+              912
+            ],
+            "unknown_reply": [
+              906,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                56,
+                72
+              ],
+              "known_action": [
+                282,
+                306
+              ],
+              "known_reply": [
+                280,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                34,
+                72
+              ],
+              "known_action": [
+                235,
+                306
+              ],
+              "known_reply": [
+                236,
+                306
+              ],
+              "unknown_action": [
+                299,
+                304
+              ],
+              "unknown_reply": [
+                299,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                54,
+                72
+              ],
+              "known_action": [
+                267,
+                306
+              ],
+              "known_reply": [
+                266,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            }
+          }
+        },
+        "transfer_varied": {
+          "overall": {
+            "anchor_pair_both": [
+              134,
+              216
+            ],
+            "known_action": [
+              775,
+              918
+            ],
+            "known_reply": [
+              772,
+              918
+            ],
+            "unknown_action": [
+              906,
+              912
+            ],
+            "unknown_reply": [
+              906,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                54,
+                72
+              ],
+              "known_action": [
+                270,
+                306
+              ],
+              "known_reply": [
+                270,
+                306
+              ],
+              "unknown_action": [
+                301,
+                304
+              ],
+              "unknown_reply": [
+                301,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                27,
+                72
+              ],
+              "known_action": [
+                230,
+                306
+              ],
+              "known_reply": [
+                228,
+                306
+              ],
+              "unknown_action": [
+                301,
+                304
+              ],
+              "unknown_reply": [
+                301,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                53,
+                72
+              ],
+              "known_action": [
+                275,
+                306
+              ],
+              "known_reply": [
+                274,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            }
+          }
+        }
+      },
+      "2592": {
+        "basis_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              16,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                5,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                9,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                2,
+                32
+              ]
+            }
+          }
+        },
+        "basis_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              81,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                23,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                26,
+                32
+              ]
+            }
+          }
+        },
+        "basis_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "basis_sequence": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "complementary_fit_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              15,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                5,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                5,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                5,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_fit_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              46,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                15,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                14,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                17,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_dev_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              27,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                6,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                6,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                15,
+                40
+              ]
+            }
+          }
+        },
+        "complementary_dev_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              89,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                33,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                21,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                35,
+                40
+              ]
+            }
+          }
+        },
+        "definition_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              95,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              96,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "dev": {
+          "overall": {
+            "anchor_pair_both": [
+              271,
+              324
+            ],
+            "known_action": [
+              1339,
+              1440
+            ],
+            "known_reply": [
+              1341,
+              1440
+            ],
+            "unknown_action": [
+              1622,
+              1626
+            ],
+            "unknown_reply": [
+              1622,
+              1626
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                100,
+                108
+              ],
+              "known_action": [
+                456,
+                480
+              ],
+              "known_reply": [
+                457,
+                480
+              ],
+              "unknown_action": [
+                539,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                72,
+                108
+              ],
+              "known_action": [
+                419,
+                480
+              ],
+              "known_reply": [
+                420,
+                480
+              ],
+              "unknown_action": [
+                541,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                99,
+                108
+              ],
+              "known_action": [
+                464,
+                480
+              ],
+              "known_reply": [
+                464,
+                480
+              ],
+              "unknown_action": [
+                542,
+                542
+              ],
+              "unknown_reply": [
+                542,
+                542
+              ]
+            }
+          }
+        },
+        "retention": {
+          "overall": {
+            "anchor_pair_both": [
+              281,
+              360
+            ],
+            "known_action": [
+              1449,
+              1592
+            ],
+            "known_reply": [
+              1447,
+              1592
+            ],
+            "unknown_action": [
+              1776,
+              1784
+            ],
+            "unknown_reply": [
+              1779,
+              1784
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                101,
+                120
+              ],
+              "known_action": [
+                500,
+                536
+              ],
+              "known_reply": [
+                500,
+                536
+              ],
+              "unknown_action": [
+                588,
+                592
+              ],
+              "unknown_reply": [
+                588,
+                592
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                71,
+                120
+              ],
+              "known_action": [
+                451,
+                532
+              ],
+              "known_reply": [
+                449,
+                532
+              ],
+              "unknown_action": [
+                592,
+                596
+              ],
+              "unknown_reply": [
+                595,
+                596
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                109,
+                120
+              ],
+              "known_action": [
+                498,
+                524
+              ],
+              "known_reply": [
+                498,
+                524
+              ],
+              "unknown_action": [
+                596,
+                596
+              ],
+              "unknown_reply": [
+                596,
+                596
+              ]
+            }
+          }
+        },
+        "train_fit": {
+          "overall": {
+            "anchor_pair_both": [
+              52,
+              54
+            ],
+            "known_action": [
+              250,
+              252
+            ],
+            "known_reply": [
+              249,
+              252
+            ],
+            "unknown_action": [
+              264,
+              264
+            ],
+            "unknown_reply": [
+              264,
+              264
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                83,
+                84
+              ],
+              "known_reply": [
+                82,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                83,
+                84
+              ],
+              "known_reply": [
+                83,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            }
+          }
+        },
+        "transfer_original": {
+          "overall": {
+            "anchor_pair_both": [
+              149,
+              216
+            ],
+            "known_action": [
+              793,
+              918
+            ],
+            "known_reply": [
+              791,
+              918
+            ],
+            "unknown_action": [
+              907,
+              912
+            ],
+            "unknown_reply": [
+              909,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                57,
+                72
+              ],
+              "known_action": [
+                281,
+                306
+              ],
+              "known_reply": [
+                281,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                38,
+                72
+              ],
+              "known_action": [
+                244,
+                306
+              ],
+              "known_reply": [
+                242,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                54,
+                72
+              ],
+              "known_action": [
+                268,
+                306
+              ],
+              "known_reply": [
+                268,
+                306
+              ],
+              "unknown_action": [
+                300,
+                304
+              ],
+              "unknown_reply": [
+                302,
+                304
+              ]
+            }
+          }
+        },
+        "transfer_varied": {
+          "overall": {
+            "anchor_pair_both": [
+              141,
+              216
+            ],
+            "known_action": [
+              793,
+              918
+            ],
+            "known_reply": [
+              794,
+              918
+            ],
+            "unknown_action": [
+              896,
+              912
+            ],
+            "unknown_reply": [
+              896,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                53,
+                72
+              ],
+              "known_action": [
+                276,
+                306
+              ],
+              "known_reply": [
+                274,
+                306
+              ],
+              "unknown_action": [
+                299,
+                304
+              ],
+              "unknown_reply": [
+                299,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                36,
+                72
+              ],
+              "known_action": [
+                247,
+                306
+              ],
+              "known_reply": [
+                248,
+                306
+              ],
+              "unknown_action": [
+                300,
+                304
+              ],
+              "unknown_reply": [
+                299,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                52,
+                72
+              ],
+              "known_action": [
+                270,
+                306
+              ],
+              "known_reply": [
+                272,
+                306
+              ],
+              "unknown_action": [
+                297,
+                304
+              ],
+              "unknown_reply": [
+                298,
+                304
+              ]
+            }
+          }
+        }
+      }
+    },
+    "lower": {
+      "0": {
+        "basis_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              9,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                3,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                3,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                3,
+                32
+              ]
+            }
+          }
+        },
+        "basis_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              80,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                27,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                24,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                29,
+                32
+              ]
+            }
+          }
+        },
+        "basis_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              1,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                1,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "basis_sequence": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "complementary_fit_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              11,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                3,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                4,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                4,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_fit_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              39,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                13,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                12,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                14,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_dev_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              10,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                3,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                3,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                4,
+                40
+              ]
+            }
+          }
+        },
+        "complementary_dev_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              54,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                19,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                13,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                22,
+                40
+              ]
+            }
+          }
+        },
+        "definition_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              93,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                31,
+                32
+              ]
+            }
+          }
+        },
+        "definition_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              96,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "dev": {
+          "overall": {
+            "anchor_pair_both": [
+              268,
+              324
+            ],
+            "known_action": [
+              1345,
+              1440
+            ],
+            "known_reply": [
+              1344,
+              1440
+            ],
+            "unknown_action": [
+              1620,
+              1626
+            ],
+            "unknown_reply": [
+              1620,
+              1626
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                98,
+                108
+              ],
+              "known_action": [
+                463,
+                480
+              ],
+              "known_reply": [
+                464,
+                480
+              ],
+              "unknown_action": [
+                540,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                68,
+                108
+              ],
+              "known_action": [
+                413,
+                480
+              ],
+              "known_reply": [
+                412,
+                480
+              ],
+              "unknown_action": [
+                540,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                102,
+                108
+              ],
+              "known_action": [
+                469,
+                480
+              ],
+              "known_reply": [
+                468,
+                480
+              ],
+              "unknown_action": [
+                540,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            }
+          }
+        },
+        "retention": {
+          "overall": {
+            "anchor_pair_both": [
+              277,
+              360
+            ],
+            "known_action": [
+              1464,
+              1592
+            ],
+            "known_reply": [
+              1459,
+              1592
+            ],
+            "unknown_action": [
+              1774,
+              1784
+            ],
+            "unknown_reply": [
+              1773,
+              1784
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                104,
+                120
+              ],
+              "known_action": [
+                513,
+                536
+              ],
+              "known_reply": [
+                512,
+                536
+              ],
+              "unknown_action": [
+                586,
+                592
+              ],
+              "unknown_reply": [
+                586,
+                592
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                70,
+                120
+              ],
+              "known_action": [
+                452,
+                532
+              ],
+              "known_reply": [
+                449,
+                532
+              ],
+              "unknown_action": [
+                593,
+                596
+              ],
+              "unknown_reply": [
+                592,
+                596
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                103,
+                120
+              ],
+              "known_action": [
+                499,
+                524
+              ],
+              "known_reply": [
+                498,
+                524
+              ],
+              "unknown_action": [
+                595,
+                596
+              ],
+              "unknown_reply": [
+                595,
+                596
+              ]
+            }
+          }
+        },
+        "train_fit": {
+          "overall": {
+            "anchor_pair_both": [
+              52,
+              54
+            ],
+            "known_action": [
+              249,
+              252
+            ],
+            "known_reply": [
+              249,
+              252
+            ],
+            "unknown_action": [
+              264,
+              264
+            ],
+            "unknown_reply": [
+              264,
+              264
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                83,
+                84
+              ],
+              "known_reply": [
+                83,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                82,
+                84
+              ],
+              "known_reply": [
+                82,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            }
+          }
+        },
+        "transfer_original": {
+          "overall": {
+            "anchor_pair_both": [
+              144,
+              216
+            ],
+            "known_action": [
+              779,
+              918
+            ],
+            "known_reply": [
+              779,
+              918
+            ],
+            "unknown_action": [
+              910,
+              912
+            ],
+            "unknown_reply": [
+              909,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                63,
+                72
+              ],
+              "known_action": [
+                287,
+                306
+              ],
+              "known_reply": [
+                287,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                32,
+                72
+              ],
+              "known_action": [
+                226,
+                306
+              ],
+              "known_reply": [
+                226,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                302,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                49,
+                72
+              ],
+              "known_action": [
+                266,
+                306
+              ],
+              "known_reply": [
+                266,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            }
+          }
+        },
+        "transfer_varied": {
+          "overall": {
+            "anchor_pair_both": [
+              148,
+              216
+            ],
+            "known_action": [
+              785,
+              918
+            ],
+            "known_reply": [
+              785,
+              918
+            ],
+            "unknown_action": [
+              898,
+              912
+            ],
+            "unknown_reply": [
+              899,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                63,
+                72
+              ],
+              "known_action": [
+                281,
+                306
+              ],
+              "known_reply": [
+                280,
+                306
+              ],
+              "unknown_action": [
+                297,
+                304
+              ],
+              "unknown_reply": [
+                297,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                35,
+                72
+              ],
+              "known_action": [
+                234,
+                306
+              ],
+              "known_reply": [
+                234,
+                306
+              ],
+              "unknown_action": [
+                301,
+                304
+              ],
+              "unknown_reply": [
+                301,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                50,
+                72
+              ],
+              "known_action": [
+                270,
+                306
+              ],
+              "known_reply": [
+                271,
+                306
+              ],
+              "unknown_action": [
+                300,
+                304
+              ],
+              "unknown_reply": [
+                301,
+                304
+              ]
+            }
+          }
+        }
+      },
+      "648": {
+        "basis_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              21,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                10,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                5,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                6,
+                32
+              ]
+            }
+          }
+        },
+        "basis_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              92,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                28,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "basis_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "basis_sequence": {
+          "overall": {
+            "all_query_pair_both": [
+              1,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                1,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "complementary_fit_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              28,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                9,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                8,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                11,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_fit_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              50,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                17,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                16,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                17,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_dev_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              50,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                15,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                12,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                23,
+                40
+              ]
+            }
+          }
+        },
+        "complementary_dev_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              88,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                31,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                24,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                33,
+                40
+              ]
+            }
+          }
+        },
+        "definition_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              96,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              96,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "dev": {
+          "overall": {
+            "anchor_pair_both": [
+              274,
+              324
+            ],
+            "known_action": [
+              1363,
+              1440
+            ],
+            "known_reply": [
+              1365,
+              1440
+            ],
+            "unknown_action": [
+              1624,
+              1626
+            ],
+            "unknown_reply": [
+              1623,
+              1626
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                101,
+                108
+              ],
+              "known_action": [
+                466,
+                480
+              ],
+              "known_reply": [
+                465,
+                480
+              ],
+              "unknown_action": [
+                541,
+                542
+              ],
+              "unknown_reply": [
+                540,
+                542
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                70,
+                108
+              ],
+              "known_action": [
+                425,
+                480
+              ],
+              "known_reply": [
+                427,
+                480
+              ],
+              "unknown_action": [
+                542,
+                542
+              ],
+              "unknown_reply": [
+                542,
+                542
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                103,
+                108
+              ],
+              "known_action": [
+                472,
+                480
+              ],
+              "known_reply": [
+                473,
+                480
+              ],
+              "unknown_action": [
+                541,
+                542
+              ],
+              "unknown_reply": [
+                541,
+                542
+              ]
+            }
+          }
+        },
+        "retention": {
+          "overall": {
+            "anchor_pair_both": [
+              300,
+              360
+            ],
+            "known_action": [
+              1499,
+              1592
+            ],
+            "known_reply": [
+              1501,
+              1592
+            ],
+            "unknown_action": [
+              1781,
+              1784
+            ],
+            "unknown_reply": [
+              1781,
+              1784
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                112,
+                120
+              ],
+              "known_action": [
+                526,
+                536
+              ],
+              "known_reply": [
+                525,
+                536
+              ],
+              "unknown_action": [
+                589,
+                592
+              ],
+              "unknown_reply": [
+                589,
+                592
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                75,
+                120
+              ],
+              "known_action": [
+                462,
+                532
+              ],
+              "known_reply": [
+                464,
+                532
+              ],
+              "unknown_action": [
+                596,
+                596
+              ],
+              "unknown_reply": [
+                596,
+                596
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                113,
+                120
+              ],
+              "known_action": [
+                511,
+                524
+              ],
+              "known_reply": [
+                512,
+                524
+              ],
+              "unknown_action": [
+                596,
+                596
+              ],
+              "unknown_reply": [
+                596,
+                596
+              ]
+            }
+          }
+        },
+        "train_fit": {
+          "overall": {
+            "anchor_pair_both": [
+              53,
+              54
+            ],
+            "known_action": [
+              250,
+              252
+            ],
+            "known_reply": [
+              250,
+              252
+            ],
+            "unknown_action": [
+              264,
+              264
+            ],
+            "unknown_reply": [
+              264,
+              264
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                82,
+                84
+              ],
+              "known_reply": [
+                82,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            }
+          }
+        },
+        "transfer_original": {
+          "overall": {
+            "anchor_pair_both": [
+              154,
+              216
+            ],
+            "known_action": [
+              807,
+              918
+            ],
+            "known_reply": [
+              802,
+              918
+            ],
+            "unknown_action": [
+              910,
+              912
+            ],
+            "unknown_reply": [
+              909,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                65,
+                72
+              ],
+              "known_action": [
+                292,
+                306
+              ],
+              "known_reply": [
+                292,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                32,
+                72
+              ],
+              "known_action": [
+                233,
+                306
+              ],
+              "known_reply": [
+                230,
+                306
+              ],
+              "unknown_action": [
+                302,
+                304
+              ],
+              "unknown_reply": [
+                301,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                57,
+                72
+              ],
+              "known_action": [
+                282,
+                306
+              ],
+              "known_reply": [
+                280,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            }
+          }
+        },
+        "transfer_varied": {
+          "overall": {
+            "anchor_pair_both": [
+              164,
+              216
+            ],
+            "known_action": [
+              816,
+              918
+            ],
+            "known_reply": [
+              815,
+              918
+            ],
+            "unknown_action": [
+              908,
+              912
+            ],
+            "unknown_reply": [
+              908,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                66,
+                72
+              ],
+              "known_action": [
+                288,
+                306
+              ],
+              "known_reply": [
+                288,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                39,
+                72
+              ],
+              "known_action": [
+                246,
+                306
+              ],
+              "known_reply": [
+                245,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                59,
+                72
+              ],
+              "known_action": [
+                282,
+                306
+              ],
+              "known_reply": [
+                282,
+                306
+              ],
+              "unknown_action": [
+                302,
+                304
+              ],
+              "unknown_reply": [
+                302,
+                304
+              ]
+            }
+          }
+        }
+      },
+      "1296": {
+        "basis_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              28,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                12,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                6,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                10,
+                32
+              ]
+            }
+          }
+        },
+        "basis_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              90,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                26,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "basis_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "basis_sequence": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "complementary_fit_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              30,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                8,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                10,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                12,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_fit_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              54,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                18,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                16,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                20,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_dev_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              55,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                19,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                14,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                22,
+                40
+              ]
+            }
+          }
+        },
+        "complementary_dev_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              88,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                33,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                20,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                35,
+                40
+              ]
+            }
+          }
+        },
+        "definition_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              96,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              96,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "dev": {
+          "overall": {
+            "anchor_pair_both": [
+              279,
+              324
+            ],
+            "known_action": [
+              1368,
+              1440
+            ],
+            "known_reply": [
+              1369,
+              1440
+            ],
+            "unknown_action": [
+              1623,
+              1626
+            ],
+            "unknown_reply": [
+              1622,
+              1626
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                102,
+                108
+              ],
+              "known_action": [
+                467,
+                480
+              ],
+              "known_reply": [
+                467,
+                480
+              ],
+              "unknown_action": [
+                540,
+                542
+              ],
+              "unknown_reply": [
+                539,
+                542
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                72,
+                108
+              ],
+              "known_action": [
+                427,
+                480
+              ],
+              "known_reply": [
+                427,
+                480
+              ],
+              "unknown_action": [
+                542,
+                542
+              ],
+              "unknown_reply": [
+                542,
+                542
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                105,
+                108
+              ],
+              "known_action": [
+                474,
+                480
+              ],
+              "known_reply": [
+                475,
+                480
+              ],
+              "unknown_action": [
+                541,
+                542
+              ],
+              "unknown_reply": [
+                541,
+                542
+              ]
+            }
+          }
+        },
+        "retention": {
+          "overall": {
+            "anchor_pair_both": [
+              298,
+              360
+            ],
+            "known_action": [
+              1500,
+              1592
+            ],
+            "known_reply": [
+              1499,
+              1592
+            ],
+            "unknown_action": [
+              1781,
+              1784
+            ],
+            "unknown_reply": [
+              1781,
+              1784
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                111,
+                120
+              ],
+              "known_action": [
+                525,
+                536
+              ],
+              "known_reply": [
+                525,
+                536
+              ],
+              "unknown_action": [
+                589,
+                592
+              ],
+              "unknown_reply": [
+                589,
+                592
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                73,
+                120
+              ],
+              "known_action": [
+                462,
+                532
+              ],
+              "known_reply": [
+                461,
+                532
+              ],
+              "unknown_action": [
+                596,
+                596
+              ],
+              "unknown_reply": [
+                596,
+                596
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                114,
+                120
+              ],
+              "known_action": [
+                513,
+                524
+              ],
+              "known_reply": [
+                513,
+                524
+              ],
+              "unknown_action": [
+                596,
+                596
+              ],
+              "unknown_reply": [
+                596,
+                596
+              ]
+            }
+          }
+        },
+        "train_fit": {
+          "overall": {
+            "anchor_pair_both": [
+              53,
+              54
+            ],
+            "known_action": [
+              250,
+              252
+            ],
+            "known_reply": [
+              250,
+              252
+            ],
+            "unknown_action": [
+              264,
+              264
+            ],
+            "unknown_reply": [
+              264,
+              264
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                82,
+                84
+              ],
+              "known_reply": [
+                82,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            }
+          }
+        },
+        "transfer_original": {
+          "overall": {
+            "anchor_pair_both": [
+              160,
+              216
+            ],
+            "known_action": [
+              815,
+              918
+            ],
+            "known_reply": [
+              813,
+              918
+            ],
+            "unknown_action": [
+              910,
+              912
+            ],
+            "unknown_reply": [
+              910,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                65,
+                72
+              ],
+              "known_action": [
+                292,
+                306
+              ],
+              "known_reply": [
+                292,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                35,
+                72
+              ],
+              "known_action": [
+                238,
+                306
+              ],
+              "known_reply": [
+                237,
+                306
+              ],
+              "unknown_action": [
+                302,
+                304
+              ],
+              "unknown_reply": [
+                302,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                60,
+                72
+              ],
+              "known_action": [
+                285,
+                306
+              ],
+              "known_reply": [
+                284,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            }
+          }
+        },
+        "transfer_varied": {
+          "overall": {
+            "anchor_pair_both": [
+              164,
+              216
+            ],
+            "known_action": [
+              814,
+              918
+            ],
+            "known_reply": [
+              815,
+              918
+            ],
+            "unknown_action": [
+              905,
+              912
+            ],
+            "unknown_reply": [
+              908,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                66,
+                72
+              ],
+              "known_action": [
+                287,
+                306
+              ],
+              "known_reply": [
+                287,
+                306
+              ],
+              "unknown_action": [
+                301,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                37,
+                72
+              ],
+              "known_action": [
+                242,
+                306
+              ],
+              "known_reply": [
+                244,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                61,
+                72
+              ],
+              "known_action": [
+                285,
+                306
+              ],
+              "known_reply": [
+                284,
+                306
+              ],
+              "unknown_action": [
+                301,
+                304
+              ],
+              "unknown_reply": [
+                302,
+                304
+              ]
+            }
+          }
+        }
+      },
+      "2592": {
+        "basis_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              27,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                6,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                7,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                14,
+                32
+              ]
+            }
+          }
+        },
+        "basis_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              89,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                27,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                30,
+                32
+              ]
+            }
+          }
+        },
+        "basis_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "basis_sequence": {
+          "overall": {
+            "all_query_pair_both": [
+              1,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                1,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "complementary_fit_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              43,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                14,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                15,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                14,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_fit_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              55,
+              60
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                19,
+                20
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                16,
+                20
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                20,
+                20
+              ]
+            }
+          }
+        },
+        "complementary_dev_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              62,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                21,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                14,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                27,
+                40
+              ]
+            }
+          }
+        },
+        "complementary_dev_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              97,
+              120
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                33,
+                40
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                26,
+                40
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                38,
+                40
+              ]
+            }
+          }
+        },
+        "definition_binding": {
+          "overall": {
+            "all_query_pair_both": [
+              96,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_revision": {
+          "overall": {
+            "all_query_pair_both": [
+              96,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                32,
+                32
+              ]
+            }
+          }
+        },
+        "definition_composition": {
+          "overall": {
+            "all_query_pair_both": [
+              0,
+              96
+            ]
+          },
+          "families": {
+            "color": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "count": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            },
+            "switch": {
+              "all_query_pair_both": [
+                0,
+                32
+              ]
+            }
+          }
+        },
+        "dev": {
+          "overall": {
+            "anchor_pair_both": [
+              278,
+              324
+            ],
+            "known_action": [
+              1364,
+              1440
+            ],
+            "known_reply": [
+              1366,
+              1440
+            ],
+            "unknown_action": [
+              1625,
+              1626
+            ],
+            "unknown_reply": [
+              1625,
+              1626
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                101,
+                108
+              ],
+              "known_action": [
+                465,
+                480
+              ],
+              "known_reply": [
+                465,
+                480
+              ],
+              "unknown_action": [
+                541,
+                542
+              ],
+              "unknown_reply": [
+                541,
+                542
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                74,
+                108
+              ],
+              "known_action": [
+                427,
+                480
+              ],
+              "known_reply": [
+                429,
+                480
+              ],
+              "unknown_action": [
+                542,
+                542
+              ],
+              "unknown_reply": [
+                542,
+                542
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                103,
+                108
+              ],
+              "known_action": [
+                472,
+                480
+              ],
+              "known_reply": [
+                472,
+                480
+              ],
+              "unknown_action": [
+                542,
+                542
+              ],
+              "unknown_reply": [
+                542,
+                542
+              ]
+            }
+          }
+        },
+        "retention": {
+          "overall": {
+            "anchor_pair_both": [
+              296,
+              360
+            ],
+            "known_action": [
+              1490,
+              1592
+            ],
+            "known_reply": [
+              1491,
+              1592
+            ],
+            "unknown_action": [
+              1781,
+              1784
+            ],
+            "unknown_reply": [
+              1781,
+              1784
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                110,
+                120
+              ],
+              "known_action": [
+                525,
+                536
+              ],
+              "known_reply": [
+                525,
+                536
+              ],
+              "unknown_action": [
+                589,
+                592
+              ],
+              "unknown_reply": [
+                589,
+                592
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                73,
+                120
+              ],
+              "known_action": [
+                455,
+                532
+              ],
+              "known_reply": [
+                456,
+                532
+              ],
+              "unknown_action": [
+                596,
+                596
+              ],
+              "unknown_reply": [
+                596,
+                596
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                113,
+                120
+              ],
+              "known_action": [
+                510,
+                524
+              ],
+              "known_reply": [
+                510,
+                524
+              ],
+              "unknown_action": [
+                596,
+                596
+              ],
+              "unknown_reply": [
+                596,
+                596
+              ]
+            }
+          }
+        },
+        "train_fit": {
+          "overall": {
+            "anchor_pair_both": [
+              53,
+              54
+            ],
+            "known_action": [
+              250,
+              252
+            ],
+            "known_reply": [
+              250,
+              252
+            ],
+            "unknown_action": [
+              264,
+              264
+            ],
+            "unknown_reply": [
+              264,
+              264
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                17,
+                18
+              ],
+              "known_action": [
+                82,
+                84
+              ],
+              "known_reply": [
+                82,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                18,
+                18
+              ],
+              "known_action": [
+                84,
+                84
+              ],
+              "known_reply": [
+                84,
+                84
+              ],
+              "unknown_action": [
+                88,
+                88
+              ],
+              "unknown_reply": [
+                88,
+                88
+              ]
+            }
+          }
+        },
+        "transfer_original": {
+          "overall": {
+            "anchor_pair_both": [
+              160,
+              216
+            ],
+            "known_action": [
+              826,
+              918
+            ],
+            "known_reply": [
+              823,
+              918
+            ],
+            "unknown_action": [
+              911,
+              912
+            ],
+            "unknown_reply": [
+              911,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                66,
+                72
+              ],
+              "known_action": [
+                292,
+                306
+              ],
+              "known_reply": [
+                292,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                35,
+                72
+              ],
+              "known_action": [
+                248,
+                306
+              ],
+              "known_reply": [
+                245,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                59,
+                72
+              ],
+              "known_action": [
+                286,
+                306
+              ],
+              "known_reply": [
+                286,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            }
+          }
+        },
+        "transfer_varied": {
+          "overall": {
+            "anchor_pair_both": [
+              160,
+              216
+            ],
+            "known_action": [
+              813,
+              918
+            ],
+            "known_reply": [
+              816,
+              918
+            ],
+            "unknown_action": [
+              910,
+              912
+            ],
+            "unknown_reply": [
+              910,
+              912
+            ]
+          },
+          "families": {
+            "color": {
+              "anchor_pair_both": [
+                65,
+                72
+              ],
+              "known_action": [
+                286,
+                306
+              ],
+              "known_reply": [
+                285,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            },
+            "count": {
+              "anchor_pair_both": [
+                35,
+                72
+              ],
+              "known_action": [
+                239,
+                306
+              ],
+              "known_reply": [
+                243,
+                306
+              ],
+              "unknown_action": [
+                304,
+                304
+              ],
+              "unknown_reply": [
+                304,
+                304
+              ]
+            },
+            "switch": {
+              "anchor_pair_both": [
+                60,
+                72
+              ],
+              "known_action": [
+                288,
+                306
+              ],
+              "known_reply": [
+                288,
+                306
+              ],
+              "unknown_action": [
+                303,
+                304
+              ],
+              "unknown_reply": [
+                303,
+                304
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "references": {
+    "prior13000": {
+      "basis_binding": {
+        "overall": {
+          "all_query_pair_both": [
+            5,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              1,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              3,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              1,
+              32
+            ]
+          }
+        }
+      },
+      "basis_revision": {
+        "overall": {
+          "all_query_pair_both": [
+            76,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              25,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              21,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              30,
+              32
+            ]
+          }
+        }
+      },
+      "basis_composition": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "basis_sequence": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "definition_binding": {
+        "overall": {
+          "all_query_pair_both": [
+            95,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              31,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          }
+        }
+      },
+      "definition_revision": {
+        "overall": {
+          "all_query_pair_both": [
+            96,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          }
+        }
+      },
+      "definition_composition": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "dev": {
+        "overall": {
+          "anchor_pair_both": [
+            261,
+            324
+          ],
+          "known_action": [
+            1343,
+            1440
+          ],
+          "known_reply": [
+            1336,
+            1440
+          ],
+          "unknown_action": [
+            1622,
+            1626
+          ],
+          "unknown_reply": [
+            1622,
+            1626
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              98,
+              108
+            ],
+            "known_action": [
+              463,
+              480
+            ],
+            "known_reply": [
+              462,
+              480
+            ],
+            "unknown_action": [
+              539,
+              542
+            ],
+            "unknown_reply": [
+              539,
+              542
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              68,
+              108
+            ],
+            "known_action": [
+              417,
+              480
+            ],
+            "known_reply": [
+              413,
+              480
+            ],
+            "unknown_action": [
+              542,
+              542
+            ],
+            "unknown_reply": [
+              542,
+              542
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              95,
+              108
+            ],
+            "known_action": [
+              463,
+              480
+            ],
+            "known_reply": [
+              461,
+              480
+            ],
+            "unknown_action": [
+              541,
+              542
+            ],
+            "unknown_reply": [
+              541,
+              542
+            ]
+          }
+        }
+      },
+      "retention": {
+        "overall": {
+          "anchor_pair_both": [
+            283,
+            360
+          ],
+          "known_action": [
+            1462,
+            1592
+          ],
+          "known_reply": [
+            1457,
+            1592
+          ],
+          "unknown_action": [
+            1778,
+            1784
+          ],
+          "unknown_reply": [
+            1778,
+            1784
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              106,
+              120
+            ],
+            "known_action": [
+              510,
+              536
+            ],
+            "known_reply": [
+              511,
+              536
+            ],
+            "unknown_action": [
+              588,
+              592
+            ],
+            "unknown_reply": [
+              588,
+              592
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              70,
+              120
+            ],
+            "known_action": [
+              447,
+              532
+            ],
+            "known_reply": [
+              443,
+              532
+            ],
+            "unknown_action": [
+              594,
+              596
+            ],
+            "unknown_reply": [
+              594,
+              596
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              107,
+              120
+            ],
+            "known_action": [
+              505,
+              524
+            ],
+            "known_reply": [
+              503,
+              524
+            ],
+            "unknown_action": [
+              596,
+              596
+            ],
+            "unknown_reply": [
+              596,
+              596
+            ]
+          }
+        }
+      },
+      "train_fit": {
+        "overall": {
+          "anchor_pair_both": [
+            50,
+            54
+          ],
+          "known_action": [
+            247,
+            252
+          ],
+          "known_reply": [
+            245,
+            252
+          ],
+          "unknown_action": [
+            264,
+            264
+          ],
+          "unknown_reply": [
+            264,
+            264
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              18,
+              18
+            ],
+            "known_action": [
+              84,
+              84
+            ],
+            "known_reply": [
+              83,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              14,
+              18
+            ],
+            "known_action": [
+              79,
+              84
+            ],
+            "known_reply": [
+              78,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              18,
+              18
+            ],
+            "known_action": [
+              84,
+              84
+            ],
+            "known_reply": [
+              84,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          }
+        }
+      },
+      "transfer_original": {
+        "overall": {
+          "anchor_pair_both": [
+            138,
+            216
+          ],
+          "known_action": [
+            791,
+            918
+          ],
+          "known_reply": [
+            791,
+            918
+          ],
+          "unknown_action": [
+            909,
+            912
+          ],
+          "unknown_reply": [
+            911,
+            912
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              59,
+              72
+            ],
+            "known_action": [
+              288,
+              306
+            ],
+            "known_reply": [
+              287,
+              306
+            ],
+            "unknown_action": [
+              303,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              25,
+              72
+            ],
+            "known_action": [
+              222,
+              306
+            ],
+            "known_reply": [
+              224,
+              306
+            ],
+            "unknown_action": [
+              302,
+              304
+            ],
+            "unknown_reply": [
+              303,
+              304
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              54,
+              72
+            ],
+            "known_action": [
+              281,
+              306
+            ],
+            "known_reply": [
+              280,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          }
+        }
+      },
+      "transfer_varied": {
+        "overall": {
+          "anchor_pair_both": [
+            150,
+            216
+          ],
+          "known_action": [
+            792,
+            918
+          ],
+          "known_reply": [
+            790,
+            918
+          ],
+          "unknown_action": [
+            911,
+            912
+          ],
+          "unknown_reply": [
+            912,
+            912
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              61,
+              72
+            ],
+            "known_action": [
+              283,
+              306
+            ],
+            "known_reply": [
+              281,
+              306
+            ],
+            "unknown_action": [
+              303,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              34,
+              72
+            ],
+            "known_action": [
+              230,
+              306
+            ],
+            "known_reply": [
+              231,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              55,
+              72
+            ],
+            "known_action": [
+              279,
+              306
+            ],
+            "known_reply": [
+              278,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          }
+        }
+      }
+    },
+    "previous10408": {
+      "basis_binding": {
+        "overall": {
+          "all_query_pair_both": [
+            3,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              2,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              1,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "basis_revision": {
+        "overall": {
+          "all_query_pair_both": [
+            55,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              20,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              12,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              23,
+              32
+            ]
+          }
+        }
+      },
+      "basis_composition": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "basis_sequence": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "definition_binding": {
+        "overall": {
+          "all_query_pair_both": [
+            90,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              30,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              29,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              31,
+              32
+            ]
+          }
+        }
+      },
+      "definition_revision": {
+        "overall": {
+          "all_query_pair_both": [
+            93,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              30,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              31,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          }
+        }
+      },
+      "definition_composition": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "dev": {
+        "overall": {
+          "anchor_pair_both": [
+            263,
+            324
+          ],
+          "known_action": [
+            1345,
+            1440
+          ],
+          "known_reply": [
+            1346,
+            1440
+          ],
+          "unknown_action": [
+            1623,
+            1626
+          ],
+          "unknown_reply": [
+            1622,
+            1626
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              96,
+              108
+            ],
+            "known_action": [
+              459,
+              480
+            ],
+            "known_reply": [
+              458,
+              480
+            ],
+            "unknown_action": [
+              539,
+              542
+            ],
+            "unknown_reply": [
+              539,
+              542
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              64,
+              108
+            ],
+            "known_action": [
+              415,
+              480
+            ],
+            "known_reply": [
+              416,
+              480
+            ],
+            "unknown_action": [
+              542,
+              542
+            ],
+            "unknown_reply": [
+              541,
+              542
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              103,
+              108
+            ],
+            "known_action": [
+              471,
+              480
+            ],
+            "known_reply": [
+              472,
+              480
+            ],
+            "unknown_action": [
+              542,
+              542
+            ],
+            "unknown_reply": [
+              542,
+              542
+            ]
+          }
+        }
+      },
+      "retention": {
+        "overall": {
+          "anchor_pair_both": [
+            280,
+            360
+          ],
+          "known_action": [
+            1480,
+            1592
+          ],
+          "known_reply": [
+            1476,
+            1592
+          ],
+          "unknown_action": [
+            1781,
+            1784
+          ],
+          "unknown_reply": [
+            1780,
+            1784
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              104,
+              120
+            ],
+            "known_action": [
+              515,
+              536
+            ],
+            "known_reply": [
+              515,
+              536
+            ],
+            "unknown_action": [
+              590,
+              592
+            ],
+            "unknown_reply": [
+              590,
+              592
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              67,
+              120
+            ],
+            "known_action": [
+              456,
+              532
+            ],
+            "known_reply": [
+              453,
+              532
+            ],
+            "unknown_action": [
+              596,
+              596
+            ],
+            "unknown_reply": [
+              595,
+              596
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              109,
+              120
+            ],
+            "known_action": [
+              509,
+              524
+            ],
+            "known_reply": [
+              508,
+              524
+            ],
+            "unknown_action": [
+              595,
+              596
+            ],
+            "unknown_reply": [
+              595,
+              596
+            ]
+          }
+        }
+      },
+      "train_fit": {
+        "overall": {
+          "anchor_pair_both": [
+            50,
+            54
+          ],
+          "known_action": [
+            246,
+            252
+          ],
+          "known_reply": [
+            246,
+            252
+          ],
+          "unknown_action": [
+            264,
+            264
+          ],
+          "unknown_reply": [
+            264,
+            264
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              17,
+              18
+            ],
+            "known_action": [
+              83,
+              84
+            ],
+            "known_reply": [
+              83,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              15,
+              18
+            ],
+            "known_action": [
+              79,
+              84
+            ],
+            "known_reply": [
+              79,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              18,
+              18
+            ],
+            "known_action": [
+              84,
+              84
+            ],
+            "known_reply": [
+              84,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          }
+        }
+      },
+      "transfer_original": {
+        "overall": {
+          "anchor_pair_both": [
+            141,
+            216
+          ],
+          "known_action": [
+            798,
+            918
+          ],
+          "known_reply": [
+            794,
+            918
+          ],
+          "unknown_action": [
+            912,
+            912
+          ],
+          "unknown_reply": [
+            912,
+            912
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              59,
+              72
+            ],
+            "known_action": [
+              288,
+              306
+            ],
+            "known_reply": [
+              287,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              27,
+              72
+            ],
+            "known_action": [
+              230,
+              306
+            ],
+            "known_reply": [
+              228,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              55,
+              72
+            ],
+            "known_action": [
+              280,
+              306
+            ],
+            "known_reply": [
+              279,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          }
+        }
+      },
+      "transfer_varied": {
+        "overall": {
+          "anchor_pair_both": [
+            145,
+            216
+          ],
+          "known_action": [
+            789,
+            918
+          ],
+          "known_reply": [
+            790,
+            918
+          ],
+          "unknown_action": [
+            905,
+            912
+          ],
+          "unknown_reply": [
+            903,
+            912
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              59,
+              72
+            ],
+            "known_action": [
+              282,
+              306
+            ],
+            "known_reply": [
+              283,
+              306
+            ],
+            "unknown_action": [
+              298,
+              304
+            ],
+            "unknown_reply": [
+              296,
+              304
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              26,
+              72
+            ],
+            "known_action": [
+              225,
+              306
+            ],
+            "known_reply": [
+              224,
+              306
+            ],
+            "unknown_action": [
+              303,
+              304
+            ],
+            "unknown_reply": [
+              303,
+              304
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              60,
+              72
+            ],
+            "known_action": [
+              282,
+              306
+            ],
+            "known_reply": [
+              283,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          }
+        }
+      }
+    },
+    "original9760": {
+      "basis_binding": {
+        "overall": {
+          "all_query_pair_both": [
+            10,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              5,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              4,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              1,
+              32
+            ]
+          }
+        }
+      },
+      "basis_revision": {
+        "overall": {
+          "all_query_pair_both": [
+            78,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              25,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              21,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          }
+        }
+      },
+      "basis_composition": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "basis_sequence": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "definition_binding": {
+        "overall": {
+          "all_query_pair_both": [
+            92,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              30,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              30,
+              32
+            ]
+          }
+        }
+      },
+      "definition_revision": {
+        "overall": {
+          "all_query_pair_both": [
+            91,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              27,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              32,
+              32
+            ]
+          }
+        }
+      },
+      "definition_composition": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "dev": {
+        "overall": {
+          "anchor_pair_both": [
+            257,
+            324
+          ],
+          "known_action": [
+            1332,
+            1440
+          ],
+          "known_reply": [
+            1332,
+            1440
+          ],
+          "unknown_action": [
+            1621,
+            1626
+          ],
+          "unknown_reply": [
+            1618,
+            1626
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              96,
+              108
+            ],
+            "known_action": [
+              454,
+              480
+            ],
+            "known_reply": [
+              453,
+              480
+            ],
+            "unknown_action": [
+              538,
+              542
+            ],
+            "unknown_reply": [
+              535,
+              542
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              63,
+              108
+            ],
+            "known_action": [
+              414,
+              480
+            ],
+            "known_reply": [
+              415,
+              480
+            ],
+            "unknown_action": [
+              542,
+              542
+            ],
+            "unknown_reply": [
+              542,
+              542
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              98,
+              108
+            ],
+            "known_action": [
+              464,
+              480
+            ],
+            "known_reply": [
+              464,
+              480
+            ],
+            "unknown_action": [
+              541,
+              542
+            ],
+            "unknown_reply": [
+              541,
+              542
+            ]
+          }
+        }
+      },
+      "retention": {
+        "overall": {
+          "anchor_pair_both": [
+            290,
+            360
+          ],
+          "known_action": [
+            1478,
+            1592
+          ],
+          "known_reply": [
+            1482,
+            1592
+          ],
+          "unknown_action": [
+            1779,
+            1784
+          ],
+          "unknown_reply": [
+            1777,
+            1784
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              107,
+              120
+            ],
+            "known_action": [
+              516,
+              536
+            ],
+            "known_reply": [
+              516,
+              536
+            ],
+            "unknown_action": [
+              587,
+              592
+            ],
+            "unknown_reply": [
+              586,
+              592
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              75,
+              120
+            ],
+            "known_action": [
+              458,
+              532
+            ],
+            "known_reply": [
+              462,
+              532
+            ],
+            "unknown_action": [
+              596,
+              596
+            ],
+            "unknown_reply": [
+              595,
+              596
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              108,
+              120
+            ],
+            "known_action": [
+              504,
+              524
+            ],
+            "known_reply": [
+              504,
+              524
+            ],
+            "unknown_action": [
+              596,
+              596
+            ],
+            "unknown_reply": [
+              596,
+              596
+            ]
+          }
+        }
+      },
+      "train_fit": {
+        "overall": {
+          "anchor_pair_both": [
+            48,
+            54
+          ],
+          "known_action": [
+            246,
+            252
+          ],
+          "known_reply": [
+            243,
+            252
+          ],
+          "unknown_action": [
+            264,
+            264
+          ],
+          "unknown_reply": [
+            264,
+            264
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              16,
+              18
+            ],
+            "known_action": [
+              83,
+              84
+            ],
+            "known_reply": [
+              82,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              15,
+              18
+            ],
+            "known_action": [
+              80,
+              84
+            ],
+            "known_reply": [
+              79,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              17,
+              18
+            ],
+            "known_action": [
+              83,
+              84
+            ],
+            "known_reply": [
+              82,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          }
+        }
+      },
+      "transfer_original": {
+        "overall": {
+          "anchor_pair_both": [
+            136,
+            216
+          ],
+          "known_action": [
+            794,
+            918
+          ],
+          "known_reply": [
+            789,
+            918
+          ],
+          "unknown_action": [
+            909,
+            912
+          ],
+          "unknown_reply": [
+            908,
+            912
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              57,
+              72
+            ],
+            "known_action": [
+              281,
+              306
+            ],
+            "known_reply": [
+              279,
+              306
+            ],
+            "unknown_action": [
+              301,
+              304
+            ],
+            "unknown_reply": [
+              300,
+              304
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              25,
+              72
+            ],
+            "known_action": [
+              238,
+              306
+            ],
+            "known_reply": [
+              234,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              54,
+              72
+            ],
+            "known_action": [
+              275,
+              306
+            ],
+            "known_reply": [
+              276,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          }
+        }
+      },
+      "transfer_varied": {
+        "overall": {
+          "anchor_pair_both": [
+            141,
+            216
+          ],
+          "known_action": [
+            789,
+            918
+          ],
+          "known_reply": [
+            791,
+            918
+          ],
+          "unknown_action": [
+            891,
+            912
+          ],
+          "unknown_reply": [
+            889,
+            912
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              57,
+              72
+            ],
+            "known_action": [
+              276,
+              306
+            ],
+            "known_reply": [
+              277,
+              306
+            ],
+            "unknown_action": [
+              284,
+              304
+            ],
+            "unknown_reply": [
+              283,
+              304
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              26,
+              72
+            ],
+            "known_action": [
+              232,
+              306
+            ],
+            "known_reply": [
+              232,
+              306
+            ],
+            "unknown_action": [
+              303,
+              304
+            ],
+            "unknown_reply": [
+              302,
+              304
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              58,
+              72
+            ],
+            "known_action": [
+              281,
+              306
+            ],
+            "known_reply": [
+              282,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          }
+        }
+      }
+    },
+    "historical9112": {
+      "basis_binding": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "basis_revision": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "basis_composition": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "basis_sequence": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "definition_binding": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "definition_revision": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "definition_composition": {
+        "overall": {
+          "all_query_pair_both": [
+            0,
+            96
+          ]
+        },
+        "families": {
+          "color": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "count": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          },
+          "switch": {
+            "all_query_pair_both": [
+              0,
+              32
+            ]
+          }
+        }
+      },
+      "dev": {
+        "overall": {
+          "anchor_pair_both": [
+            271,
+            324
+          ],
+          "known_action": [
+            1348,
+            1440
+          ],
+          "known_reply": [
+            1349,
+            1440
+          ],
+          "unknown_action": [
+            1619,
+            1626
+          ],
+          "unknown_reply": [
+            1619,
+            1626
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              103,
+              108
+            ],
+            "known_action": [
+              462,
+              480
+            ],
+            "known_reply": [
+              461,
+              480
+            ],
+            "unknown_action": [
+              535,
+              542
+            ],
+            "unknown_reply": [
+              535,
+              542
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              65,
+              108
+            ],
+            "known_action": [
+              417,
+              480
+            ],
+            "known_reply": [
+              419,
+              480
+            ],
+            "unknown_action": [
+              542,
+              542
+            ],
+            "unknown_reply": [
+              542,
+              542
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              103,
+              108
+            ],
+            "known_action": [
+              469,
+              480
+            ],
+            "known_reply": [
+              469,
+              480
+            ],
+            "unknown_action": [
+              542,
+              542
+            ],
+            "unknown_reply": [
+              542,
+              542
+            ]
+          }
+        }
+      },
+      "retention": {
+        "overall": {
+          "anchor_pair_both": [
+            299,
+            360
+          ],
+          "known_action": [
+            1489,
+            1592
+          ],
+          "known_reply": [
+            1493,
+            1592
+          ],
+          "unknown_action": [
+            1773,
+            1784
+          ],
+          "unknown_reply": [
+            1773,
+            1784
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              113,
+              120
+            ],
+            "known_action": [
+              523,
+              536
+            ],
+            "known_reply": [
+              525,
+              536
+            ],
+            "unknown_action": [
+              582,
+              592
+            ],
+            "unknown_reply": [
+              582,
+              592
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              74,
+              120
+            ],
+            "known_action": [
+              455,
+              532
+            ],
+            "known_reply": [
+              457,
+              532
+            ],
+            "unknown_action": [
+              596,
+              596
+            ],
+            "unknown_reply": [
+              596,
+              596
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              112,
+              120
+            ],
+            "known_action": [
+              511,
+              524
+            ],
+            "known_reply": [
+              511,
+              524
+            ],
+            "unknown_action": [
+              595,
+              596
+            ],
+            "unknown_reply": [
+              595,
+              596
+            ]
+          }
+        }
+      },
+      "train_fit": {
+        "overall": {
+          "anchor_pair_both": [
+            49,
+            54
+          ],
+          "known_action": [
+            247,
+            252
+          ],
+          "known_reply": [
+            245,
+            252
+          ],
+          "unknown_action": [
+            264,
+            264
+          ],
+          "unknown_reply": [
+            264,
+            264
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              18,
+              18
+            ],
+            "known_action": [
+              84,
+              84
+            ],
+            "known_reply": [
+              84,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              13,
+              18
+            ],
+            "known_action": [
+              79,
+              84
+            ],
+            "known_reply": [
+              77,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              18,
+              18
+            ],
+            "known_action": [
+              84,
+              84
+            ],
+            "known_reply": [
+              84,
+              84
+            ],
+            "unknown_action": [
+              88,
+              88
+            ],
+            "unknown_reply": [
+              88,
+              88
+            ]
+          }
+        }
+      },
+      "transfer_original": {
+        "overall": {
+          "anchor_pair_both": [
+            153,
+            216
+          ],
+          "known_action": [
+            808,
+            918
+          ],
+          "known_reply": [
+            812,
+            918
+          ],
+          "unknown_action": [
+            902,
+            912
+          ],
+          "unknown_reply": [
+            902,
+            912
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              56,
+              72
+            ],
+            "known_action": [
+              282,
+              306
+            ],
+            "known_reply": [
+              281,
+              306
+            ],
+            "unknown_action": [
+              298,
+              304
+            ],
+            "unknown_reply": [
+              298,
+              304
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              36,
+              72
+            ],
+            "known_action": [
+              244,
+              306
+            ],
+            "known_reply": [
+              248,
+              306
+            ],
+            "unknown_action": [
+              300,
+              304
+            ],
+            "unknown_reply": [
+              300,
+              304
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              61,
+              72
+            ],
+            "known_action": [
+              282,
+              306
+            ],
+            "known_reply": [
+              283,
+              306
+            ],
+            "unknown_action": [
+              304,
+              304
+            ],
+            "unknown_reply": [
+              304,
+              304
+            ]
+          }
+        }
+      },
+      "transfer_varied": {
+        "overall": {
+          "anchor_pair_both": [
+            146,
+            216
+          ],
+          "known_action": [
+            782,
+            918
+          ],
+          "known_reply": [
+            786,
+            918
+          ],
+          "unknown_action": [
+            881,
+            912
+          ],
+          "unknown_reply": [
+            880,
+            912
+          ]
+        },
+        "families": {
+          "color": {
+            "anchor_pair_both": [
+              53,
+              72
+            ],
+            "known_action": [
+              269,
+              306
+            ],
+            "known_reply": [
+              271,
+              306
+            ],
+            "unknown_action": [
+              282,
+              304
+            ],
+            "unknown_reply": [
+              281,
+              304
+            ]
+          },
+          "count": {
+            "anchor_pair_both": [
+              31,
+              72
+            ],
+            "known_action": [
+              231,
+              306
+            ],
+            "known_reply": [
+              234,
+              306
+            ],
+            "unknown_action": [
+              300,
+              304
+            ],
+            "unknown_reply": [
+              300,
+              304
+            ]
+          },
+          "switch": {
+            "anchor_pair_both": [
+              62,
+              72
+            ],
+            "known_action": [
+              282,
+              306
+            ],
+            "known_reply": [
+              281,
+              306
+            ],
+            "unknown_action": [
+              299,
+              304
+            ],
+            "unknown_reply": [
+              299,
+              304
+            ]
+          }
+        }
+      }
+    }
+  },
+  "reported": {
+    "acquisition_mean_effect_pp": 24.375,
+    "split_mean_effect_pp": {
+      "dev": 17.916666666666668,
+      "fit": 30.833333333333332
+    },
+    "family_mean_effect_pp": {
+      "color": 25.625,
+      "count": 23.125,
+      "switch": 24.375
+    },
+    "rate_effect_passed": true,
+    "secondary_mean_effect_pp": 0.5208333333333334,
+    "secondary_effect_passed": false,
+    "arms": {
+      "control": {
+        "acquisition_passes": 4,
+        "capability_passes": 2,
+        "retention_passes": {
+          "common15592": 93,
+          "historical9112": 92,
+          "original9760": 93,
+          "previous10408": 94,
+          "prior13000": 93
+        },
+        "original_transfer_mean_pp": 0.0,
+        "eligible": false
+      },
+      "lower": {
+        "acquisition_passes": 6,
+        "capability_passes": 3,
+        "retention_passes": {
+          "common15592": 96,
+          "historical9112": 96,
+          "original9760": 95,
+          "previous10408": 96,
+          "prior13000": 96
+        },
+        "original_transfer_mean_pp": 0.5208333333333334,
+        "eligible": false
+      }
+    },
+    "eligible_arms": [],
+    "automatic_adoption": false,
+    "selected_arm": null
+  }
+}

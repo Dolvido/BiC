@@ -1,0 +1,308 @@
+{
+  "interpretation": "Single-seed engineering check on synthetic tasks, not a research conclusion or an AGI assessment.",
+  "limitations": [
+    "Same optimizer settings are not independently tuned for each architecture.",
+    "Equal update and parameter budgets do not imply equal compute or equal recurrent-state capacity.",
+    "Random test episodes can share symbolic combinations with training; this is not compositional transfer.",
+    "Reported per-task standard errors cover evaluation sampling, not training-seed variation.",
+    "An existing checkpoint must have been trained with this code and unchanged settings for historical data parity."
+  ],
+  "reference": {
+    "checkpoint": "runs/reference/checkpoint.pt",
+    "sha256": "830e0ec6bd74b51b66acb7017c4c1bae2f95e3503335f84136e2597a636fa153",
+    "mode": "existing_checkpoint"
+  },
+  "software": {
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "threads": 1
+  },
+  "seed_controls": {
+    "initialization_seed": 7,
+    "training_stream_seed": 8,
+    "replay_seed": 9,
+    "evaluation_seed": 100007,
+    "training_rng_match": true,
+    "replay_rng_and_seen_match": true,
+    "final_stream_rng_sha256": "fdc4b95e8e5186f053cfb8d55f1aea54eac780e9ed9d6013c12205370c6e0aca"
+  },
+  "training_config": {
+    "seed": 7,
+    "batch_size": 32,
+    "delay": 2,
+    "learning_rate": 0.002,
+    "replay_capacity": 256,
+    "replay_fraction": 0.25,
+    "curriculum": "mixed",
+    "stage_steps": 200
+  },
+  "modular_config": {
+    "hidden_size": 48,
+    "visual_dim": 8,
+    "auditory_dim": 8,
+    "body_dim": 4,
+    "vocab_size": 8,
+    "num_actions": 4,
+    "memory_slots": 8
+  },
+  "total_updates_each": 600,
+  "modular": {
+    "parameters": 162810,
+    "training_seconds": null,
+    "training_time_note": "Not measured for an existing checkpoint",
+    "history": []
+  },
+  "gru": {
+    "hidden_size": 195,
+    "embedding_size": 48,
+    "parameters": 163047,
+    "relative_parameter_difference": 0.0014556845402616547,
+    "within_ten_percent": true,
+    "training_seconds": 3.7101682479988085,
+    "history": [
+      {
+        "step": 1,
+        "loss": 1.8668594360351562,
+        "gradient_norm": 0.6520608067512512,
+        "accuracy": 0.1875,
+        "action": 1.4347755908966064,
+        "sensory": 2.7553977966308594,
+        "prediction": 0.19751930236816406,
+        "value": 0.2569728195667267
+      },
+      {
+        "step": 100,
+        "loss": 1.0573214292526245,
+        "gradient_norm": 0.740079939365387,
+        "accuracy": 0.5625,
+        "action": 0.9790540933609009,
+        "sensory": 0.4324410557746887,
+        "prediction": 0.08810760825872421,
+        "value": 0.21515917778015137
+      },
+      {
+        "step": 200,
+        "loss": 0.22850485146045685,
+        "gradient_norm": 0.47106921672821045,
+        "accuracy": 0.90625,
+        "action": 0.21507635712623596,
+        "sensory": 0.06368022412061691,
+        "prediction": 0.08288349211215973,
+        "value": 0.02779935672879219
+      },
+      {
+        "step": 300,
+        "loss": 0.34923210740089417,
+        "gradient_norm": 0.532581090927124,
+        "accuracy": 0.8125,
+        "action": 0.3387772738933563,
+        "sensory": 0.044202208518981934,
+        "prediction": 0.0777871385216713,
+        "value": 0.029817912727594376
+      },
+      {
+        "step": 400,
+        "loss": 0.18712690472602844,
+        "gradient_norm": 0.31197261810302734,
+        "accuracy": 0.90625,
+        "action": 0.18133926391601562,
+        "sensory": 0.014025049284100533,
+        "prediction": 0.07844944298267365,
+        "value": 0.026607930660247803
+      },
+      {
+        "step": 500,
+        "loss": 0.228402778506279,
+        "gradient_norm": 0.30042123794555664,
+        "accuracy": 0.875,
+        "action": 0.21926280856132507,
+        "sensory": 0.014554818160831928,
+        "prediction": 0.07640977203845978,
+        "value": 0.09328892081975937
+      },
+      {
+        "step": 600,
+        "loss": 0.09755972027778625,
+        "gradient_norm": 0.25498247146606445,
+        "accuracy": 0.9375,
+        "action": 0.09199588000774384,
+        "sensory": 0.005441626533865929,
+        "prediction": 0.07577420771121979,
+        "value": 0.04948756843805313
+      }
+    ]
+  },
+  "evaluation": {
+    "trained_delay": {
+      "modular": {
+        "seed": 100007,
+        "delay": 2,
+        "ablate": [],
+        "random_chance": 0.25,
+        "macro_accuracy": 1.0,
+        "tasks": {
+          "visual_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "auditory_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "rule_switch": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "delayed_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "cross_modal": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          }
+        },
+        "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence.",
+        "evaluation_seconds": 0.2371288310023374
+      },
+      "gru": {
+        "seed": 100007,
+        "delay": 2,
+        "ablate": [],
+        "random_chance": 0.25,
+        "macro_accuracy": 0.969921875,
+        "tasks": {
+          "visual_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "auditory_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "rule_switch": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "delayed_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "cross_modal": {
+            "accuracy": 0.849609375,
+            "correct": 435,
+            "episodes": 512,
+            "standard_error": 0.01579737943755114
+          }
+        },
+        "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence.",
+        "evaluation_seconds": 0.07644816899846774
+      },
+      "modular_minus_gru_accuracy": 0.030078124999999956
+    },
+    "longer_delay": {
+      "modular": {
+        "seed": 100007,
+        "delay": 6,
+        "ablate": [],
+        "random_chance": 0.25,
+        "macro_accuracy": 1.0,
+        "tasks": {
+          "visual_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "auditory_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "rule_switch": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "delayed_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "cross_modal": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          }
+        },
+        "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence.",
+        "evaluation_seconds": 0.4218896290003613
+      },
+      "gru": {
+        "seed": 100007,
+        "delay": 6,
+        "ablate": [],
+        "random_chance": 0.25,
+        "macro_accuracy": 0.97265625,
+        "tasks": {
+          "visual_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "auditory_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "rule_switch": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "delayed_match": {
+            "accuracy": 1.0,
+            "correct": 512,
+            "episodes": 512,
+            "standard_error": 0.0
+          },
+          "cross_modal": {
+            "accuracy": 0.86328125,
+            "correct": 442,
+            "episodes": 512,
+            "standard_error": 0.015182916836656362
+          }
+        },
+        "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence.",
+        "evaluation_seconds": 0.12259890499990433
+      },
+      "modular_minus_gru_accuracy": 0.02734375
+    }
+  }
+}

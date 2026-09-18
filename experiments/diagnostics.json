@@ -1,0 +1,723 @@
+{
+  "seed": 300007,
+  "trained_steps": 600,
+  "parameters": 162810,
+  "intact": {
+    "seed": 300007,
+    "delay": 2,
+    "ablate": [],
+    "random_chance": 0.25,
+    "macro_accuracy": 1.0,
+    "tasks": {
+      "visual_match": {
+        "accuracy": 1.0,
+        "correct": 256,
+        "episodes": 256,
+        "standard_error": 0.0
+      },
+      "auditory_match": {
+        "accuracy": 1.0,
+        "correct": 256,
+        "episodes": 256,
+        "standard_error": 0.0
+      },
+      "rule_switch": {
+        "accuracy": 1.0,
+        "correct": 256,
+        "episodes": 256,
+        "standard_error": 0.0
+      },
+      "delayed_match": {
+        "accuracy": 1.0,
+        "correct": 256,
+        "episodes": 256,
+        "standard_error": 0.0
+      },
+      "cross_modal": {
+        "accuracy": 1.0,
+        "correct": 256,
+        "episodes": 256,
+        "standard_error": 0.0
+      }
+    },
+    "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+  },
+  "region_lesions": {
+    "visual_cortex": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "visual_cortex"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.48046875,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 0.234375,
+          "correct": 60,
+          "episodes": 256,
+          "standard_error": 0.026475472093214762
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 0.6640625,
+          "correct": 170,
+          "episodes": 256,
+          "standard_error": 0.02951982226599969
+        },
+        "delayed_match": {
+          "accuracy": 0.2578125,
+          "correct": 66,
+          "episodes": 256,
+          "standard_error": 0.02733938999837777
+        },
+        "cross_modal": {
+          "accuracy": 0.24609375,
+          "correct": 63,
+          "episodes": 256,
+          "standard_error": 0.02692086320725943
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "auditory_cortex": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "auditory_cortex"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.63984375,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 0.29296875,
+          "correct": 75,
+          "episodes": 256,
+          "standard_error": 0.028445264154616807
+        },
+        "rule_switch": {
+          "accuracy": 0.65234375,
+          "correct": 167,
+          "episodes": 256,
+          "standard_error": 0.02976413673024351
+        },
+        "delayed_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "cross_modal": {
+          "accuracy": 0.25390625,
+          "correct": 65,
+          "episodes": 256,
+          "standard_error": 0.02720278781460596
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "somatosensory_cortex": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "somatosensory_cortex"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.98984375,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "delayed_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "cross_modal": {
+          "accuracy": 0.94921875,
+          "correct": 243,
+          "episodes": 256,
+          "standard_error": 0.013721919430074605
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "temporal_language": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "temporal_language"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.440625,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 0.62109375,
+          "correct": 159,
+          "episodes": 256,
+          "standard_error": 0.030319670782692373
+        },
+        "auditory_match": {
+          "accuracy": 0.30078125,
+          "correct": 77,
+          "episodes": 256,
+          "standard_error": 0.028662358921400885
+        },
+        "rule_switch": {
+          "accuracy": 0.4609375,
+          "correct": 118,
+          "episodes": 256,
+          "standard_error": 0.031154486603416544
+        },
+        "delayed_match": {
+          "accuracy": 0.23828125,
+          "correct": 61,
+          "episodes": 256,
+          "standard_error": 0.026627002264679955
+        },
+        "cross_modal": {
+          "accuracy": 0.58203125,
+          "correct": 149,
+          "episodes": 256,
+          "standard_error": 0.030826560814564648
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "parietal_association": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "parietal_association"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.94140625,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "delayed_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "cross_modal": {
+          "accuracy": 0.70703125,
+          "correct": 181,
+          "episodes": 256,
+          "standard_error": 0.028445264154616807
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "thalamus": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "thalamus"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.38359375,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 0.296875,
+          "correct": 76,
+          "episodes": 256,
+          "standard_error": 0.02855506155705751
+        },
+        "auditory_match": {
+          "accuracy": 0.35546875,
+          "correct": 91,
+          "episodes": 256,
+          "standard_error": 0.029915944599869987
+        },
+        "rule_switch": {
+          "accuracy": 0.29296875,
+          "correct": 75,
+          "episodes": 256,
+          "standard_error": 0.028445264154616807
+        },
+        "delayed_match": {
+          "accuracy": 0.5625,
+          "correct": 144,
+          "episodes": 256,
+          "standard_error": 0.031004898176538172
+        },
+        "cross_modal": {
+          "accuracy": 0.41015625,
+          "correct": 105,
+          "episodes": 256,
+          "standard_error": 0.0307413669656022
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "prefrontal_cortex": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "prefrontal_cortex"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.75078125,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 0.81640625,
+          "correct": 209,
+          "episodes": 256,
+          "standard_error": 0.024197033405536764
+        },
+        "auditory_match": {
+          "accuracy": 0.94140625,
+          "correct": 241,
+          "episodes": 256,
+          "standard_error": 0.014678923355036537
+        },
+        "rule_switch": {
+          "accuracy": 0.8515625,
+          "correct": 218,
+          "episodes": 256,
+          "standard_error": 0.02222082080660694
+        },
+        "delayed_match": {
+          "accuracy": 0.234375,
+          "correct": 60,
+          "episodes": 256,
+          "standard_error": 0.026475472093214762
+        },
+        "cross_modal": {
+          "accuracy": 0.91015625,
+          "correct": 233,
+          "episodes": 256,
+          "standard_error": 0.017872361101749213
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "hippocampus": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "hippocampus"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 1.0,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "delayed_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "cross_modal": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "basal_ganglia": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "basal_ganglia"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.97890625,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "delayed_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "cross_modal": {
+          "accuracy": 0.89453125,
+          "correct": 229,
+          "episodes": 256,
+          "standard_error": 0.019197278938595446
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "motor_cortex": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "motor_cortex"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.25078125,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 0.2578125,
+          "correct": 66,
+          "episodes": 256,
+          "standard_error": 0.02733938999837777
+        },
+        "auditory_match": {
+          "accuracy": 0.28515625,
+          "correct": 73,
+          "episodes": 256,
+          "standard_error": 0.0282180518383967
+        },
+        "rule_switch": {
+          "accuracy": 0.2265625,
+          "correct": 58,
+          "episodes": 256,
+          "standard_error": 0.026162945946521122
+        },
+        "delayed_match": {
+          "accuracy": 0.234375,
+          "correct": 60,
+          "episodes": 256,
+          "standard_error": 0.026475472093214762
+        },
+        "cross_modal": {
+          "accuracy": 0.25,
+          "correct": 64,
+          "episodes": 256,
+          "standard_error": 0.027063293868263706
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "cerebellum": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "cerebellum"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 1.0,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "delayed_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "cross_modal": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "amygdala": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "amygdala"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.884375,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 0.98828125,
+          "correct": 253,
+          "episodes": 256,
+          "standard_error": 0.006726063141580034
+        },
+        "delayed_match": {
+          "accuracy": 0.96484375,
+          "correct": 247,
+          "episodes": 256,
+          "standard_error": 0.01151091331457645
+        },
+        "cross_modal": {
+          "accuracy": 0.46875,
+          "correct": 120,
+          "episodes": 256,
+          "standard_error": 0.031188905122404905
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "hypothalamus": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [
+        "hypothalamus"
+      ],
+      "random_chance": 0.25,
+      "macro_accuracy": 0.98515625,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "delayed_match": {
+          "accuracy": 0.93359375,
+          "correct": 239,
+          "episodes": 256,
+          "standard_error": 0.015561930205550085
+        },
+        "cross_modal": {
+          "accuracy": 0.9921875,
+          "correct": 254,
+          "episodes": 256,
+          "standard_error": 0.005502650229289377
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    }
+  },
+  "delay_sweep": {
+    "2": {
+      "seed": 300007,
+      "delay": 2,
+      "ablate": [],
+      "random_chance": 0.25,
+      "macro_accuracy": 1.0,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "delayed_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "cross_modal": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "6": {
+      "seed": 300007,
+      "delay": 6,
+      "ablate": [],
+      "random_chance": 0.25,
+      "macro_accuracy": 1.0,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "delayed_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "cross_modal": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    },
+    "14": {
+      "seed": 300007,
+      "delay": 14,
+      "ablate": [],
+      "random_chance": 0.25,
+      "macro_accuracy": 1.0,
+      "tasks": {
+        "visual_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "auditory_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "rule_switch": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "delayed_match": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        },
+        "cross_modal": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "episodes": 256,
+          "standard_error": 0.0
+        }
+      },
+      "interpretation": "Fresh random episodes from the same symbolic generators; not evidence of general intelligence."
+    }
+  },
+  "diagnostic_seconds": 2.2894048649977776,
+  "process_peak_rss_bytes": 358756352,
+  "notes": [
+    "Inference lesions are out-of-distribution interventions, not retrained controls.",
+    "Raw observation error also enters cerebellum. Lesioning a sensory region does not remove its modality.",
+    "Memory slots bound within-episode reads; working state can also retain a cue.",
+    "Peak RSS includes the Python/PyTorch runtime and loaded optimizer/replay, not just model tensors."
+  ]
+}
