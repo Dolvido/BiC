@@ -1,0 +1,34 @@
+{
+  "schema": "bic-public-inference-v1",
+  "asset": "bic-lower-2592.pt",
+  "asset_sha256": "1cb5d827e16c26c2b67cdb90a9cc7a61b10dfc05e05dbec38fbc31f7688d5986",
+  "asset_bytes": 9085105,
+  "weights_sha256": "002a5cdd39c1ad1e4625f2a7e804eb1d1a13ba62598db90ff0bc3354467d758b",
+  "parameter_count": 2264725,
+  "architecture": "sequence-shared-entity-state-v1",
+  "config": {
+    "width": 192,
+    "layers": 4,
+    "heads": 4,
+    "feedforward": 768,
+    "max_positions": 1024,
+    "max_turns": 12,
+    "max_input_bytes": 128,
+    "max_output_bytes": 32
+  },
+  "provenance": {
+    "source_archive_name": "lower-2592.pt",
+    "source_archive_sha256": "ad39a15737834e20203209261cd58dc9f70773a849914fc463ab705bcaf70637",
+    "study": "shared-rate-local/attempt-001",
+    "branch": "lower",
+    "lifetime_updates": 18184,
+    "study_updates": 2592,
+    "status": "Research candidate; failed the complete promotion gate."
+  },
+  "export_contents": "Model tensors and inference configuration only; no optimizer, tutor model, lessons, or session state.",
+  "export_runtime": {
+    "python": "3.12.14",
+    "torch": "2.11.0+cu128",
+    "device": "cpu"
+  }
+}
